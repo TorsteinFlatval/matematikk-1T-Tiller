@@ -19,16 +19,17 @@
 <link href="../../../_static/pygments.css?v=fa44fd50" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/general_style.css?v=11bbc4b6" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=9237f12a" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=33f0140e" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/popup.css?v=2d27c3a4" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/escape-room.css?v=bfeb5342" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/legacy_1t/interactive_code.css?v=23cd07d5" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/jeopardy.css?v=71d9bb06" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/parsonsPuzzle.css?v=9fbab2c7" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/static_code_blocks.css?v=68f9364b" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/clickable_figures/style.css?v=2580ef29" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/clickable_figures/style.css?v=d35dfce7" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/escapeRoom/style.css?v=b30732ed" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/mathjax/style.css?v=194b018e" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/misc_styles/figures.css?v=46e199f0" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/misc_styles/figures.css?v=5dd46ff0" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/geogebra.css?v=fd180d66" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/grids.css?v=7667ba21" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/misc.css?v=55d93a12" rel="stylesheet" type="text/css"/>
@@ -42,74 +43,28 @@
 <link href="../../../_static/sphinx-thebe.css?v=4fa983c6" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/proof.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/tabs.css?v=4c969af8" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/general_style.css?v=ea5285ea" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/general_style.css?v=57d653fb" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=241d39f0" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/flashcards.css?v=816457f1" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/jeopardy.css?v=575e2325" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/masonry.css?v=db25927a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/notebook.css?v=00170ee0" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/interactive_code.css?v=f903e660" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/jeopardy.css?v=f760f57b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/quiz.css?v=722631f3" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/sphinx-design.min.css?v=95c83b7e" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" rel="stylesheet" type="text/css"/>
 <link href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 <link href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/admonitions.css?v=a3692687" onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/dialogue.css?v=c5b7ed32" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/figures.css?v=acd93126" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/admonitions.css?v=009bab9d" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/dialogue.css?v=1b585024" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/figures.css?v=a197b544" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/popup.css?v=26181dfd" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/timedQuiz.css?v=89e27729" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/cas_popup.css?v=bb968b84" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/github-light.css?v=0cccc4aa" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/github-dark.css?v=e9bcc25f" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/cas_popup.css?v=bae4ad7e" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/github-light.css?v=a6d10b1c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/github-dark.css?v=2454bc3f" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/github-dark-high-contrast.css?v=4c0c1b0f" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/table.css?v=fd6d533f" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/pairPuzzle/style.css?v=0a0f323a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=a1529215" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/part.css?v=bc286cc2" onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/pairPuzzle/style.css?v=f77426ac" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=8c5c5c21" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/print_pdf.css?v=04196dc1" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" id="highlight-theme-light" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" id="highlight-theme-dark" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/dialogue.css?v=1b585024" rel="stylesheet" type="text/css"/>
@@ -143,8 +98,7 @@
 <script src="../../../_static/documentation_options.js?v=c712eed9"></script>
 <script src="../../../_static/doctools.js?v=9a2dae69"></script>
 <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-<script src="../../../_static/munchboka/fonts/opendyslexic/opendylexic-toggle.js?v=1652b728"></script>
-<script src="../../../_static/munchboka/js/utils.js?v=b59157b9"></script>
+<script src="../../../_static/munchboka/js/utils.js?v=a5b18a1c"></script>
 <script src="../../../_static/munchboka/js/casThemeManager.js?v=88874cc7"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
 <script src="../../../_static/munchboka/js/skulpt/skulpt.js?v=51c28977"></script>
@@ -153,37 +107,14 @@
 <script src="../../../_static/copybutton.js?v=f281be69"></script>
 <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
 <script src="../../../_static/tabs.js?v=3ee01567"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/solution_timer.js?v=8d1f44f8"></script>
-<script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
-<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
+<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=fec3e31f"></script>
 <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=733f5585"></script>
 <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
 <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=ecc68a76"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=b934d01d"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=0d62d95e"></script>
 <script src="../../../_static/munchboka/js/jeopardy.js?v=375a3583"></script>
-<script defer="defer" src="../../../_static/munchboka/js/masonry.js?v=96ec6874"></script>
 <script src="../../../_static/munchboka/js/quiz.js?v=f8bcd7a1"></script>
 <script>let toggleHintShow = 'Klikk for å vise';</script>
 <script>let toggleHintHide = 'Klikk for å skjule';</script>
@@ -207,114 +138,9 @@
 <script src="../../../_static/munchboka/js/pairPuzzle/draggableItem.js?v=ce9ef7bd"></script>
 <script src="../../../_static/munchboka/js/pairPuzzle/dropZone.js?v=56907477"></script>
 <script src="../../../_static/munchboka/js/pairPuzzle/game.js?v=cb8b0d45"></script>
-<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
-<script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=57870877"></script>
+<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=fec3e31f"></script>
+<script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=62fdd1f2"></script>
 <script src="../../../_static/munchboka/js/print_answer_key.js?v=eebcd271"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/solution2.js?v=a2d1029e"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/part.js?v=ca40db03"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/goals.js?v=a2f2d5f7"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
 <script src="../../../_static/utils.js?v=14803243"></script>
 <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
 <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
@@ -345,7 +171,6 @@
 <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
-<script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
 <link href="../../../genindex.html" rel="index" title="Index"/>
 <link href="../../../search.html" rel="search" title="Search"/>
 <link href="oppgaver.html" rel="next" title="Oppgaver: Andregradsulikheter"/>
@@ -577,22 +402,9 @@ document.write(`
 </div>
 <nav aria-label="Page">
 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafisk-losning">Grafisk løsning</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-1">Eksempel 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-2">Eksempel 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-1">Underveisoppgave 1</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafisk-losning">Grafisk løsning</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algebraisk-losning">Algebraisk løsning</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-Fortegnslinjer">Fortegnslinjer</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-3">Eksempel 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-2">Underveisoppgave 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-4">Eksempel 4</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-3">Underveisoppgave 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cas">CAS</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-1">Utforsk 1</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cas">CAS</a></li>
 </ul>
 </li>
 </ul>
@@ -604,14 +416,13 @@ document.write(`
 <article class="bd-article">
 <section class="tex2jax_ignore mathjax_ignore" id="andregradsulikheter">
 <h1>Andregradsulikheter<a class="headerlink" href="#andregradsulikheter" title="Link to this heading">#</a></h1>
-<div class="goals docutils container">
-<button aria-expanded="false" class="goals-toggle" data-label="Læringsmål">Læringsmål</button><div class="goals-content docutils container">
+<div class="admonition tip">
+<p class="admonition-title">Læringsmål</p>
 <ul class="simple">
 <li><p>Kunne beskrive mengder som består av flere intervaller.</p></li>
 <li><p>Kunne tolke og tegne fortegnslinjer for andregradsfunksjoner.</p></li>
 <li><p>Kunne løse andregradsulikheter grafisk og algebraisk.</p></li>
 </ul>
-</div>
 </div>
 <p>Andregradsulikheter er ulikheter der vi lurer på når en andregradsfunksjon er større enn eller mindre enn null. Som når vi jobbet med lineære ulikheter, så hadde vi to strategier vi kunne bruke for å løse ulikhetene:</p>
 <ol class="arabic simple">
@@ -627,16 +438,15 @@ document.write(`
 <span id="grafisk-losning-ulikheter"></span><h2>Grafisk løsning<a class="headerlink" href="#grafisk-losning" title="Link to this heading">#</a></h2>
 <p>Å løse en andregradsulikhet grafisk er ganske likt det vi gjorde med lineære ulikheter. Vi tegner grafen til funksjonen og så leser vi av hvor grafen oppfyller ulikheten.</p>
 <p>La oss se på et eksempel:</p>
-<section class="example-section" id="example-Eksempel-1">
-<h3>Eksempel 1<a class="headerlink" href="#example-Eksempel-1" title="Link to this heading">#</a></h3>
-<div class="example-body docutils container">
+<div class="admonition example">
+<p class="admonition-title">Eksempel 1</p>
 <p>Løs ulikheten</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 x^2 - 4x + 3 &lt; 0
 \]</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution">
+<p class="admonition-title">Løsning</p>
 <p>Vi tegner grafen til <span class="math notranslate nohighlight avoid-break-inside">\(f(x) = x^2 - 4x + 3\)</span> og ser hvor <span class="math notranslate nohighlight avoid-break-inside">\(y\)</span>-koordinaten til grafen er mindre enn null:</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/figur5.svg"><img alt="../../../_images/figur5.svg" class="no-click adaptive-figure" src="../../../_images/figur5.svg" style="width: 80%;"/>
@@ -649,25 +459,21 @@ x^2 - 4x + 3 &lt; 0
 \]</div>
 </div>
 </div>
-</div>
-</section>
 <p>La oss se på et eksempel til der vi trenger en ny måte å beskrive løsningen på:</p>
-<section class="example-section" id="example-Eksempel-2">
-<h3>Eksempel 2<a class="headerlink" href="#example-Eksempel-2" title="Link to this heading">#</a></h3>
-<div class="example-body docutils container">
+<div class="admonition example">
+<p class="admonition-title">Eksempel 2</p>
 <p>Løs ulikheten</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 x^2 - x - 4 \geq 2
 \]</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution">
+<p class="admonition-title">Løsning</p>
 <p>Vi tegner grafen til <span class="math notranslate nohighlight avoid-break-inside">\(f(x) = x^2 - x - 2\)</span> og ser hvor <span class="math notranslate nohighlight avoid-break-inside">\(y\)</span>-koordinaten til grafen er større enn eller lik <span class="math notranslate nohighlight avoid-break-inside">\(y = 2\)</span>:</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/figur6.svg"><img alt="../../../_images/figur6.svg" class="no-click adaptive-figure" src="../../../_images/figur6.svg" style="width: 80%;"/>
 </a>
 </figure>
-</div>
 </div>
 <p>Fra grafen til <span class="math notranslate nohighlight avoid-break-inside">\(f\)</span> ser vi at <span class="math notranslate nohighlight avoid-break-inside">\(f(x) \geq 2\)</span> når <span class="math notranslate nohighlight avoid-break-inside">\(x \leq -2\)</span> eller når <span class="math notranslate nohighlight avoid-break-inside">\(x \geq 3\)</span>. Løsningen er derfor satt sammen av to intervaller. Det ene intervallet er <span class="math notranslate nohighlight avoid-break-inside">\(\langle \gets, -2]\)</span> og det andre er <span class="math notranslate nohighlight avoid-break-inside">\([3, \to \rangle\)</span>. For å sette sammen disse to plasserer vi symbolet <span class="math notranslate nohighlight avoid-break-inside">\(\cup\)</span> mellom dem:</p>
 <div class="math notranslate nohighlight avoid-break-inside">
@@ -678,11 +484,9 @@ x^2 - x - 4 \geq 2
 <div class="docutils">
 </div>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Underveisoppgave-1">
-<h3>Underveisoppgave 1<a class="headerlink" href="#exercise-Underveisoppgave-1" title="Link to this heading">#</a></h3>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Underveisoppgave 1</p>
 <p>Grafen til en andregradsfunksjon <span class="math notranslate nohighlight avoid-break-inside">\(f(x) = x^2 - 2x - 8\)</span> er vist i figuren nedenfor.</p>
 <p>Bruk grafen til å løse ulikheten</p>
 <div class="math notranslate nohighlight avoid-break-inside">
@@ -698,7 +502,7 @@ x^2 - 2x - 10 \geq -2
 <rdf:rdf xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 <cc:work>
 <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"></dc:type>
-<dc:date>2026-10-25T21:09:53.163935</dc:date>
+<dc:date>2026-02-24T18:42:24.219925</dc:date>
 <dc:format>image/svg+xml</dc:format>
 <dc:creator>
 <cc:agent>
@@ -711,8 +515,8 @@ x^2 - 2x - 10 \geq -2
 <defs>
 <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
 </defs>
-<g id="cpl_64fec06aedd8_3a29b1_figure_1">
-<g id="cpl_64fec06aedd8_3a29b1_patch_1">
+<g id="cpl_2625d532412d_0b05c9_figure_1">
+<g id="cpl_2625d532412d_0b05c9_patch_1">
 <path d="M 0 345.6 
 L 460.8 345.6 
 L 460.8 0 
@@ -721,8 +525,8 @@ L 0 345.6
 z
 " style="fill: none"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_axes_1">
-<g id="cpl_64fec06aedd8_3a29b1_patch_2">
+<g id="cpl_2625d532412d_0b05c9_axes_1">
+<g id="cpl_2625d532412d_0b05c9_patch_2">
 <path d="M 10.8 334.8 
 L 447 334.8 
 L 447 20.016315 
@@ -731,24 +535,24 @@ L 10.8 334.8
 z
 " style="fill: none"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_matplotlib.axis_1">
-<g id="cpl_64fec06aedd8_3a29b1_xtick_1">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_1">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 47.15 334.8 
+<g id="cpl_2625d532412d_0b05c9_matplotlib.axis_1">
+<g id="cpl_2625d532412d_0b05c9_xtick_1">
+<g id="cpl_2625d532412d_0b05c9_line2d_1">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 47.15 334.8 
 L 47.15 20.016315 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_2">
+<g id="cpl_2625d532412d_0b05c9_line2d_2">
 <defs>
 <path d="M 0 0 
 L 0 3.5 
-" id="cpl_64fec06aedd8_3a29b1_m0f5cb53f89" style="stroke: #000000; stroke-width: 0.8"></path>
+" id="cpl_2625d532412d_0b05c9_m180c0bbab6" style="stroke: #000000; stroke-width: 0.8"></path>
 </defs>
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="47.15" xlink:href="#cpl_64fec06aedd8_3a29b1_m0f5cb53f89" y="124.94421"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="47.15" xlink:href="#cpl_2625d532412d_0b05c9_m180c0bbab6" y="124.94421"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_1">
+<g id="cpl_2625d532412d_0b05c9_text_1">
 <!-- $\mathdefault{−5}$ -->
 <g transform="translate(34.832209 145.781207) scale(0.2 -0.2)">
 <defs>
@@ -760,7 +564,7 @@ C 646 1728 531 1728 531 1600
 C 531 1472 646 1472 755 1472 
 L 4218 1472 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMSY10-0" transform="scale(0.015625)"></path>
+" id="CMSY10-0" transform="scale(0.015625)"></path>
 <path d="M 730 3692 
 C 794 3666 1056 3584 1325 3584 
 C 1920 3584 2246 3911 2432 4100 
@@ -788,25 +592,25 @@ C 2669 2030 2170 2624 1549 2624
 C 1222 2624 947 2503 730 2274 
 L 730 3692 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMR17-35" transform="scale(0.015625)"></path>
+" id="CMR17-35" transform="scale(0.015625)"></path>
 </defs>
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMSY10-0"></use>
-<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-35"></use>
+<use transform="scale(0.996264)" xlink:href="#CMSY10-0"></use>
+<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#CMR17-35"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_xtick_2">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_3">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 83.5 334.8 
+<g id="cpl_2625d532412d_0b05c9_xtick_2">
+<g id="cpl_2625d532412d_0b05c9_line2d_3">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 83.5 334.8 
 L 83.5 20.016315 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_4">
+<g id="cpl_2625d532412d_0b05c9_line2d_4">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="83.5" xlink:href="#cpl_64fec06aedd8_3a29b1_m0f5cb53f89" y="124.94421"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="83.5" xlink:href="#cpl_2625d532412d_0b05c9_m180c0bbab6" y="124.94421"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_2">
+<g id="cpl_2625d532412d_0b05c9_text_2">
 <!-- $\mathdefault{−4}$ -->
 <g transform="translate(71.182209 145.781207) scale(0.2 -0.2)">
 <defs>
@@ -835,25 +639,25 @@ L 1798 1254
 L 256 1254 
 L 1798 3703 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMR17-34" transform="scale(0.015625)"></path>
+" id="CMR17-34" transform="scale(0.015625)"></path>
 </defs>
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMSY10-0"></use>
-<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-34"></use>
+<use transform="scale(0.996264)" xlink:href="#CMSY10-0"></use>
+<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#CMR17-34"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_xtick_3">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_5">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 119.85 334.8 
+<g id="cpl_2625d532412d_0b05c9_xtick_3">
+<g id="cpl_2625d532412d_0b05c9_line2d_5">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 119.85 334.8 
 L 119.85 20.016315 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_6">
+<g id="cpl_2625d532412d_0b05c9_line2d_6">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="119.85" xlink:href="#cpl_64fec06aedd8_3a29b1_m0f5cb53f89" y="124.94421"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="119.85" xlink:href="#cpl_2625d532412d_0b05c9_m180c0bbab6" y="124.94421"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_3">
+<g id="cpl_2625d532412d_0b05c9_text_3">
 <!-- $\mathdefault{−3}$ -->
 <g transform="translate(107.532209 145.781207) scale(0.2 -0.2)">
 <defs>
@@ -884,25 +688,25 @@ C 992 2263 966 2257 966 2208
 C 966 2163 973 2157 1101 2157 
 L 1414 2157 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMR17-33" transform="scale(0.015625)"></path>
+" id="CMR17-33" transform="scale(0.015625)"></path>
 </defs>
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMSY10-0"></use>
-<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-33"></use>
+<use transform="scale(0.996264)" xlink:href="#CMSY10-0"></use>
+<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#CMR17-33"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_xtick_4">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_7">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 156.2 334.8 
+<g id="cpl_2625d532412d_0b05c9_xtick_4">
+<g id="cpl_2625d532412d_0b05c9_line2d_7">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 156.2 334.8 
 L 156.2 20.016315 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_8">
+<g id="cpl_2625d532412d_0b05c9_line2d_8">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="156.2" xlink:href="#cpl_64fec06aedd8_3a29b1_m0f5cb53f89" y="124.94421"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="156.2" xlink:href="#cpl_2625d532412d_0b05c9_m180c0bbab6" y="124.94421"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_4">
+<g id="cpl_2625d532412d_0b05c9_text_4">
 <!-- $\mathdefault{−2}$ -->
 <g transform="translate(143.882209 145.781207) scale(0.2 -0.2)">
 <defs>
@@ -927,25 +731,25 @@ L 262 0
 L 2515 0 
 L 2669 989 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMR17-32" transform="scale(0.015625)"></path>
+" id="CMR17-32" transform="scale(0.015625)"></path>
 </defs>
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMSY10-0"></use>
-<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-32"></use>
+<use transform="scale(0.996264)" xlink:href="#CMSY10-0"></use>
+<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#CMR17-32"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_xtick_5">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_9">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 192.55 334.8 
+<g id="cpl_2625d532412d_0b05c9_xtick_5">
+<g id="cpl_2625d532412d_0b05c9_line2d_9">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 192.55 334.8 
 L 192.55 20.016315 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_10">
+<g id="cpl_2625d532412d_0b05c9_line2d_10">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="192.55" xlink:href="#cpl_64fec06aedd8_3a29b1_m0f5cb53f89" y="124.94421"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="192.55" xlink:href="#cpl_2625d532412d_0b05c9_m180c0bbab6" y="124.94421"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_5">
+<g id="cpl_2625d532412d_0b05c9_text_5">
 <!-- $\mathdefault{−1}$ -->
 <g transform="translate(180.232209 145.781207) scale(0.2 -0.2)">
 <defs>
@@ -966,104 +770,104 @@ L 2266 160
 C 1715 160 1702 230 1702 458 
 L 1702 4058 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMR17-31" transform="scale(0.015625)"></path>
+" id="CMR17-31" transform="scale(0.015625)"></path>
 </defs>
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMSY10-0"></use>
-<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-31"></use>
+<use transform="scale(0.996264)" xlink:href="#CMSY10-0"></use>
+<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#CMR17-31"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_xtick_6">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_11">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 265.25 334.8 
+<g id="cpl_2625d532412d_0b05c9_xtick_6">
+<g id="cpl_2625d532412d_0b05c9_line2d_11">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 265.25 334.8 
 L 265.25 20.016315 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_12">
+<g id="cpl_2625d532412d_0b05c9_line2d_12">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="265.25" xlink:href="#cpl_64fec06aedd8_3a29b1_m0f5cb53f89" y="124.94421"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="265.25" xlink:href="#cpl_2625d532412d_0b05c9_m180c0bbab6" y="124.94421"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_6">
+<g id="cpl_2625d532412d_0b05c9_text_6">
 <!-- $\mathdefault{1}$ -->
 <g transform="translate(260.680952 145.781207) scale(0.2 -0.2)">
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-31"></use>
+<use transform="scale(0.996264)" xlink:href="#CMR17-31"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_xtick_7">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_13">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 301.6 334.8 
+<g id="cpl_2625d532412d_0b05c9_xtick_7">
+<g id="cpl_2625d532412d_0b05c9_line2d_13">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 301.6 334.8 
 L 301.6 20.016315 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_14">
+<g id="cpl_2625d532412d_0b05c9_line2d_14">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="301.6" xlink:href="#cpl_64fec06aedd8_3a29b1_m0f5cb53f89" y="124.94421"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="301.6" xlink:href="#cpl_2625d532412d_0b05c9_m180c0bbab6" y="124.94421"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_7">
+<g id="cpl_2625d532412d_0b05c9_text_7">
 <!-- $\mathdefault{2}$ -->
 <g transform="translate(297.030952 145.781207) scale(0.2 -0.2)">
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-32"></use>
+<use transform="scale(0.996264)" xlink:href="#CMR17-32"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_xtick_8">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_15">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 337.95 334.8 
+<g id="cpl_2625d532412d_0b05c9_xtick_8">
+<g id="cpl_2625d532412d_0b05c9_line2d_15">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 337.95 334.8 
 L 337.95 20.016315 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_16">
+<g id="cpl_2625d532412d_0b05c9_line2d_16">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="337.95" xlink:href="#cpl_64fec06aedd8_3a29b1_m0f5cb53f89" y="124.94421"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="337.95" xlink:href="#cpl_2625d532412d_0b05c9_m180c0bbab6" y="124.94421"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_8">
+<g id="cpl_2625d532412d_0b05c9_text_8">
 <!-- $\mathdefault{3}$ -->
 <g transform="translate(333.380952 145.781207) scale(0.2 -0.2)">
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-33"></use>
+<use transform="scale(0.996264)" xlink:href="#CMR17-33"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_xtick_9">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_17">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 374.3 334.8 
+<g id="cpl_2625d532412d_0b05c9_xtick_9">
+<g id="cpl_2625d532412d_0b05c9_line2d_17">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 374.3 334.8 
 L 374.3 20.016315 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_18">
+<g id="cpl_2625d532412d_0b05c9_line2d_18">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="374.3" xlink:href="#cpl_64fec06aedd8_3a29b1_m0f5cb53f89" y="124.94421"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="374.3" xlink:href="#cpl_2625d532412d_0b05c9_m180c0bbab6" y="124.94421"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_9">
+<g id="cpl_2625d532412d_0b05c9_text_9">
 <!-- $\mathdefault{4}$ -->
 <g transform="translate(369.730952 145.781207) scale(0.2 -0.2)">
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-34"></use>
+<use transform="scale(0.996264)" xlink:href="#CMR17-34"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_xtick_10">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_19">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 410.65 334.8 
+<g id="cpl_2625d532412d_0b05c9_xtick_10">
+<g id="cpl_2625d532412d_0b05c9_line2d_19">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 410.65 334.8 
 L 410.65 20.016315 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_20">
+<g id="cpl_2625d532412d_0b05c9_line2d_20">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="410.65" xlink:href="#cpl_64fec06aedd8_3a29b1_m0f5cb53f89" y="124.94421"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="410.65" xlink:href="#cpl_2625d532412d_0b05c9_m180c0bbab6" y="124.94421"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_10">
+<g id="cpl_2625d532412d_0b05c9_text_10">
 <!-- $\mathdefault{5}$ -->
 <g transform="translate(406.080952 145.781207) scale(0.2 -0.2)">
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-35"></use>
+<use transform="scale(0.996264)" xlink:href="#CMR17-35"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_11">
+<g id="cpl_2625d532412d_0b05c9_text_11">
 <!-- $x$ -->
 <g transform="translate(435.913188 167.493837) scale(0.2 -0.2)">
 <defs>
@@ -1099,30 +903,30 @@ L 2099 2024
 C 2195 2408 2413 2689 2707 2689 
 C 2720 2689 2899 2689 3034 2606 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMMI12-78" transform="scale(0.015625)"></path>
+" id="CMMI12-78" transform="scale(0.015625)"></path>
 </defs>
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMMI12-78"></use>
+<use transform="scale(0.996264)" xlink:href="#CMMI12-78"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_matplotlib.axis_2">
-<g id="cpl_64fec06aedd8_3a29b1_ytick_1">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_21">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 10.8 299.824035 
+<g id="cpl_2625d532412d_0b05c9_matplotlib.axis_2">
+<g id="cpl_2625d532412d_0b05c9_ytick_1">
+<g id="cpl_2625d532412d_0b05c9_line2d_21">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 10.8 299.824035 
 L 447 299.824035 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_22">
+<g id="cpl_2625d532412d_0b05c9_line2d_22">
 <defs>
 <path d="M 0 0 
 L -3.5 0 
-" id="cpl_64fec06aedd8_3a29b1_m27a8871ef1" style="stroke: #000000; stroke-width: 0.8"></path>
+" id="cpl_2625d532412d_0b05c9_m493550887c" style="stroke: #000000; stroke-width: 0.8"></path>
 </defs>
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_64fec06aedd8_3a29b1_m27a8871ef1" y="299.824035"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_2625d532412d_0b05c9_m493550887c" y="299.824035"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_12">
+<g id="cpl_2625d532412d_0b05c9_text_12">
 <!-- $\mathdefault{−10}$ -->
 <g transform="translate(188.126322 306.742533) scale(0.2 -0.2)">
 <defs>
@@ -1146,26 +950,26 @@ C 2272 3036 2278 2607 2278 2096
 C 2278 1680 2278 1169 2202 792 
 C 2067 95 1690 -26 1466 -26 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMR17-30" transform="scale(0.015625)"></path>
+" id="CMR17-30" transform="scale(0.015625)"></path>
 </defs>
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMSY10-0"></use>
-<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-31"></use>
-<use transform="translate(123.177945 0) scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-30"></use>
+<use transform="scale(0.996264)" xlink:href="#CMSY10-0"></use>
+<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#CMR17-31"></use>
+<use transform="translate(123.177945 0) scale(0.996264)" xlink:href="#CMR17-30"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_ytick_2">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_23">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 10.8 264.84807 
+<g id="cpl_2625d532412d_0b05c9_ytick_2">
+<g id="cpl_2625d532412d_0b05c9_line2d_23">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 10.8 264.84807 
 L 447 264.84807 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_24">
+<g id="cpl_2625d532412d_0b05c9_line2d_24">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_64fec06aedd8_3a29b1_m27a8871ef1" y="264.84807"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_2625d532412d_0b05c9_m493550887c" y="264.84807"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_13">
+<g id="cpl_2625d532412d_0b05c9_text_13">
 <!-- $\mathdefault{−8}$ -->
 <g transform="translate(197.264417 271.766568) scale(0.2 -0.2)">
 <defs>
@@ -1196,25 +1000,25 @@ C 890 25 448 438 448 940
 C 448 1443 838 1862 1280 2060 
 L 2080 1519 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMR17-38" transform="scale(0.015625)"></path>
+" id="CMR17-38" transform="scale(0.015625)"></path>
 </defs>
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMSY10-0"></use>
-<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-38"></use>
+<use transform="scale(0.996264)" xlink:href="#CMSY10-0"></use>
+<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#CMR17-38"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_ytick_3">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_25">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 10.8 229.872105 
+<g id="cpl_2625d532412d_0b05c9_ytick_3">
+<g id="cpl_2625d532412d_0b05c9_line2d_25">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 10.8 229.872105 
 L 447 229.872105 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_26">
+<g id="cpl_2625d532412d_0b05c9_line2d_26">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_64fec06aedd8_3a29b1_m27a8871ef1" y="229.872105"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_2625d532412d_0b05c9_m493550887c" y="229.872105"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_14">
+<g id="cpl_2625d532412d_0b05c9_text_14">
 <!-- $\mathdefault{−6}$ -->
 <g transform="translate(197.264417 236.790603) scale(0.2 -0.2)">
 <defs>
@@ -1240,88 +1044,88 @@ C 2253 1870 2253 1609 2253 1289
 C 2253 944 2253 690 2118 434 
 C 1978 171 1773 25 1478 25 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMR17-36" transform="scale(0.015625)"></path>
+" id="CMR17-36" transform="scale(0.015625)"></path>
 </defs>
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMSY10-0"></use>
-<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-36"></use>
+<use transform="scale(0.996264)" xlink:href="#CMSY10-0"></use>
+<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#CMR17-36"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_ytick_4">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_27">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 10.8 194.89614 
+<g id="cpl_2625d532412d_0b05c9_ytick_4">
+<g id="cpl_2625d532412d_0b05c9_line2d_27">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 10.8 194.89614 
 L 447 194.89614 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_28">
+<g id="cpl_2625d532412d_0b05c9_line2d_28">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_64fec06aedd8_3a29b1_m27a8871ef1" y="194.89614"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_2625d532412d_0b05c9_m493550887c" y="194.89614"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_15">
+<g id="cpl_2625d532412d_0b05c9_text_15">
 <!-- $\mathdefault{−4}$ -->
 <g transform="translate(197.264417 201.814638) scale(0.2 -0.2)">
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMSY10-0"></use>
-<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-34"></use>
+<use transform="scale(0.996264)" xlink:href="#CMSY10-0"></use>
+<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#CMR17-34"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_ytick_5">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_29">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 10.8 159.920175 
+<g id="cpl_2625d532412d_0b05c9_ytick_5">
+<g id="cpl_2625d532412d_0b05c9_line2d_29">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 10.8 159.920175 
 L 447 159.920175 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_30">
+<g id="cpl_2625d532412d_0b05c9_line2d_30">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_64fec06aedd8_3a29b1_m27a8871ef1" y="159.920175"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_2625d532412d_0b05c9_m493550887c" y="159.920175"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_16">
+<g id="cpl_2625d532412d_0b05c9_text_16">
 <!-- $\mathdefault{−2}$ -->
 <g transform="translate(197.264417 166.838673) scale(0.2 -0.2)">
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMSY10-0"></use>
-<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-32"></use>
+<use transform="scale(0.996264)" xlink:href="#CMSY10-0"></use>
+<use transform="translate(77.487468 0) scale(0.996264)" xlink:href="#CMR17-32"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_ytick_6">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_31">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 10.8 89.968245 
+<g id="cpl_2625d532412d_0b05c9_ytick_6">
+<g id="cpl_2625d532412d_0b05c9_line2d_31">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 10.8 89.968245 
 L 447 89.968245 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_32">
+<g id="cpl_2625d532412d_0b05c9_line2d_32">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_64fec06aedd8_3a29b1_m27a8871ef1" y="89.968245"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_2625d532412d_0b05c9_m493550887c" y="89.968245"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_17">
+<g id="cpl_2625d532412d_0b05c9_text_17">
 <!-- $\mathdefault{2}$ -->
 <g transform="translate(212.761905 96.886744) scale(0.2 -0.2)">
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-32"></use>
+<use transform="scale(0.996264)" xlink:href="#CMR17-32"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_ytick_7">
-<g id="cpl_64fec06aedd8_3a29b1_line2d_33">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 10.8 54.99228 
+<g id="cpl_2625d532412d_0b05c9_ytick_7">
+<g id="cpl_2625d532412d_0b05c9_line2d_33">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 10.8 54.99228 
 L 447 54.99228 
 " style="fill: none; stroke-dasharray: 2.96,1.28; stroke-dashoffset: 0; stroke: #b0b0b0; stroke-opacity: 0.6; stroke-width: 0.8"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_34">
+<g id="cpl_2625d532412d_0b05c9_line2d_34">
 <g>
-<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_64fec06aedd8_3a29b1_m27a8871ef1" y="54.99228"></use>
+<use style="stroke: #000000; stroke-width: 0.8" x="228.9" xlink:href="#cpl_2625d532412d_0b05c9_m493550887c" y="54.99228"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_18">
+<g id="cpl_2625d532412d_0b05c9_text_18">
 <!-- $\mathdefault{4}$ -->
 <g transform="translate(212.761905 61.910779) scale(0.2 -0.2)">
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMR17-34"></use>
+<use transform="scale(0.996264)" xlink:href="#CMR17-34"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_19">
+<g id="cpl_2625d532412d_0b05c9_text_19">
 <!-- $y$ -->
 <g transform="translate(174.613487 16.140682) scale(0.2 -0.2)">
 <defs>
@@ -1357,38 +1161,38 @@ C 1606 -64 1837 -6 2061 230
 L 2067 224 
 C 1971 -147 1907 -392 1683 -700 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMMI12-79" transform="scale(0.015625)"></path>
+" id="CMMI12-79" transform="scale(0.015625)"></path>
 </defs>
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMMI12-79"></use>
+<use transform="scale(0.996264)" xlink:href="#CMMI12-79"></use>
 </g>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_35">
+<g id="cpl_2625d532412d_0b05c9_line2d_35">
 <defs>
 <path d="M 3 0 
 L -3 -3 
 L -3 3 
 z
-" id="cpl_64fec06aedd8_3a29b1_m3781a8b7cd" style="stroke: #000000; stroke-linejoin: miter"></path>
+" id="cpl_2625d532412d_0b05c9_m8fddf3c7ed" style="stroke: #000000; stroke-linejoin: miter"></path>
 </defs>
 <g>
-<use style="stroke: #000000; stroke-linejoin: miter" x="447" xlink:href="#cpl_64fec06aedd8_3a29b1_m3781a8b7cd" y="124.94421"></use>
+<use style="stroke: #000000; stroke-linejoin: miter" x="447" xlink:href="#cpl_2625d532412d_0b05c9_m8fddf3c7ed" y="124.94421"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_36">
+<g id="cpl_2625d532412d_0b05c9_line2d_36">
 <defs>
 <path d="M 0 -3 
 L -3 3 
 L 3 3 
 z
-" id="cpl_64fec06aedd8_3a29b1_m511a80c848" style="stroke: #000000; stroke-linejoin: miter"></path>
+" id="cpl_2625d532412d_0b05c9_m1cff71f277" style="stroke: #000000; stroke-linejoin: miter"></path>
 </defs>
 <g>
-<use style="stroke: #000000; stroke-linejoin: miter" x="228.9" xlink:href="#cpl_64fec06aedd8_3a29b1_m511a80c848" y="20.016315"></use>
+<use style="stroke: #000000; stroke-linejoin: miter" x="228.9" xlink:href="#cpl_2625d532412d_0b05c9_m1cff71f277" y="20.016315"></use>
 </g>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_37">
-<path clip-path="url(#cpl_64fec06aedd8_3a29b1_p97d1c0719e)" d="M 110.168113 -1 
+<g id="cpl_2625d532412d_0b05c9_line2d_37">
+<path clip-path="url(#cpl_2625d532412d_0b05c9_p12c995f1e2)" d="M 110.168113 -1 
 L 116.129134 23.000191 
 L 121.986669 45.667485 
 L 127.737704 67.039047 
@@ -1467,28 +1271,28 @@ L 420.331887 -1
 L 420.331887 -1 
 " style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_patch_3">
+<g id="cpl_2625d532412d_0b05c9_patch_3">
 <path d="M 228.9 334.8 
 L 228.9 20.016315 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_patch_4">
+<g id="cpl_2625d532412d_0b05c9_patch_4">
 <path d="M 447 334.8 
 L 447 20.016315 
 " style="fill: none"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_patch_5">
+<g id="cpl_2625d532412d_0b05c9_patch_5">
 <path d="M 10.8 124.94421 
 L 447 124.94421 
 " style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_patch_6">
+<g id="cpl_2625d532412d_0b05c9_patch_6">
 <path d="M 10.8 20.016315 
 L 447 20.016315 
 " style="fill: none"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_legend_1">
-<g id="cpl_64fec06aedd8_3a29b1_patch_7">
+<g id="cpl_2625d532412d_0b05c9_legend_1">
+<g id="cpl_2625d532412d_0b05c9_patch_7">
 <path d="M 24.8 63.891949 
 L 98.416648 63.891949 
 Q 102.416648 63.891949 102.416648 59.891949 
@@ -1501,13 +1305,13 @@ Q 20.8 63.891949 24.8 63.891949
 z
 " style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_line2d_38">
+<g id="cpl_2625d532412d_0b05c9_line2d_38">
 <path d="M 28.8 45.016315 
 L 48.8 45.016315 
 L 68.8 45.016315 
 " style="fill: none; stroke: #0072b2; stroke-width: 2.5; stroke-linecap: square"></path>
 </g>
-<g id="cpl_64fec06aedd8_3a29b1_text_20">
+<g id="cpl_2625d532412d_0b05c9_text_20">
 <!-- $f$ -->
 <g transform="translate(84.8 52.016315) scale(0.2 -0.2)">
 <defs>
@@ -1539,31 +1343,30 @@ C 1510 -1280 1779 -118 1850 199
 C 1965 688 2278 2376 2310 2566 
 L 2854 2566 
 z
-" id="cpl_64fec06aedd8_3a29b1_CMMI12-66" transform="scale(0.015625)"></path>
+" id="CMMI12-66" transform="scale(0.015625)"></path>
 </defs>
-<use transform="scale(0.996264)" xlink:href="#cpl_64fec06aedd8_3a29b1_CMMI12-66"></use>
+<use transform="scale(0.996264)" xlink:href="#CMMI12-66"></use>
 </g>
 </g>
 </g>
 </g>
 </g>
 <defs>
-<clippath id="cpl_64fec06aedd8_3a29b1_p97d1c0719e">
+<clippath id="cpl_2625d532412d_0b05c9_p12c995f1e2">
 <rect height="314.783685" width="436.2" x="10.8" y="20.016315"></rect>
 </clippath>
 </defs>
 </svg>
 </div></figure>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 \mathcal{L} = \langle \gets, -2] \cup [4, \to \rangle
 \]</div>
 </div>
-</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution dropdown">
+<p class="admonition-title">Løsning</p>
 <p>Vi ser fra grafen at <span class="math notranslate nohighlight avoid-break-inside">\(f(x) \geq -2\)</span> når <span class="math notranslate nohighlight avoid-break-inside">\(x \leq -2\)</span> eller når <span class="math notranslate nohighlight avoid-break-inside">\(x \geq 4\)</span>. Løsningen er derfor</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
@@ -1571,8 +1374,6 @@ z
 \]</div>
 </div>
 </div>
-</div>
-</section>
 </section>
 <section id="algebraisk-losning">
 <span id="algebraisk-losning-ulikheter"></span><h2>Algebraisk løsning<a class="headerlink" href="#algebraisk-losning" title="Link to this heading">#</a></h2>
@@ -1583,9 +1384,8 @@ z
 <li><p>Tegn en <strong>fortegnslinje</strong> for andregradsfunksjonen på venstre side og les av løsningen som oppfyller ulikheten.</p></li>
 </ol>
 <p>La oss først se på hvordan vi leser og tegner et fortegnsskjema.</p>
-<section class="summary-section" id="summary-Fortegnslinjer">
-<h3>Fortegnslinjer<a class="headerlink" href="#summary-Fortegnslinjer" title="Link to this heading">#</a></h3>
-<div class="summary-body docutils container">
+<div class="admonition summary">
+<p class="admonition-title">Fortegnslinjer</p>
 <p>En <strong>fortegnslinje</strong> er en linje som viser fortegnet til en funksjon på et intervall. Vi bruker <strong>heltrukne</strong> og <strong>stiplede</strong> linjer for å skille mellom fortegnene:</p>
 <ul class="simple">
 <li><p><span style="display:inline-block; width:100px; border-bottom: 3px solid red; vertical-align:middle;"></span> <span class="math notranslate nohighlight avoid-break-inside">\(=\)</span> Positivt fortegn</p></li>
@@ -1597,11 +1397,9 @@ z
 </a>
 </figure>
 </div>
-</section>
 <p>La oss se på et eksempel:</p>
-<section class="example-section" id="example-Eksempel-3">
-<h3>Eksempel 3<a class="headerlink" href="#example-Eksempel-3" title="Link to this heading">#</a></h3>
-<div class="example-body docutils container">
+<div class="admonition example">
+<p class="admonition-title">Eksempel 3</p>
 <p>Nedenfor vises fortegnslinja til en andregradsfunksjon <span class="math notranslate nohighlight avoid-break-inside">\(f\)</span> som har nullpunkter <span class="math notranslate nohighlight avoid-break-inside">\(x = -2\)</span> og <span class="math notranslate nohighlight avoid-break-inside">\(x = 3\)</span>.</p>
 <p>Bruk fortegnslinja til å løse ulikheten</p>
 <div class="math notranslate nohighlight avoid-break-inside">
@@ -1612,8 +1410,8 @@ f(x) &lt; 0
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/figur7.svg"><img alt="../../../_images/figur7.svg" class="no-click adaptive-figure" src="../../../_images/figur7.svg" style="width: 100%;"/>
 </a>
 </figure>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution">
+<p class="admonition-title">Løsning</p>
 <p>Siden vi skal bestemme når <span class="math notranslate nohighlight avoid-break-inside">\(f(x) &lt; 0\)</span>, så må vi se hvor fortegnslinja er <strong>stiplet</strong>. Fra fortegnslinja ser vi at <span class="math notranslate nohighlight avoid-break-inside">\(f(x) &lt; 0\)</span> når <span class="math notranslate nohighlight avoid-break-inside">\(x &lt; -2\)</span> eller når <span class="math notranslate nohighlight avoid-break-inside">\(x &gt; 3\)</span>. Løsningen er derfor</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
@@ -1621,28 +1419,24 @@ f(x) &lt; 0
 \]</div>
 </div>
 </div>
-</div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Underveisoppgave-2">
-<h3>Underveisoppgave 2<a class="headerlink" href="#exercise-Underveisoppgave-2" title="Link to this heading">#</a></h3>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Underveisoppgave 2</p>
 <p>Nedenfor vises fortegnslinja til en andregradsfunksjon <span class="math notranslate nohighlight avoid-break-inside">\(f\)</span>.</p>
 <p>Bruk fortegnslinja til å løse ulikheten <span class="math notranslate nohighlight avoid-break-inside">\(f(x) \geq 0\)</span>.</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/figur8.svg"><img alt="../../../_images/figur8.svg" class="no-click adaptive-figure" src="../../../_images/figur8.svg" style="width: 100%;"/>
 </a>
 </figure>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 \mathcal{L} = \langle \gets, -1] \cup [2, \to \rangle
 \]</div>
 </div>
-</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution dropdown">
+<p class="admonition-title">Løsning</p>
 <p>For å løse ulikheten <span class="math notranslate nohighlight avoid-break-inside">\(f(x) \geq 0\)</span> må vi se hvor fortegnslinja er <strong>heltrukket</strong> eller <strong>lik null</strong>. Fra fortegnslinja ser vi at <span class="math notranslate nohighlight avoid-break-inside">\(f(x) \geq 0\)</span> når <span class="math notranslate nohighlight avoid-break-inside">\(x \leq -1\)</span> eller når <span class="math notranslate nohighlight avoid-break-inside">\(x \geq 2\)</span>. Løsningen er derfor</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
@@ -1650,20 +1444,17 @@ f(x) &lt; 0
 \]</div>
 </div>
 </div>
-</div>
-</section>
 <hr class="docutils"/>
 <p>Nå er vi klare for å se hvordan vi kan løse andregradsulikheter algebraisk. La oss se på et eksempel:</p>
-<section class="example-section" id="example-Eksempel-4">
-<h3>Eksempel 4<a class="headerlink" href="#example-Eksempel-4" title="Link to this heading">#</a></h3>
-<div class="example-body docutils container">
+<div class="admonition example">
+<p class="admonition-title">Eksempel 4</p>
 <p>Løs ulikheten</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 -x^2 - 2x + 1 &gt; -2
 \]</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution">
+<p class="admonition-title">Løsning</p>
 <p>Vi starter med å samle alle leddene på én side slik at vi får <span class="math notranslate nohighlight avoid-break-inside">\(0\)</span> på høyre side:</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
@@ -1696,27 +1487,23 @@ x = \frac{6}{-2} = -3 \or x = \frac{-2}{-2} = 1
 \]</div>
 </div>
 </div>
-</div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Underveisoppgave-3">
-<h3>Underveisoppgave 3<a class="headerlink" href="#exercise-Underveisoppgave-3" title="Link to this heading">#</a></h3>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Underveisoppgave 3</p>
 <p>Løs ulikheten</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 x^2 + x - 8 &lt; 4
 \]</div>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 \mathcal{L} = \langle -4, 3 \rangle
 \]</div>
 </div>
-</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution dropdown">
+<p class="admonition-title">Løsning</p>
 <p>Vi starter med å samle alle leddene på én side slik at vi får <span class="math notranslate nohighlight avoid-break-inside">\(0\)</span> på høyre side:</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
@@ -1749,14 +1536,11 @@ x = \frac{6}{2} = 3 \or x = \frac{-8}{2} = -4
 \]</div>
 </div>
 </div>
-</div>
-</section>
 <section id="cas">
 <h3>CAS<a class="headerlink" href="#cas" title="Link to this heading">#</a></h3>
 <p>Vi kan også løse ulikheten algebraisk med CAS. Det skal du se nærmere på Utforsk 1.</p>
-<section class="explore-section" id="explore-Utforsk-1">
-<h4>Utforsk 1<a class="headerlink" href="#explore-Utforsk-1" title="Link to this heading">#</a></h4>
-<div class="explore-body docutils container">
+<div class="admonition explore">
+<p class="admonition-title">Utforsk 1</p>
 <p>I gif-en nedenfor vises det hvordan man løser en andregradsulikhet med CAS.</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/cas_ulikheter.gif"><img alt="../../../_images/cas_ulikheter.gif" class="no-click adaptive-figure" src="../../../_images/cas_ulikheter.gif" style="width: 80%;"/>
@@ -1768,9 +1552,9 @@ x = \frac{6}{2} = 3 \or x = \frac{-8}{2} = -4
 a</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<button class="ggb-cas-button" id="button-ggb-cas-342077cb">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-342077cb" style="display:none;" title="CAS‑vindu">
-<div class="ggb-window" id="ggb-cas-342077cb"></div>
+<button class="ggb-cas-button" id="button-ggb-cas-06803737">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-06803737" style="display:none;" title="CAS‑vindu">
+<div class="ggb-window" id="ggb-cas-06803737"></div>
 </div>
 <style>
 .ui-resizable-handle { min-width:16px;min-height:16px; }
@@ -1819,12 +1603,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-342077cb';
+    const storageKey = 'ggb-cas-state-ggb-cas-06803737';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-342077cb").width(),
-            h = $("#ggb-cas-342077cb").height();
+      const w = $("#ggb-cas-06803737").width(),
+            h = $("#ggb-cas-06803737").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1895,7 +1679,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-342077cb").dialog({
+    const $dlg = $("#dialog-ggb-cas-06803737").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1905,7 +1689,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-342077cb",
+            appName: "classic", id: "ggb-cas-06803737",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1917,7 +1701,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-342077cb");
+          }, true).inject("ggb-cas-06803737");
         } else {
           applySize();
         }
@@ -1938,12 +1722,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-342077cb").empty();
+            $("#ggb-cas-06803737").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-342077cb",
+              appName: "classic", id: "ggb-cas-06803737",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1953,7 +1737,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-342077cb");
+            }, true).inject("ggb-cas-06803737");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2005,7 +1789,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-342077cb')) {
+          if (!e.target.closest('#ggb-cas-06803737')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2033,7 +1817,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-342077cb');
+      const ggbContainer = document.getElementById('ggb-cas-06803737');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2079,10 +1863,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-342077cb").button()
+    $("#button-ggb-cas-06803737").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-342077cb").dialog("open");
+        $("#dialog-ggb-cas-06803737").dialog("open");
       });
   });
 })();
@@ -2095,9 +1879,9 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 b</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<button class="ggb-cas-button" id="button-ggb-cas-46c90a49">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-46c90a49" style="display:none;" title="CAS‑vindu">
-<div class="ggb-window" id="ggb-cas-46c90a49"></div>
+<button class="ggb-cas-button" id="button-ggb-cas-51bb538c">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-51bb538c" style="display:none;" title="CAS‑vindu">
+<div class="ggb-window" id="ggb-cas-51bb538c"></div>
 </div>
 <style>
 .ui-resizable-handle { min-width:16px;min-height:16px; }
@@ -2146,12 +1930,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-46c90a49';
+    const storageKey = 'ggb-cas-state-ggb-cas-51bb538c';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-46c90a49").width(),
-            h = $("#ggb-cas-46c90a49").height();
+      const w = $("#ggb-cas-51bb538c").width(),
+            h = $("#ggb-cas-51bb538c").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -2222,7 +2006,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-46c90a49").dialog({
+    const $dlg = $("#dialog-ggb-cas-51bb538c").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -2232,7 +2016,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-46c90a49",
+            appName: "classic", id: "ggb-cas-51bb538c",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -2244,7 +2028,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-46c90a49");
+          }, true).inject("ggb-cas-51bb538c");
         } else {
           applySize();
         }
@@ -2265,12 +2049,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-46c90a49").empty();
+            $("#ggb-cas-51bb538c").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-46c90a49",
+              appName: "classic", id: "ggb-cas-51bb538c",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2280,7 +2064,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-46c90a49");
+            }, true).inject("ggb-cas-51bb538c");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2332,7 +2116,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-46c90a49')) {
+          if (!e.target.closest('#ggb-cas-51bb538c')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2360,7 +2144,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-46c90a49');
+      const ggbContainer = document.getElementById('ggb-cas-51bb538c');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2406,10 +2190,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-46c90a49").button()
+    $("#button-ggb-cas-51bb538c").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-46c90a49").dialog("open");
+        $("#dialog-ggb-cas-51bb538c").dialog("open");
       });
   });
 })();
@@ -2426,9 +2210,9 @@ x^2 - 4x + 3 &lt; 0
 c</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<button class="ggb-cas-button" id="button-ggb-cas-3ab5fc89">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-3ab5fc89" style="display:none;" title="CAS‑vindu">
-<div class="ggb-window" id="ggb-cas-3ab5fc89"></div>
+<button class="ggb-cas-button" id="button-ggb-cas-997b7b2c">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-997b7b2c" style="display:none;" title="CAS‑vindu">
+<div class="ggb-window" id="ggb-cas-997b7b2c"></div>
 </div>
 <style>
 .ui-resizable-handle { min-width:16px;min-height:16px; }
@@ -2477,12 +2261,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-3ab5fc89';
+    const storageKey = 'ggb-cas-state-ggb-cas-997b7b2c';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-3ab5fc89").width(),
-            h = $("#ggb-cas-3ab5fc89").height();
+      const w = $("#ggb-cas-997b7b2c").width(),
+            h = $("#ggb-cas-997b7b2c").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -2553,7 +2337,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-3ab5fc89").dialog({
+    const $dlg = $("#dialog-ggb-cas-997b7b2c").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -2563,7 +2347,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-3ab5fc89",
+            appName: "classic", id: "ggb-cas-997b7b2c",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -2575,7 +2359,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-3ab5fc89");
+          }, true).inject("ggb-cas-997b7b2c");
         } else {
           applySize();
         }
@@ -2596,12 +2380,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-3ab5fc89").empty();
+            $("#ggb-cas-997b7b2c").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-3ab5fc89",
+              appName: "classic", id: "ggb-cas-997b7b2c",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2611,7 +2395,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-3ab5fc89");
+            }, true).inject("ggb-cas-997b7b2c");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2663,7 +2447,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-3ab5fc89')) {
+          if (!e.target.closest('#ggb-cas-997b7b2c')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2691,7 +2475,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-3ab5fc89');
+      const ggbContainer = document.getElementById('ggb-cas-997b7b2c');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2737,10 +2521,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-3ab5fc89").button()
+    $("#button-ggb-cas-997b7b2c").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-3ab5fc89").dialog("open");
+        $("#dialog-ggb-cas-997b7b2c").dialog("open");
       });
   });
 })();
@@ -2754,7 +2538,6 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 </div>
 </div>
 </div>
-</section>
 </section>
 </section>
 <div class="toctree-wrapper compound">
@@ -2806,22 +2589,9 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
   </div>
 <nav class="bd-toc-nav page-toc">
 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafisk-losning">Grafisk løsning</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-1">Eksempel 1</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-2">Eksempel 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-1">Underveisoppgave 1</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafisk-losning">Grafisk løsning</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algebraisk-losning">Algebraisk løsning</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-Fortegnslinjer">Fortegnslinjer</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-3">Eksempel 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-2">Underveisoppgave 2</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-4">Eksempel 4</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-3">Underveisoppgave 3</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cas">CAS</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-1">Utforsk 1</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cas">CAS</a></li>
 </ul>
 </li>
 </ul>

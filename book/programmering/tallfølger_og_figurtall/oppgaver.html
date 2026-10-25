@@ -19,16 +19,17 @@
 <link href="../../../_static/pygments.css?v=fa44fd50" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/general_style.css?v=11bbc4b6" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=9237f12a" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=33f0140e" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/popup.css?v=2d27c3a4" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/escape-room.css?v=bfeb5342" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/legacy_1t/interactive_code.css?v=23cd07d5" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/jeopardy.css?v=71d9bb06" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/parsonsPuzzle.css?v=9fbab2c7" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/static_code_blocks.css?v=68f9364b" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/clickable_figures/style.css?v=2580ef29" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/clickable_figures/style.css?v=d35dfce7" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/escapeRoom/style.css?v=b30732ed" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/mathjax/style.css?v=194b018e" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/misc_styles/figures.css?v=46e199f0" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/misc_styles/figures.css?v=5dd46ff0" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/geogebra.css?v=fd180d66" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/grids.css?v=7667ba21" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/misc.css?v=55d93a12" rel="stylesheet" type="text/css"/>
@@ -42,74 +43,28 @@
 <link href="../../../_static/sphinx-thebe.css?v=4fa983c6" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/proof.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/tabs.css?v=4c969af8" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/general_style.css?v=ea5285ea" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/general_style.css?v=57d653fb" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=241d39f0" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/flashcards.css?v=816457f1" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/jeopardy.css?v=575e2325" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/masonry.css?v=db25927a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/notebook.css?v=00170ee0" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/interactive_code.css?v=f903e660" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/jeopardy.css?v=f760f57b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/quiz.css?v=722631f3" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/sphinx-design.min.css?v=95c83b7e" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" rel="stylesheet" type="text/css"/>
 <link href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 <link href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/admonitions.css?v=a3692687" onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/dialogue.css?v=c5b7ed32" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/figures.css?v=acd93126" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/admonitions.css?v=009bab9d" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/dialogue.css?v=1b585024" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/figures.css?v=a197b544" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/popup.css?v=26181dfd" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/timedQuiz.css?v=89e27729" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/cas_popup.css?v=bb968b84" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/github-light.css?v=0cccc4aa" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/github-dark.css?v=e9bcc25f" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/cas_popup.css?v=bae4ad7e" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/github-light.css?v=a6d10b1c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/github-dark.css?v=2454bc3f" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/github-dark-high-contrast.css?v=4c0c1b0f" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/table.css?v=fd6d533f" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/pairPuzzle/style.css?v=0a0f323a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=a1529215" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/part.css?v=bc286cc2" onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/pairPuzzle/style.css?v=f77426ac" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=8c5c5c21" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/print_pdf.css?v=04196dc1" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" id="highlight-theme-light" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" id="highlight-theme-dark" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/dialogue.css?v=1b585024" rel="stylesheet" type="text/css"/>
@@ -143,8 +98,7 @@
 <script src="../../../_static/documentation_options.js?v=c712eed9"></script>
 <script src="../../../_static/doctools.js?v=9a2dae69"></script>
 <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-<script src="../../../_static/munchboka/fonts/opendyslexic/opendylexic-toggle.js?v=1652b728"></script>
-<script src="../../../_static/munchboka/js/utils.js?v=b59157b9"></script>
+<script src="../../../_static/munchboka/js/utils.js?v=a5b18a1c"></script>
 <script src="../../../_static/munchboka/js/casThemeManager.js?v=88874cc7"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
 <script src="../../../_static/munchboka/js/skulpt/skulpt.js?v=51c28977"></script>
@@ -153,37 +107,14 @@
 <script src="../../../_static/copybutton.js?v=f281be69"></script>
 <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
 <script src="../../../_static/tabs.js?v=3ee01567"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/solution_timer.js?v=8d1f44f8"></script>
-<script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
-<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
+<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=fec3e31f"></script>
 <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=733f5585"></script>
 <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
 <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=ecc68a76"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=b934d01d"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=0d62d95e"></script>
 <script src="../../../_static/munchboka/js/jeopardy.js?v=375a3583"></script>
-<script defer="defer" src="../../../_static/munchboka/js/masonry.js?v=96ec6874"></script>
 <script src="../../../_static/munchboka/js/quiz.js?v=f8bcd7a1"></script>
 <script>let toggleHintShow = 'Klikk for å vise';</script>
 <script>let toggleHintHide = 'Klikk for å skjule';</script>
@@ -207,114 +138,9 @@
 <script src="../../../_static/munchboka/js/pairPuzzle/draggableItem.js?v=ce9ef7bd"></script>
 <script src="../../../_static/munchboka/js/pairPuzzle/dropZone.js?v=56907477"></script>
 <script src="../../../_static/munchboka/js/pairPuzzle/game.js?v=cb8b0d45"></script>
-<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
-<script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=57870877"></script>
+<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=fec3e31f"></script>
+<script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=62fdd1f2"></script>
 <script src="../../../_static/munchboka/js/print_answer_key.js?v=eebcd271"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/solution2.js?v=a2d1029e"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/part.js?v=ca40db03"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/goals.js?v=a2f2d5f7"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
 <script src="../../../_static/utils.js?v=14803243"></script>
 <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
 <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
@@ -345,7 +171,6 @@
 <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
-<script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
 <link href="../../../genindex.html" rel="index" title="Index"/>
 <link href="../../../search.html" rel="search" title="Search"/>
 <link href="../../likninger_og_ulikheter/likningssystemer/teori.html" rel="next" title="Likningssystemer"/>
@@ -560,9 +385,6 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Toggle secondary sidebar">
-<span class="fa-solid fa-list"></span>
-</button>
 </div></div>
 </div>
 </div>
@@ -572,26 +394,6 @@ document.write(`
 <!-- Table of contents -->
 <div id="print-main-content">
 <div id="jb-print-toc">
-<div>
-<h2> Innhold </h2>
-</div>
-<nav aria-label="Page">
-<ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-2">Oppgave 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-3">Oppgave 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-4">Oppgave 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-5">Oppgave 5</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-6">Oppgave 6</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-7">Oppgave 7</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-8">Oppgave 8</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-9">Oppgave 9</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-10">Oppgave 10</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-11">Oppgave 11</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-12">Oppgave 12</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-13">Oppgave 13</a></li>
-</ul>
-</nav>
 </div>
 </div>
 </div>
@@ -599,9 +401,8 @@ document.write(`
 <article class="bd-article">
 <section class="tex2jax_ignore mathjax_ignore" id="oppgaver-programmering-av-tallfolger">
 <h1>Oppgaver: Programmering av tallfølger<a class="headerlink" href="#oppgaver-programmering-av-tallfolger" title="Link to this heading">#</a></h1>
-<section class="exercise-section" id="exercise-Oppgave-1">
-<h2>Oppgave 1<a class="headerlink" href="#exercise-Oppgave-1" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 1</p>
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-0">
@@ -611,15 +412,14 @@ a</label><div class="sd-tab-content docutils">
 \[
 S = 1 + 2 + 3 + \ldots + 99 + 100
 \]</div>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># variabel som skal lagre summen</span>
 <span class="hll"><span class="linenos">2</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
 </span><span class="linenos">3</span>    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="n">n</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -631,15 +431,14 @@ b</label><div class="sd-tab-content docutils">
 \[
 S = 1 + 3 + 5 + \ldots + 97 + 99
 \]</div>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># variabel som skal lagre summen</span>
 <span class="hll"><span class="linenos">2</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
 </span><span class="linenos">3</span>    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="n">n</span>
 <span class="linenos">4</span>
 <span class="linenos">5</span><span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -651,8 +450,8 @@ c</label><div class="sd-tab-content docutils">
 \[
 S = 2 + 4 + 6 + \ldots + 98 + 100
 \]</div>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>   <span class="c1"># variabel som skal lagre summen</span>
 <span class="hll"><span class="linenos">2</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
 </span><span class="linenos">3</span>    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="n">n</span>
@@ -663,8 +462,7 @@ S = 2 + 4 + 6 + \ldots + 98 + 100
 </div>
 </div>
 </div>
-</div>
-<div id="container-code-bb7edb0b"></div>
+<div id="container-code-03a05260"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -676,17 +474,15 @@ print(s)
 `;
 
                 makePredictionInteractiveCode(
-                    "container-code-bb7edb0b",
+                    "container-code-03a05260",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-2">
-<h2>Oppgave 2<a class="headerlink" href="#exercise-Oppgave-2" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 2</p>
 <p>En sum er gitt ved</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
@@ -697,8 +493,8 @@ S = 1 + \dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8} + \dfrac{1}{16} + \ldots
 <label class="sd-tab-label" for="sd-tab-item-3">
 a</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver ut de første 5 leddene i summen.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
 <span class="linenos">3</span>    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
@@ -706,13 +502,12 @@ a</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-4" name="sd-tab-set-1" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-4">
 b</label><div class="sd-tab-content docutils">
 <p>Lag et program som regner ut summen av de 5 første leddene i summen</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos">2</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
 <span class="linenos">3</span>    <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
@@ -724,13 +519,12 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-5" name="sd-tab-set-1" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-5">
 c</label><div class="sd-tab-content docutils">
 <p>Bruk programmet ditt til å bestemme hvilken verdi summen nærmer seg når vi bruker veldig mange ledd.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos">2</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10001</span><span class="p">,</span> <span class="mi">1</span><span class="p">):</span>
 <span class="linenos">3</span>    <span class="n">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
@@ -743,8 +537,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
-<div id="container-code-cdb74d3c"></div>
+<div id="container-code-a7f3c7dd"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -755,17 +548,15 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-cdb74d3c",
+                    "container-code-a7f3c7dd",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-3">
-<h2>Oppgave 3<a class="headerlink" href="#exercise-Oppgave-3" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 3</p>
 <p>Alma og Synne jobber med summen</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
@@ -792,7 +583,7 @@ c</label><div class="sd-tab-content docutils">
 <p>Bruk programmet ditt til å bestemme hvilken verdi programmet nærmer seg når vi bruker veldig mange ledd.</p>
 </div>
 </div>
-<div id="container-code-589ef989"></div>
+<div id="container-code-007e32ab"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -803,17 +594,15 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-589ef989",
+                    "container-code-007e32ab",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-4">
-<h2>Oppgave 4<a class="headerlink" href="#exercise-Oppgave-4" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 4</p>
 <p>Nedenfor ser du tre figurer. Figurene er satt sammen av små kvadrater.</p>
 <p>Tenk deg at du skal fortsette å lage figurer etter samme mønster. Vi lar <span class="math notranslate nohighlight avoid-break-inside">\(K_n\)</span> være antall små kvadrater i figur <span class="math notranslate nohighlight avoid-break-inside">\(n\)</span>.</p>
 <figure class="align-default">
@@ -825,13 +614,12 @@ c</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-9">
 a</label><div class="sd-tab-content docutils">
 <p>Bestem en formel for <span class="math notranslate nohighlight avoid-break-inside">\(K_n\)</span>.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 K_n = 9 + 8(n - 1) = 8n + 1 \qder n \in \mathbb{N}
 \]</div>
-</div>
 </div>
 </div>
 <input id="sd-tab-item-10" name="sd-tab-set-3" type="radio"/>
@@ -846,7 +634,7 @@ c</label><div class="sd-tab-content docutils">
 <p>Lag et program som finner ut hvor mange kvadrater du må bruke for å lage de 10 000 første figurene.</p>
 </div>
 </div>
-<div id="container-code-3c9aeb81"></div>
+<div id="container-code-9159b3d2"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -857,17 +645,15 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-3c9aeb81",
+                    "container-code-9159b3d2",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-5">
-<h2>Oppgave 5<a class="headerlink" href="#exercise-Oppgave-5" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 5</p>
 <p>Nedenfor ser du tre figurer. Figurene er satt sammen av små kvadrater.</p>
 <p>Tenk deg at du skal fortsette å lage figurer etter samme mønster. Vi lar <span class="math notranslate nohighlight avoid-break-inside">\(K_n\)</span> være antall små kvadrater i figur <span class="math notranslate nohighlight avoid-break-inside">\(n\)</span>.</p>
 <figure class="align-default">
@@ -879,13 +665,12 @@ c</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-12">
 a</label><div class="sd-tab-content docutils">
 <p>Bestem en formel for <span class="math notranslate nohighlight avoid-break-inside">\(K_n\)</span>.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 K(n) = (n + 1)^2 = n^2 + 2n + 1
 \]</div>
-</div>
 </div>
 </div>
 <input id="sd-tab-item-13" name="sd-tab-set-4" type="radio"/>
@@ -904,7 +689,7 @@ c</label><div class="sd-tab-content docutils">
 </ol>
 </div>
 </div>
-<div id="container-code-513340d0"></div>
+<div id="container-code-472e3ceb"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -915,17 +700,15 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-513340d0",
+                    "container-code-472e3ceb",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-6">
-<h2>Oppgave 6<a class="headerlink" href="#exercise-Oppgave-6" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 6</p>
 <blockquote>
 <div><p>I denne oppgaven skal du jobbe med summer av oddetall og partall.</p>
 </div></blockquote>
@@ -949,8 +732,8 @@ a</label><div class="sd-tab-content docutils">
 \[
 O_n = 2n - 1 \qder n \in \mathbb{N}
 \]</div>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="n">oddetall</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
 <span class="linenos">3</span>
@@ -959,13 +742,12 @@ O_n = 2n - 1 \qder n \in \mathbb{N}
 </div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-16" name="sd-tab-set-5" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-16">
 b</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver ut <span class="math notranslate nohighlight avoid-break-inside">\(S_1, S_2, S_3, \ldots, S_{20}\)</span>.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos">2</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
 <span class="linenos">3</span>    <span class="n">oddetall</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span>
@@ -976,14 +758,13 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-17" name="sd-tab-set-5" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-17">
 c</label><div class="sd-tab-content docutils">
 <p>La <span class="math notranslate nohighlight avoid-break-inside">\(P_n\)</span> være summen av de <span class="math notranslate nohighlight avoid-break-inside">\(n\)</span> første partallene.</p>
 <p>Lag et program som skriver ut <span class="math notranslate nohighlight avoid-break-inside">\(P_1, P_2, P_3, \ldots, P_{20}\)</span>.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">p</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos">2</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">21</span><span class="p">):</span>
 <span class="linenos">3</span>    <span class="n">partall</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">n</span>
@@ -995,8 +776,7 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
-<div id="container-code-83aa2492"></div>
+<div id="container-code-9e41c59b"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1006,17 +786,15 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-83aa2492",
+                    "container-code-9e41c59b",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-7">
-<h2>Oppgave 7<a class="headerlink" href="#exercise-Oppgave-7" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 7</p>
 <p>Anna og Nicolai jobber med å lage et program som regner ut <span class="math notranslate nohighlight avoid-break-inside">\(n\)</span>-fakultet definert med formelen:</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
@@ -1036,8 +814,8 @@ n! = 1 \cdot 2 \cdot 3 \cdot \ldots \cdot (n - 1) \cdot n
 <label class="sd-tab-label" for="sd-tab-item-18">
 a</label><div class="sd-tab-content docutils">
 <p>Ta utgangspunkt i dialogen mellom Anna og Nicolai og lag et program som regner ut <span class="math notranslate nohighlight avoid-break-inside">\(5!\)</span>.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">s</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="linenos">2</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
 <span class="linenos">3</span>    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">*</span> <span class="n">n</span>
@@ -1047,15 +825,14 @@ a</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-19" name="sd-tab-set-6" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-19">
 b</label><div class="sd-tab-content docutils">
 <p>Antall måter å stokke en kortstokk på er <span class="math notranslate nohighlight avoid-break-inside">\(52!\)</span></p>
 <p>Bruk programmet ditt til å regne ut <span class="math notranslate nohighlight avoid-break-inside">\(52!\)</span>.</p>
 <p>Kan du forklare hvorfor det sannsynligvis stemmer at når man stokker en kortstokk, så er det nesten umulig å få samme rekkefølge som en annen gang?</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">s</span> <span class="o">=</span> <span class="mi">1</span>
 <span class="linenos">2</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">53</span><span class="p">):</span>
 <span class="linenos">3</span>    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">*</span> <span class="n">n</span>
@@ -1070,8 +847,7 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
-<div id="container-code-3a6e6b58"></div>
+<div id="container-code-b9534e8c"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1081,17 +857,15 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-3a6e6b58",
+                    "container-code-b9534e8c",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-8">
-<h2>Oppgave 8<a class="headerlink" href="#exercise-Oppgave-8" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 8</p>
 <p>Nedenfor vises et kvadrat med sidelengder <span class="math notranslate nohighlight avoid-break-inside">\(3\)</span>.</p>
 <p>Kvadratet er fylt med mindre fargelagte kvadrater som blir mindre og mindre.</p>
 <figure class="align-default">
@@ -1103,8 +877,8 @@ b</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-20">
 a</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver ut arealet til de <span class="math notranslate nohighlight avoid-break-inside">\(10\)</span> største fargelagte kvadratene i figuren.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">s</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="linenos">2</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
 <span class="linenos">3</span>    <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">/</span> <span class="mi">2</span>
@@ -1114,13 +888,12 @@ a</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-21" name="sd-tab-set-7" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-21">
 b</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver regner ut summen av arealene til de <span class="math notranslate nohighlight avoid-break-inside">\(100\)</span> største fargelagte kvadratene i figuren.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">areal</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos">2</span><span class="n">s</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="linenos">3</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
@@ -1134,8 +907,7 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
-<div id="container-code-bc1af442"></div>
+<div id="container-code-6e5efd3b"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1146,17 +918,15 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-bc1af442",
+                    "container-code-6e5efd3b",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-9">
-<h2>Oppgave 9<a class="headerlink" href="#exercise-Oppgave-9" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 9</p>
 <p>Nedenfor vises en figur som er satt sammen av uendelige mange linjestykker.</p>
 <p>Lengden til et linjestykke er alltid <span class="math notranslate nohighlight avoid-break-inside">\(90 \%\)</span> av lengden til det forrige linjestykket. Det første linjestykket er <span class="math notranslate nohighlight avoid-break-inside">\(100\)</span> cm langt.</p>
 <figure class="align-default">
@@ -1168,8 +938,8 @@ b</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-22">
 a</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver ut lengden til de <span class="math notranslate nohighlight avoid-break-inside">\(10\)</span> første linjestykkene i figuren.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">l</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="linenos">2</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
 <span class="linenos">3</span>    <span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
@@ -1179,13 +949,12 @@ a</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-23" name="sd-tab-set-8" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-23">
 b</label><div class="sd-tab-content docutils">
 <p>Lag et program som regner ut summen av lengdene til de <span class="math notranslate nohighlight avoid-break-inside">\(100\)</span> første linjestykkene i figuren.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos">2</span><span class="n">l</span> <span class="o">=</span> <span class="mi">100</span>
 <span class="linenos">3</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">101</span><span class="p">):</span>
@@ -1197,14 +966,13 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-24" name="sd-tab-set-8" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-24">
 c</label><div class="sd-tab-content docutils">
 <p>Lag et program som finner hvor mange linjestykker du må sette sammen for at figuren skal være minst <span class="math notranslate nohighlight avoid-break-inside">\(9\)</span> meter.</p>
 </div>
 </div>
-<div id="container-code-e538a506"></div>
+<div id="container-code-bcda0751"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1215,17 +983,15 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-e538a506",
+                    "container-code-bcda0751",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-10">
-<h2>Oppgave 10<a class="headerlink" href="#exercise-Oppgave-10" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 10</p>
 <p>Nedenfor vises tre figurer som følger et bestemt mønster.</p>
 <p>La <span class="math notranslate nohighlight avoid-break-inside">\(K_n\)</span> være antall små kvadrater i figur <span class="math notranslate nohighlight avoid-break-inside">\(n\)</span>.</p>
 <figure class="align-default">
@@ -1249,7 +1015,7 @@ c</label><div class="sd-tab-content docutils">
 <p>Lag et program som regner ut hvor mange små kvadrater du må bruke for å lage de 20 første figurene.</p>
 </div>
 </div>
-<div id="container-code-a3b1455c"></div>
+<div id="container-code-8d717d66"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1259,17 +1025,15 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-a3b1455c",
+                    "container-code-8d717d66",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-11">
-<h2>Oppgave 11<a class="headerlink" href="#exercise-Oppgave-11" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 11</p>
 <p>Å regne ut <span class="math notranslate nohighlight avoid-break-inside">\(\pi\)</span> med så mange desimaler som mulig har vært et mål for matematikere i over tusen år. En måte å komme fram til verdien til <span class="math notranslate nohighlight avoid-break-inside">\(\pi\)</span> på er med summen</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
@@ -1289,8 +1053,8 @@ a</label><div class="sd-tab-content docutils">
 <span class="go">0.4444444444444444</span>
 </pre></div>
 </div>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">pi</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos">2</span>
 <span class="linenos">3</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
@@ -1303,13 +1067,12 @@ a</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-29" name="sd-tab-set-10" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-29">
 b</label><div class="sd-tab-content docutils">
 <p>Lag et program som summerer de <span class="math notranslate nohighlight avoid-break-inside">\(5\)</span> første leddene i tallfølgen.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">pi</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="linenos"> 2</span>
 <span class="linenos"> 3</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
@@ -1325,7 +1088,6 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-30" name="sd-tab-set-10" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-30">
 c</label><div class="sd-tab-content docutils">
@@ -1336,7 +1098,7 @@ c</label><div class="sd-tab-content docutils">
 <p>Hvor mange ledd trenger du for å få <span class="math notranslate nohighlight avoid-break-inside">\(\pi\)</span> med <span class="math notranslate nohighlight avoid-break-inside">\(5\)</span> riktige desimaler?</p>
 </div>
 </div>
-<div id="container-code-4efbe17d"></div>
+<div id="container-code-209623c0"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1346,17 +1108,15 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-4efbe17d",
+                    "container-code-209623c0",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-12">
-<h2>Oppgave 12<a class="headerlink" href="#exercise-Oppgave-12" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 12</p>
 <p>Summen av en annen tallfølge nærmer seg også <span class="math notranslate nohighlight avoid-break-inside">\(\pi\)</span>, men mye raskere enn den forrige. Summen er</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
@@ -1375,8 +1135,8 @@ a</label><div class="sd-tab-content docutils">
 <span class="go">-0.005555555555555556</span>
 </pre></div>
 </div>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">pi</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="linenos"> 2</span><span class="nb">print</span><span class="p">(</span><span class="n">pi</span><span class="p">)</span>
 <span class="linenos"> 3</span>
@@ -1392,13 +1152,12 @@ a</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-32" name="sd-tab-set-11" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-32">
 b</label><div class="sd-tab-content docutils">
 <p>Lag et program som regner ut en tilnærming til <span class="math notranslate nohighlight avoid-break-inside">\(\pi\)</span> ved å bruke de 10 000 først leddene i summen.</p>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="n">pi</span> <span class="o">=</span> <span class="mi">3</span>
 <span class="linenos"> 2</span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10_000</span><span class="p">):</span>
 <span class="linenos"> 3</span>    <span class="n">nevner</span> <span class="o">=</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
@@ -1421,8 +1180,7 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
-<div id="container-code-9a804452"></div>
+<div id="container-code-ff4fa880"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1433,17 +1191,15 @@ b</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-9a804452",
+                    "container-code-ff4fa880",
                     code,
                 );
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Oppgave-13">
-<h2>Oppgave 13<a class="headerlink" href="#exercise-Oppgave-13" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 13</p>
 <p>En rask måte å komme fram til sifrene til <span class="math notranslate nohighlight avoid-break-inside">\(\pi\)</span> er ved ta utgangspunkt i <strong>kjedebrøken</strong> nedenfor:</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
@@ -1468,7 +1224,7 @@ b</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-35">
 c</label><div class="sd-tab-content docutils">
 <p>Lag et program med utgangspunkt i algoritmen din fra <strong>b</strong> og regn ut en tilnærming til <span class="math notranslate nohighlight avoid-break-inside">\(\pi\)</span>.</p>
-<div id="container-code-e82a0507"></div>
+<div id="container-code-d542bec8"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -1478,13 +1234,13 @@ c</label><div class="sd-tab-content docutils">
 `;
 
                 makeInteractiveCode(
-                    "container-code-e82a0507",
+                    "container-code-d542bec8",
                     code,
                 );
             });
         </script>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="n">N</span> <span class="o">=</span> <span class="mi">100</span> <span class="c1"># Antall ledd i kjedebrøken</span>
 <span class="linenos">2</span><span class="n">nevner</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">N</span> <span class="o">-</span> <span class="mi">1</span> <span class="c1"># først nevner</span>
 <span class="linenos">3</span>
@@ -1500,8 +1256,6 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
-</section>
 </section>
 <script type="text/x-thebe-config">
     {
@@ -1542,29 +1296,6 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </footer>
 </div>
-<div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-<div class="sidebar-secondary-item">
-<div class="page-toc tocsection onthispage">
-<i class="fa-solid fa-list"></i> Innhold
-  </div>
-<nav class="bd-toc-nav page-toc">
-<ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-2">Oppgave 2</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-3">Oppgave 3</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-4">Oppgave 4</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-5">Oppgave 5</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-6">Oppgave 6</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-7">Oppgave 7</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-8">Oppgave 8</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-9">Oppgave 9</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-10">Oppgave 10</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-11">Oppgave 11</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-12">Oppgave 12</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-13">Oppgave 13</a></li>
-</ul>
-</nav></div>
-</div></div>
 </div>
 <footer class="bd-footer-content">
 <div class="bd-footer-content__inner container">

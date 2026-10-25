@@ -19,16 +19,17 @@
 <link href="../../../_static/pygments.css?v=fa44fd50" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/general_style.css?v=11bbc4b6" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=9237f12a" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=33f0140e" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/popup.css?v=2d27c3a4" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/escape-room.css?v=bfeb5342" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/legacy_1t/interactive_code.css?v=23cd07d5" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/jeopardy.css?v=71d9bb06" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/parsonsPuzzle.css?v=9fbab2c7" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/static_code_blocks.css?v=68f9364b" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/clickable_figures/style.css?v=2580ef29" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/clickable_figures/style.css?v=d35dfce7" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/escapeRoom/style.css?v=b30732ed" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/mathjax/style.css?v=194b018e" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/misc_styles/figures.css?v=46e199f0" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/misc_styles/figures.css?v=5dd46ff0" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/geogebra.css?v=fd180d66" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/grids.css?v=7667ba21" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/misc.css?v=55d93a12" rel="stylesheet" type="text/css"/>
@@ -42,74 +43,28 @@
 <link href="../../../_static/sphinx-thebe.css?v=4fa983c6" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/proof.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/tabs.css?v=4c969af8" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/general_style.css?v=ea5285ea" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/general_style.css?v=57d653fb" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=241d39f0" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/flashcards.css?v=816457f1" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/jeopardy.css?v=575e2325" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/masonry.css?v=db25927a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/notebook.css?v=00170ee0" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/interactive_code.css?v=f903e660" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/jeopardy.css?v=f760f57b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/quiz.css?v=722631f3" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/sphinx-design.min.css?v=95c83b7e" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" rel="stylesheet" type="text/css"/>
 <link href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 <link href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/admonitions.css?v=a3692687" onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/dialogue.css?v=c5b7ed32" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/figures.css?v=acd93126" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/admonitions.css?v=009bab9d" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/dialogue.css?v=1b585024" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/figures.css?v=a197b544" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/popup.css?v=26181dfd" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/timedQuiz.css?v=89e27729" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/cas_popup.css?v=bb968b84" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/github-light.css?v=0cccc4aa" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/github-dark.css?v=e9bcc25f" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/cas_popup.css?v=bae4ad7e" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/github-light.css?v=a6d10b1c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/github-dark.css?v=2454bc3f" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/github-dark-high-contrast.css?v=4c0c1b0f" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/table.css?v=fd6d533f" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/pairPuzzle/style.css?v=0a0f323a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=a1529215" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/part.css?v=bc286cc2" onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/pairPuzzle/style.css?v=f77426ac" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=8c5c5c21" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/print_pdf.css?v=04196dc1" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" id="highlight-theme-light" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" id="highlight-theme-dark" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/dialogue.css?v=1b585024" rel="stylesheet" type="text/css"/>
@@ -143,8 +98,7 @@
 <script src="../../../_static/documentation_options.js?v=c712eed9"></script>
 <script src="../../../_static/doctools.js?v=9a2dae69"></script>
 <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-<script src="../../../_static/munchboka/fonts/opendyslexic/opendylexic-toggle.js?v=1652b728"></script>
-<script src="../../../_static/munchboka/js/utils.js?v=b59157b9"></script>
+<script src="../../../_static/munchboka/js/utils.js?v=a5b18a1c"></script>
 <script src="../../../_static/munchboka/js/casThemeManager.js?v=88874cc7"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
 <script src="../../../_static/munchboka/js/skulpt/skulpt.js?v=51c28977"></script>
@@ -153,37 +107,14 @@
 <script src="../../../_static/copybutton.js?v=f281be69"></script>
 <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
 <script src="../../../_static/tabs.js?v=3ee01567"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/solution_timer.js?v=8d1f44f8"></script>
-<script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
-<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
+<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=fec3e31f"></script>
 <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=733f5585"></script>
 <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
 <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=ecc68a76"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=b934d01d"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=0d62d95e"></script>
 <script src="../../../_static/munchboka/js/jeopardy.js?v=375a3583"></script>
-<script defer="defer" src="../../../_static/munchboka/js/masonry.js?v=96ec6874"></script>
 <script src="../../../_static/munchboka/js/quiz.js?v=f8bcd7a1"></script>
 <script>let toggleHintShow = 'Klikk for å vise';</script>
 <script>let toggleHintHide = 'Klikk for å skjule';</script>
@@ -207,114 +138,9 @@
 <script src="../../../_static/munchboka/js/pairPuzzle/draggableItem.js?v=ce9ef7bd"></script>
 <script src="../../../_static/munchboka/js/pairPuzzle/dropZone.js?v=56907477"></script>
 <script src="../../../_static/munchboka/js/pairPuzzle/game.js?v=cb8b0d45"></script>
-<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
-<script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=57870877"></script>
+<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=fec3e31f"></script>
+<script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=62fdd1f2"></script>
 <script src="../../../_static/munchboka/js/print_answer_key.js?v=eebcd271"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/solution2.js?v=a2d1029e"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/part.js?v=ca40db03"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/goals.js?v=a2f2d5f7"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
 <script src="../../../_static/utils.js?v=14803243"></script>
 <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
 <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
@@ -345,7 +171,6 @@
 <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
-<script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
 <link href="../../../genindex.html" rel="index" title="Index"/>
 <link href="../../../search.html" rel="search" title="Search"/>
 <link href="../likningssystemer/teori.html" rel="next" title="Likningssystemer med programmering"/>
@@ -560,9 +385,6 @@ document.write(`
   </button>
 `);
 </script>
-<button class="sidebar-toggle secondary-toggle btn btn-sm" data-bs-placement="bottom" data-bs-toggle="tooltip" title="Toggle secondary sidebar">
-<span class="fa-solid fa-list"></span>
-</button>
 </div></div>
 </div>
 </div>
@@ -572,14 +394,6 @@ document.write(`
 <!-- Table of contents -->
 <div id="print-main-content">
 <div id="jb-print-toc">
-<div>
-<h2> Innhold </h2>
-</div>
-<nav aria-label="Page">
-<ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
-</ul>
-</nav>
 </div>
 </div>
 </div>
@@ -587,37 +401,35 @@ document.write(`
 <article class="bd-article">
 <section class="tex2jax_ignore mathjax_ignore" id="oppgaver">
 <h1>Oppgaver<a class="headerlink" href="#oppgaver" title="Link to this heading">#</a></h1>
-<section class="exercise-section" id="exercise-Oppgave-1">
-<h2>Oppgave 1<a class="headerlink" href="#exercise-Oppgave-1" title="Link to this heading">#</a></h2>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 1</p>
 <p>Finn løsningene på følgende likninger ved å teste verdier:</p>
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-0">
 a</label><div class="sd-tab-content docutils">
 <p>Løs likningen <span class="math notranslate nohighlight avoid-break-inside">\(3x + 2 = 14\)</span> ved å teste verdier fra 0 til 10.</p>
-<div id="container-code-dbceb35d"></div>
+<div id="container-code-2b58c75e"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
 `# Skriv koden din her`;
 
                 makeInteractiveCode(
-                    "container-code-dbceb35d",
+                    "container-code-2b58c75e",
                     code,
                 );
             });
         </script>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 \mathcal{L} = \{4\}
 \]</div>
 </div>
-</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution dropdown">
+<p class="admonition-title">Løsning</p>
 <p>Vi bruker en for-løkke som tester verdier fra 0 til 10:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">):</span>
     <span class="k">if</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">14</span><span class="p">:</span>
@@ -631,33 +443,31 @@ a</label><div class="sd-tab-content docutils">
 \]</div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-1">
 b</label><div class="sd-tab-content docutils">
 <p>Løs likningen <span class="math notranslate nohighlight avoid-break-inside">\(x^2 - 4 = 0\)</span> ved å teste verdier fra -5 til 5.</p>
-<div id="container-code-822c2b0c"></div>
+<div id="container-code-4cab46a9"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
 `# Skriv koden din her`;
 
                 makeInteractiveCode(
-                    "container-code-822c2b0c",
+                    "container-code-4cab46a9",
                     code,
                 );
             });
         </script>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 \mathcal{L} = \{-2, 2\}
 \]</div>
 </div>
-</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution dropdown">
+<p class="admonition-title">Løsning</p>
 <p>Vi bruker en for-løkke som tester verdier fra -5 til 5:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -671,33 +481,31 @@ b</label><div class="sd-tab-content docutils">
 \]</div>
 </div>
 </div>
-</div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-2">
 c</label><div class="sd-tab-content docutils">
 <p>Løs likningen <span class="math notranslate nohighlight avoid-break-inside">\(x^2 + 3x - 4 = 0\)</span> ved å teste verdier fra -10 til 10.</p>
-<div id="container-code-b89a48db"></div>
+<div id="container-code-d46d1f1f"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
 `# Skriv koden din her`;
 
                 makeInteractiveCode(
-                    "container-code-b89a48db",
+                    "container-code-d46d1f1f",
                     code,
                 );
             });
         </script>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 \mathcal{L} = \{-4, 1\}
 \]</div>
 </div>
-</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution dropdown">
+<p class="admonition-title">Løsning</p>
 <p>Vi bruker en for-løkke som tester verdier fra -10 til 10:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="mi">4</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
@@ -712,31 +520,28 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
 <div class="docutils">
-<section class="exercise-section" id="exercise-Oppgave-2">
-<h3>Oppgave 2<a class="headerlink" href="#exercise-Oppgave-2" title="Link to this heading">#</a></h3>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 2</p>
 <p>Definer funksjonen <span class="math notranslate nohighlight avoid-break-inside">\(f(x) = x^2 + 2x + 4\)</span> og finn alle nullpunkt ved å teste verdier fra -10 til 10.</p>
-<div id="container-code-87123166"></div>
+<div id="container-code-f5471831"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
 `# Skriv koden din her`;
 
                 makeInteractiveCode(
-                    "container-code-87123166",
+                    "container-code-f5471831",
                     code,
                 );
             });
         </script>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <p>Likningen har ingen heltallsløsninger.</p>
 </div>
-</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution dropdown">
+<p class="admonition-title">Løsning</p>
 <p>Vi definerer funksjonen og ser etter nullpunkt (der <span class="math notranslate nohighlight avoid-break-inside">\(f(x) = 0\)</span>):</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">4</span>
@@ -753,34 +558,30 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</section>
-</div>
-<section class="exercise-section" id="exercise-Oppgave-3">
-<h3>Oppgave 3<a class="headerlink" href="#exercise-Oppgave-3" title="Link to this heading">#</a></h3>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Oppgave 3</p>
 <p>Finn løsningene på likningen <span class="math notranslate nohighlight avoid-break-inside">\(2x^2 - 8 = 0\)</span> ved å teste desimalverdier i steg på 0.01 fra -3 til 3.</p>
-<div id="container-code-a5a66434"></div>
+<div id="container-code-683e0652"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
 `# Skriv koden din her`;
 
                 makeInteractiveCode(
-                    "container-code-a5a66434",
+                    "container-code-683e0652",
                     code,
                 );
             });
         </script>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <div class="math notranslate nohighlight avoid-break-inside">
 \[
 \mathcal{L} = \{-2, 2\}
 \]</div>
 </div>
-</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution dropdown">
+<p class="admonition-title">Løsning</p>
 <p>Vi bruker en <code class="code docutils literal highlight highlight-python"><span class="k">while</span></code>-løkke som tester desimalverdier:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span>
 <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">:</span>
@@ -798,9 +599,6 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</section>
-</div>
-</section>
 </section>
 <script type="text/x-thebe-config">
     {
@@ -841,17 +639,6 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </footer>
 </div>
-<div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-<div class="sidebar-secondary-item">
-<div class="page-toc tocsection onthispage">
-<i class="fa-solid fa-list"></i> Innhold
-  </div>
-<nav class="bd-toc-nav page-toc">
-<ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
-</ul>
-</nav></div>
-</div></div>
 </div>
 <footer class="bd-footer-content">
 <div class="bd-footer-content__inner container">

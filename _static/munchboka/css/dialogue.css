@@ -9,7 +9,7 @@
 
 .dialogue-entry {
   padding: 0.5em 1em;
-  border-radius: 1.4rem;
+  border-radius: 10px;
   max-width: 60%;
   position: relative;
   display: flex;

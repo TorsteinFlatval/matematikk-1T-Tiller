@@ -19,16 +19,17 @@
 <link href="../../../_static/pygments.css?v=fa44fd50" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/general_style.css?v=11bbc4b6" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=9237f12a" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=33f0140e" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/popup.css?v=2d27c3a4" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/escape-room.css?v=bfeb5342" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/legacy_1t/interactive_code.css?v=23cd07d5" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/jeopardy.css?v=71d9bb06" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/legacy_1t/parsonsPuzzle.css?v=9fbab2c7" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/static_code_blocks.css?v=68f9364b" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/clickable_figures/style.css?v=2580ef29" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/clickable_figures/style.css?v=d35dfce7" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/escapeRoom/style.css?v=b30732ed" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/mathjax/style.css?v=194b018e" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/misc_styles/figures.css?v=46e199f0" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/misc_styles/figures.css?v=5dd46ff0" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/geogebra.css?v=fd180d66" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/grids.css?v=7667ba21" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/misc_styles/misc.css?v=55d93a12" rel="stylesheet" type="text/css"/>
@@ -42,74 +43,28 @@
 <link href="../../../_static/sphinx-thebe.css?v=4fa983c6" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/proof.css" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/tabs.css?v=4c969af8" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/general_style.css?v=ea5285ea" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/general_style.css?v=57d653fb" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=241d39f0" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/flashcards.css?v=816457f1" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/jeopardy.css?v=575e2325" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/masonry.css?v=db25927a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/notebook.css?v=00170ee0" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/interactive_code.css?v=f903e660" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/jeopardy.css?v=f760f57b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/quiz.css?v=722631f3" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/sphinx-design.min.css?v=95c83b7e" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" rel="stylesheet" type="text/css"/>
 <link href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
 <link href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/admonitions.css?v=a3692687" onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/dialogue.css?v=c5b7ed32" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/figures.css?v=acd93126" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/admonitions.css?v=009bab9d" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/dialogue.css?v=1b585024" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/figures.css?v=a197b544" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/popup.css?v=26181dfd" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/timedQuiz.css?v=89e27729" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/cas_popup.css?v=bb968b84" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/github-light.css?v=0cccc4aa" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/github-dark.css?v=e9bcc25f" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/cas_popup.css?v=bae4ad7e" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/github-light.css?v=a6d10b1c" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/github-dark.css?v=2454bc3f" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/munchboka/css/github-dark-high-contrast.css?v=4c0c1b0f" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/table.css?v=fd6d533f" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/pairPuzzle/style.css?v=0a0f323a" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=a1529215" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/part.css?v=bc286cc2" onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" rel="stylesheet" type="text/css"/>
-<link href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/pairPuzzle/style.css?v=f77426ac" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=8c5c5c21" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/munchboka/css/print_pdf.css?v=04196dc1" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" id="highlight-theme-light" rel="stylesheet" type="text/css"/>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" id="highlight-theme-dark" rel="stylesheet" type="text/css"/>
 <link href="../../../_static/dialogue.css?v=1b585024" rel="stylesheet" type="text/css"/>
@@ -143,8 +98,7 @@
 <script src="../../../_static/documentation_options.js?v=c712eed9"></script>
 <script src="../../../_static/doctools.js?v=9a2dae69"></script>
 <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
-<script src="../../../_static/munchboka/fonts/opendyslexic/opendylexic-toggle.js?v=1652b728"></script>
-<script src="../../../_static/munchboka/js/utils.js?v=b59157b9"></script>
+<script src="../../../_static/munchboka/js/utils.js?v=a5b18a1c"></script>
 <script src="../../../_static/munchboka/js/casThemeManager.js?v=88874cc7"></script>
 <script src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
 <script src="../../../_static/munchboka/js/skulpt/skulpt.js?v=51c28977"></script>
@@ -153,37 +107,14 @@
 <script src="../../../_static/copybutton.js?v=f281be69"></script>
 <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
 <script src="../../../_static/tabs.js?v=3ee01567"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/solution_timer.js?v=8d1f44f8"></script>
-<script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
-<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
+<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=fec3e31f"></script>
 <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=733f5585"></script>
 <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
 <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
-<script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=ecc68a76"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=b934d01d"></script>
+<script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=0d62d95e"></script>
 <script src="../../../_static/munchboka/js/jeopardy.js?v=375a3583"></script>
-<script defer="defer" src="../../../_static/munchboka/js/masonry.js?v=96ec6874"></script>
 <script src="../../../_static/munchboka/js/quiz.js?v=f8bcd7a1"></script>
 <script>let toggleHintShow = 'Klikk for å vise';</script>
 <script>let toggleHintHide = 'Klikk for å skjule';</script>
@@ -207,114 +138,9 @@
 <script src="../../../_static/munchboka/js/pairPuzzle/draggableItem.js?v=ce9ef7bd"></script>
 <script src="../../../_static/munchboka/js/pairPuzzle/dropZone.js?v=56907477"></script>
 <script src="../../../_static/munchboka/js/pairPuzzle/game.js?v=cb8b0d45"></script>
-<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
-<script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=57870877"></script>
+<script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=fec3e31f"></script>
+<script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=62fdd1f2"></script>
 <script src="../../../_static/munchboka/js/print_answer_key.js?v=eebcd271"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/solution2.js?v=a2d1029e"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/part.js?v=ca40db03"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/goals.js?v=a2f2d5f7"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
-<script onerror="if (!this.dataset.munchbokaRetryPending) {
-  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
-  if (attempt &lt;= 2) {
-    var replacement = document.createElement(this.tagName);
-    for (var i = 0; i &lt; this.attributes.length; i++) {
-      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
-    }
-    if (this.nonce) replacement.nonce = this.nonce;
-    replacement.dataset.munchbokaRetry = String(attempt);
-    var attribute = this.tagName === 'LINK' ? 'href' : 'src';
-    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
-    url.searchParams.set('munchboka_retry', String(attempt));
-    replacement.setAttribute(attribute, url.href);
-    this.dataset.munchbokaRetryPending = 'true';
-    var failed = this;
-    window.setTimeout(function () {
-      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
-    }, attempt * 300);
-  }
-}
-" src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
 <script src="../../../_static/utils.js?v=14803243"></script>
 <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
 <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
@@ -345,7 +171,6 @@
 <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
-<script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
 <link href="../../../genindex.html" rel="index" title="Index"/>
 <link href="../../../search.html" rel="search" title="Search"/>
 <link href="oppgaver.html" rel="next" title="Oppgaver: Programmering av tallfølger"/>
@@ -578,19 +403,8 @@ document.write(`
 <nav aria-label="Page">
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-lokker-med-avstand-1"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker med avstand <span class="math notranslate nohighlight avoid-break-inside">\(1\)</span></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-for-l-python-lokker"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-1">Utforsk 1</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-1">Underveisoppgave 1</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-lokker-med-en-fast-avstand"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker med en fast <code class="code docutils literal highlight highlight-python"><span class="n">avstand</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-for-l-python-lokker-2"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker 2</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-2">Utforsk 2</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-2">Underveisoppgave 2</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-3">Underveisoppgave 3</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-lokker-med-avstand-1"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker med avstand <span class="math notranslate nohighlight avoid-break-inside">\(1\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-lokker-med-en-fast-avstand"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker med en fast <code class="code docutils literal highlight highlight-python"><span class="n">avstand</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -613,9 +427,8 @@ document.write(`
 <p>En løkke er et verktøy i programmering som lar oss gjenta én eller flere linjer med kode flere ganger – vi kaller dette for en <strong>kodeblokk</strong>. Dette er nyttig når vi ønsker å lage tallfølger. Vi skal her fokusere på en type løkke som kalles <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkke. En <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkke lar oss gjenta en kodeblokk for hvert element i en liste eller en tallmengde.</p>
 <section id="for-lokker-med-avstand-1">
 <h3><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker med avstand <span class="math notranslate nohighlight avoid-break-inside">\(1\)</span><a class="headerlink" href="#for-lokker-med-avstand-1" title="Link to this heading">#</a></h3>
-<section class="summary-section" id="summary-for-l-python-lokker">
-<h4><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker<a class="headerlink" href="#summary-for-l-python-lokker" title="Link to this heading">#</a></h4>
-<div class="summary-body docutils container">
+<div class="admonition summary">
+<p class="admonition-title"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker</p>
 <p>En <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkke som skal skrive ut tall fra og med <code class="code docutils literal highlight highlight-python"><span class="n">start</span></code> og til <code class="code docutils literal highlight highlight-python"><span class="n">slutt</span></code> kan skrives slik:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">slutt</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="c1"># Kode som skal gjentas står her</span>
@@ -623,15 +436,13 @@ document.write(`
 </div>
 <p>Det siste tallet som skrives ut er <code class="code docutils literal highlight highlight-python"><span class="n">slutt</span> <span class="o">-</span> <span class="mi">1</span></code>.</p>
 </div>
-</section>
 <p>Nedenfor i Utforsk 1 kan du utforske nærmere hvordan en slik <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkke fungerer.</p>
 <aside class="margin sidebar">
 <p class="sidebar-title"><code class="code docutils literal highlight highlight-python"><span class="nb">print</span></code>-funksjonen</p>
 <p>I Utforsk 1 vil du se at koden som gjentas i <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkka er <code class="code docutils literal highlight highlight-python"><span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span></code>. Denne kodelinjen skriver ut verdien av <code class="code docutils literal highlight highlight-python"><span class="n">n</span></code> for hver runde i løkka.</p>
 </aside>
-<section class="explore-section" id="explore-Utforsk-1">
-<h4>Utforsk 1<a class="headerlink" href="#explore-Utforsk-1" title="Link to this heading">#</a></h4>
-<div class="explore-body docutils container">
+<div class="admonition explore">
+<p class="admonition-title">Utforsk 1</p>
 <p>Nedenfor vises noen programmer som bruker <code class="docutils literal notranslate"><span class="pre">for</span></code>-løkker til å skrive ut noen tall.</p>
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio"/>
@@ -639,7 +450,7 @@ document.write(`
 a</label><div class="sd-tab-content docutils">
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
-<div id="container-code-d397d780"></div>
+<div id="container-code-72440260"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -647,7 +458,7 @@ a</label><div class="sd-tab-content docutils">
     print(n)        # skriver ut verdien av n`;
 
                 makePredictionInteractiveCode(
-                    "container-code-d397d780",
+                    "container-code-72440260",
                     code,
                 );
             });
@@ -658,7 +469,7 @@ a</label><div class="sd-tab-content docutils">
 b</label><div class="sd-tab-content docutils">
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
-<div id="container-code-98a94a69"></div>
+<div id="container-code-3de01b52"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -666,7 +477,7 @@ b</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-98a94a69",
+                    "container-code-3de01b52",
                     code,
                 );
             });
@@ -677,7 +488,7 @@ b</label><div class="sd-tab-content docutils">
 c</label><div class="sd-tab-content docutils">
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
-<div id="container-code-5a56548b"></div>
+<div id="container-code-68a83e4b"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -685,7 +496,7 @@ c</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-5a56548b",
+                    "container-code-68a83e4b",
                     code,
                 );
             });
@@ -693,14 +504,12 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Underveisoppgave-1">
-<h4>Underveisoppgave 1<a class="headerlink" href="#exercise-Underveisoppgave-1" title="Link to this heading">#</a></h4>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Underveisoppgave 1</p>
 <p>Ta quizen!</p>
 <!-- Container for the quiz -->
-<div class="quiz-main-container" id="quiz-container-cc7960d0a13445bc87d016a349dd94d6"></div>
+<div class="quiz-main-container" id="quiz-container-a9dbdeab7cfc45b592acd1e4e5c8ac89"></div>
 <!-- Include KaTeX for LaTeX rendering -->
 <link href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" rel="stylesheet"/>
 <script defer="" src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -711,19 +520,17 @@ c</label><div class="sd-tab-content docutils">
                 const questionsData = [{"content": "Hvilke tall skrives ut av programmet nedenfor?  <pre><code class=\"python\">for n in range(1, 4):\n    print(n)</code></pre>", "answers": [{"content": "1, 2, 3", "isCorrect": true}, {"content": "1, 2, 3, 4", "isCorrect": false}, {"content": "1, 4", "isCorrect": false}, {"content": "1, 2, 3, 4, 5", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(0, 6):\n    print(n)</code></pre>", "answers": [{"content": "0, 1, 2, 3, 4, 5", "isCorrect": true}, {"content": "0, 1, 2, 3, 4, 5, 6", "isCorrect": false}, {"content": "0, 6", "isCorrect": false}, {"content": "1, 2, 3, 4, 5", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(-2, 2):\n    print(n)</code></pre>", "answers": [{"content": "-2, -1, 0, 1", "isCorrect": true}, {"content": "-2, -1, 0, 1, 2", "isCorrect": false}, {"content": "-2, 2", "isCorrect": false}, {"content": "-1, 0, 1, 2", "isCorrect": false}]}, {"content": "Hvilke tall skrives ut av programmet nedenfor? <pre><code class=\"python\">for n in range(-3, 4):\n    print(n)</code></pre>", "answers": [{"content": "-3, -2, -1, 0, 1, 2, 3", "isCorrect": true}, {"content": "-3, -2, -1, 0, 1, 2", "isCorrect": false}, {"content": "-3, 4", "isCorrect": false}, {"content": "-2, -1, 0, 1, 2, 3", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-cc7960d0a13445bc87d016a349dd94d6', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-a9dbdeab7cfc45b592acd1e4e5c8ac89', questionsData);
             });
         </script>
 </div>
-</section>
 </section>
 <hr class="docutils"/>
 <section id="for-lokker-med-en-fast-avstand">
 <h3><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker med en fast <code class="code docutils literal highlight highlight-python"><span class="n">avstand</span></code><a class="headerlink" href="#for-lokker-med-en-fast-avstand" title="Link to this heading">#</a></h3>
 <p>Vi kan også bruke <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker til å lage tallfølger der ikke alle tall bare er det forrige tallet pluss <span class="math notranslate nohighlight avoid-break-inside">\(1\)</span>. For eksempel kan vi lage <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker som skriver ut partall, eller oddetall, eller tallfølger der det er fast avstand mellom hvert tall.</p>
-<section class="summary-section" id="summary-for-l-python-lokker-2">
-<h4><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker 2<a class="headerlink" href="#summary-for-l-python-lokker-2" title="Link to this heading">#</a></h4>
-<div class="summary-body docutils container">
+<div class="admonition summary">
+<p class="admonition-title"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker 2</p>
 <p>En <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkke som skriver ut tall fra og med <code class="code docutils literal highlight highlight-python"><span class="n">start</span></code> og til <code class="code docutils literal highlight highlight-python"><span class="n">slutt</span></code> med en fast <code class="code docutils literal highlight highlight-python"><span class="n">avstand</span></code> mellom hvert tall kan skrives slik:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">stopp</span><span class="p">,</span> <span class="n">avstand</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
@@ -731,11 +538,9 @@ c</label><div class="sd-tab-content docutils">
 </div>
 <p>Det siste tallet som skrives ut må være mindre enn <code class="code docutils literal highlight highlight-python"><span class="n">stopp</span></code>.</p>
 </div>
-</section>
 <p>Nedenfor i Utforsk 2 kan du utforske nærmere hvordan en slik <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkke fungerer.</p>
-<section class="explore-section" id="explore-Utforsk-2">
-<h4>Utforsk 2<a class="headerlink" href="#explore-Utforsk-2" title="Link to this heading">#</a></h4>
-<div class="explore-body docutils container">
+<div class="admonition explore">
+<p class="admonition-title">Utforsk 2</p>
 <p>Nedenfor vises noen programmer som bruker <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker til å skrive ut noen tall.</p>
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio"/>
@@ -743,7 +548,7 @@ c</label><div class="sd-tab-content docutils">
 a</label><div class="sd-tab-content docutils">
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
-<div id="container-code-8e7ea667"></div>
+<div id="container-code-3c0f94b5"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -751,7 +556,7 @@ a</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-8e7ea667",
+                    "container-code-3c0f94b5",
                     code,
                 );
             });
@@ -762,7 +567,7 @@ a</label><div class="sd-tab-content docutils">
 b</label><div class="sd-tab-content docutils">
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
-<div id="container-code-7807b5f4"></div>
+<div id="container-code-2723ffb6"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -770,7 +575,7 @@ b</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-7807b5f4",
+                    "container-code-2723ffb6",
                     code,
                 );
             });
@@ -781,7 +586,7 @@ b</label><div class="sd-tab-content docutils">
 c</label><div class="sd-tab-content docutils">
 <p>Les programmet nedenfor og prøv å forutsi hvilke tall programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
-<div id="container-code-dd06edb6"></div>
+<div id="container-code-283c9036"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -789,7 +594,7 @@ c</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makePredictionInteractiveCode(
-                    "container-code-dd06edb6",
+                    "container-code-283c9036",
                     code,
                 );
             });
@@ -797,13 +602,11 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Underveisoppgave-2">
-<h4>Underveisoppgave 2<a class="headerlink" href="#exercise-Underveisoppgave-2" title="Link to this heading">#</a></h4>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Underveisoppgave 2</p>
 <!-- Container for the quiz -->
-<div class="quiz-main-container" id="quiz-container-ab3d91b8b816476ea7b707707995ed21"></div>
+<div class="quiz-main-container" id="quiz-container-60b2aefa232f4d0ba2907a3f074cf179"></div>
 <!-- Include KaTeX for LaTeX rendering -->
 <link href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" rel="stylesheet"/>
 <script defer="" src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -814,22 +617,20 @@ c</label><div class="sd-tab-content docutils">
                 const questionsData = [{"content": "Hvilken tallfølge skrives ut av programmet? <pre><code class=\"python\">for x in range(1, 5, 1):\n    print(x)</code></pre>", "answers": [{"content": "$1, 2, 3, 4$", "isCorrect": true}, {"content": "$1, 2, 3, 4, 5$", "isCorrect": false}, {"content": "$1, 2, 3$", "isCorrect": false}, {"content": "$1, 2, 3, 4, 5, 6$", "isCorrect": false}]}, {"content": "Hvilken tallfølge skrives ut av programmet? <pre><code class=\"python\">for x in range(1, 5, 2): \n    print(x)</code></pre>", "answers": [{"content": "$1, 3$", "isCorrect": true}, {"content": "$1, 3, 5$", "isCorrect": false}, {"content": "$1, 3, 4$", "isCorrect": false}, {"content": "$0, 2, 4$", "isCorrect": false}]}, {"content": "Hvilket program gir utskriften <pre><code class=\"console\">-4 \n-2 \n0 \n2 \n4</code></pre>", "answers": [{"content": "<pre><code class=\"python\">for x in range(-4, 5, 2): \n    print(x)</code></pre>", "isCorrect": true}, {"content": "<pre><code class=\"python\">for x in range(-4, 4, 2): \n    print(x)</code></pre>", "isCorrect": false}, {"content": "<pre><code class=\"python\">for x in range(-4, 2, 4): \n    print(x)</code></pre>", "isCorrect": false}, {"content": "<pre><code class=\"python\">for x in range(-4, 2, 5): \n    print(x)</code></pre>", "isCorrect": false}]}, {"content": "Hvilken tallfølge skrives ut av programmet? <pre><code class=\"python\">for x in range(1, 10, 3): \n    print(x)</code></pre>", "answers": [{"content": "$1, 4, 7$", "isCorrect": true}, {"content": "$1, 4, 7, 10$", "isCorrect": false}, {"content": "$1, 3, 6, 10$", "isCorrect": false}, {"content": "$1, 3, 6, 9$", "isCorrect": false}]}, {"content": "Hvilken tallfølge skrives ut av programmet? <pre><code class=\"python\">for x in range(12, 2, -4): \n    print(x)</code></pre>", "answers": [{"content": "$12, 8, 4$", "isCorrect": true}, {"content": "$12, 8, 4, 0$", "isCorrect": false}, {"content": "$12, 8, 4, 2$", "isCorrect": false}, {"content": "$12, 2, -4$", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-ab3d91b8b816476ea7b707707995ed21', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-60b2aefa232f4d0ba2907a3f074cf179', questionsData);
             });
         </script>
 </div>
-</section>
 <hr class="docutils"/>
-<section class="exercise-section" id="exercise-Underveisoppgave-3">
-<h4>Underveisoppgave 3<a class="headerlink" href="#exercise-Underveisoppgave-3" title="Link to this heading">#</a></h4>
-<div class="exercise-body docutils container">
+<div class="admonition exercise">
+<p class="admonition-title">Underveisoppgave 3</p>
 <p>Nedenfor finner du interaktive kodevinduer du kan skrive kode i og kjøre direkte.</p>
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-6" name="sd-tab-set-2" type="radio"/>
 <label class="sd-tab-label" for="sd-tab-item-6">
 a</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver ut partallene fra og med <span class="math notranslate nohighlight avoid-break-inside">\(2\)</span> til og med <span class="math notranslate nohighlight avoid-break-inside">\(20\)</span>.</p>
-<div id="container-code-c42d7868"></div>
+<div id="container-code-e8ff9efa"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -837,13 +638,13 @@ a</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makeInteractiveCode(
-                    "container-code-c42d7868",
+                    "container-code-e8ff9efa",
                     code,
                 );
             });
         </script>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <p>Utskriften blir:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">2</span>
 <span class="go">4</span>
@@ -858,13 +659,11 @@ a</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution dropdown">
+<p class="admonition-title">Løsning</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -872,7 +671,7 @@ a</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-7">
 b</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver ut oddetallene fra og med <span class="math notranslate nohighlight avoid-break-inside">\(1\)</span> til og med <span class="math notranslate nohighlight avoid-break-inside">\(19\)</span>.</p>
-<div id="container-code-ae2dcdc0"></div>
+<div id="container-code-a418da16"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -880,13 +679,13 @@ b</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makeInteractiveCode(
-                    "container-code-ae2dcdc0",
+                    "container-code-a418da16",
                     code,
                 );
             });
         </script>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <p>Utskriften blir:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">1</span>
 <span class="go">3</span>
@@ -901,13 +700,11 @@ b</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution dropdown">
+<p class="admonition-title">Løsning</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -915,7 +712,7 @@ b</label><div class="sd-tab-content docutils">
 <label class="sd-tab-label" for="sd-tab-item-8">
 c</label><div class="sd-tab-content docutils">
 <p>Lag et program som skriver ut tallfølgen <span class="math notranslate nohighlight avoid-break-inside">\(10, 20, 30, 40, 50\)</span>.</p>
-<div id="container-code-87a294c3"></div>
+<div id="container-code-552322a4"></div>
 <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -923,13 +720,13 @@ c</label><div class="sd-tab-content docutils">
     print(n)`;
 
                 makeInteractiveCode(
-                    "container-code-87a294c3",
+                    "container-code-552322a4",
                     code,
                 );
             });
         </script>
-<div class="answer-2 docutils container">
-<button aria-expanded="false" class="answer-2-toggle" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
+<div class="admonition answer dropdown">
+<p class="admonition-title">Fasit</p>
 <p>Utskriften blir:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">10</span>
 <span class="go">20</span>
@@ -939,9 +736,8 @@ c</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-</div>
-<div class="solution-2 docutils container">
-<button aria-expanded="false" class="solution-2-toggle" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
+<div class="admonition solution dropdown">
+<p class="admonition-title">Løsning</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">10</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </pre></div>
@@ -950,8 +746,6 @@ c</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
-</div>
-</section>
 </section>
 </section>
 <div class="toctree-wrapper compound">
@@ -1004,19 +798,8 @@ c</label><div class="sd-tab-content docutils">
 <nav class="bd-toc-nav page-toc">
 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-lokker-med-avstand-1"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker med avstand <span class="math notranslate nohighlight avoid-break-inside">\(1\)</span></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-for-l-python-lokker"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-1">Utforsk 1</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-1">Underveisoppgave 1</a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-lokker-med-en-fast-avstand"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker med en fast <code class="code docutils literal highlight highlight-python"><span class="n">avstand</span></code></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-for-l-python-lokker-2"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker 2</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-2">Utforsk 2</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-2">Underveisoppgave 2</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-3">Underveisoppgave 3</a></li>
-</ul>
-</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-lokker-med-avstand-1"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker med avstand <span class="math notranslate nohighlight avoid-break-inside">\(1\)</span></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#for-lokker-med-en-fast-avstand"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker med en fast <code class="code docutils literal highlight highlight-python"><span class="n">avstand</span></code></a></li>
 </ul>
 </li>
 </ul>
