@@ -23,7 +23,7 @@ Nedenfor ser du de viktigste sammenligningsoperatorene:
 | `==`{l=python} | Er lik | `5 == 5` | `True`{l=python} |
 | `!=`{l=python} | Er ikke lik | `5 != 3` | `True`{l=python} |
 | `<`{l=python} | Mindre enn | `3 < 5` | `True`{l=python} |
-| `>`{l=python} | Større enn | `5 < 3` | `False`{l=python} |
+| `>`{l=python} | Større enn | `3 > 5` | `False`{l=python} |
 | `<=`{l=python} | Mindre enn eller lik | `5 <= 5` | `True`{l=python} |
 | `>=`{l=python} | Større enn eller lik | `5 >= 3` | `True`{l=python} |
 
@@ -63,6 +63,7 @@ x = 10
 if x > 5:
     print("x er større enn 5")
 :::
+
 :::::::::::::
 
 :::::::::::::{tab-item} b
@@ -89,9 +90,66 @@ navn = "Anne"
 if navn == "Anne":
     print("Hallo Anne!")
 :::
+::::::::::::::
+
+:::::::::::::::
+
+::::::::::::::{exercise} Underveisoppgave 1
+Endre på koden for å løse oppgavene nedenfor
+::::::::::::::{tab-set}
+---
+class: tabs-parts
+---
+:::::::::::::{tab-item} a
+Lag et program som sjekker om et tall `x = -6`{l=python} er negativt. 
+
+:::{interactive-code}
+x = -6
+if x ????:
+    print(????)
+:::
+
+
+
+:::::{solution}
+:::{code-block} python
+---
+linenos:
+---
+x = -5
+if x < 0:
+    print("Tallet er negativt")
+:::
+:::::
+
 :::::::::::::
 
-::::::::::::::
+:::::::::::::{tab-item} b
+Lag et program som sjekker om et tall `x`{l=python} er tallet 5. Dersom det er det, skal programmet skrive ut "Tallet er 5".
+
+:::{interactive-code}
+x = ????
+if x  ????:
+    print(????)
+:::
+
+
+
+:::::{solution}
+:::{code-block} python
+---
+linenos:
+---
+x = 5
+if x == 5:
+    print("Tallet er 5")
+:::
+:::::
+
+:::::::::::::
+
+
+
 
 :::::::::::::::
 
@@ -110,7 +168,7 @@ else:
     # Kode som kjører dersom betingelsen er False
 :::
 
-::::::::::::::
+:::::::::::::::
 :::::::::::::::{explore} Utforsk 2
 La oss utforske `if`{l=python}-`else`{l=python}-setninger.
 

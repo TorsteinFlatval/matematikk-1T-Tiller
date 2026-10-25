@@ -27,8 +27,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
@@ -36,11 +36,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=9237f12a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/popup.css?v=2d27c3a4" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/escape-room.css?v=bfeb5342" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/interactive_code.css?v=23cd07d5" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/jeopardy.css?v=71d9bb06" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/parsonsPuzzle.css?v=9fbab2c7" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/static_code_blocks.css?v=68f9364b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/clickable_figures/style.css?v=2580ef29" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/style.css?v=b30732ed" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/mathjax/style.css?v=194b018e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/misc_styles/figures.css?v=46e199f0" />
@@ -57,61 +56,106 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=57d653fb" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=ea5285ea" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/flashcards.css?v=816457f1" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=f903e660" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=951b6e4f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=722631f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=575e2325" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/masonry.css?v=db25927a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/notebook.css?v=00170ee0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" />
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/admonitions.css?v=aacd8e29" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/dialogue.css?v=1b585024" />
+    <link onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/admonitions.css?v=a3692687" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/dialogue.css?v=c5b7ed32" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/figures.css?v=acd93126" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup.css?v=26181dfd" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/timedQuiz.css?v=89e27729" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/cas_popup.css?v=bae4ad7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/cas_popup.css?v=bb968b84" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-light.css?v=0cccc4aa" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-dark.css?v=2454bc3f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-dark.css?v=e9bcc25f" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-dark-high-contrast.css?v=4c0c1b0f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/table.css?v=30eed71c" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/pairPuzzle/style.css?v=f77426ac" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=8c5c5c21" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/table.css?v=fd6d533f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/pairPuzzle/style.css?v=0a0f323a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=a1529215" />
+    <link onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/part.css?v=bc286cc2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" />
     <link id="highlight-theme-light" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" />
     <link id="highlight-theme-dark" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/dialogue.css?v=1b585024" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/grid_print.css?v=73205d86" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/admonitions.css?v=f84a357c" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/multipleChoiceQuiz/style.css?v=89e27729" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mathjax/style.css?v=0f1cb662" />
     <link rel="stylesheet" type="text/css" href="../../../_static/parsons_puzzle/parsonsPuzzle.css?v=9fbab2c7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/multipleChoiceQuiz/style.css?v=89e27729" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
     <link rel="stylesheet" type="text/css" href="../../../_static/fonts/opendyslexic/dyslexic.css?v=80f1227b" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../../../_static/documentation_options.js?v=c712eed9"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
@@ -126,15 +170,37 @@
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script src="../../../_static/tabs.js?v=3ee01567"></script>
-    <script src="../../../_static/munchboka/js/solution_timer.js?v=e7176ead"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/solution_timer.js?v=8d1f44f8"></script>
+    <script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=733f5585"></script>
+    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
-    <script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=0d62d95e"></script>
+    <script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=ecc68a76"></script>
     <script src="../../../_static/munchboka/js/jeopardy.js?v=375a3583"></script>
+    <script defer="defer" src="../../../_static/munchboka/js/masonry.js?v=96ec6874"></script>
     <script src="../../../_static/munchboka/js/quiz.js?v=f8bcd7a1"></script>
     <script>let toggleHintShow = 'Klikk for å vise';</script>
     <script>let toggleHintHide = 'Klikk for å skjule';</script>
@@ -154,6 +220,7 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3.2/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/likninger_og_ulikheter/ulikheter/oppgaver';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <script>mermaid.initialize({"startOnLoad": true})</script>
     <script src="../../../_static/munchboka/js/pairPuzzle/draggableItem.js?v=ce9ef7bd"></script>
     <script src="../../../_static/munchboka/js/pairPuzzle/dropZone.js?v=56907477"></script>
@@ -161,27 +228,132 @@
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=57870877"></script>
     <script src="../../../_static/munchboka/js/print_answer_key.js?v=eebcd271"></script>
-    <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
-    <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/solution2.js?v=a2d1029e"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/part.js?v=ca40db03"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/goals.js?v=a2f2d5f7"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
     <script src="../../../_static/utils.js?v=14803243"></script>
+    <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
+    <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
     <script src="../../../_static/serviceWorker.js?v=19bb19ce"></script>
-    <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
-    <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
-    <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
-    <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
-    <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
-    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
-    <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
-    <script src="../../../_static/pairPuzzle/dropZone.js?v=56907477"></script>
-    <script src="../../../_static/pairPuzzle/game.js?v=cb8b0d45"></script>
-    <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=6e8c8774"></script>
-    <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
-    <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
-    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
     <script src="../../../_static/multipleChoiceQuiz/utils.js?v=2c6f871c"></script>
-    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
+    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
     <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
     <script src="../../../_static/multipleChoiceQuiz/timedMultipleChoiceQuiz.js?v=9accc73d"></script>
+    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
+    <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=6e8c8774"></script>
+    <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
+    <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
+    <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
+    <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
+    <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
+    <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
+    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
+    <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
+    <script src="../../../_static/pairPuzzle/dropZone.js?v=56907477"></script>
+    <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
+    <script src="../../../_static/pairPuzzle/game.js?v=cb8b0d45"></script>
     <script src="../../../_static/fonts/opendyslexic/opendylexic-toggle.js?v=7208047f"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
@@ -191,6 +363,7 @@
     <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+    <script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="prev" title="Andregradsulikheter" href="teori.html" />
@@ -198,6 +371,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="norwegian"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../../_static/searchtools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../searchindex.js"></script>
+  
 <!-- Pyodide -->
 <script src="https://cdn.jsdelivr.net/pyodide/v0.27.0/full/pyodide.js"></script>
 
@@ -235,19 +414,19 @@
 
 
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -273,7 +452,51 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -328,6 +551,8 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programmering</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../programmering/variabler_tall_matematikk/teori.html">Variabler, tall og matematikk i Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programmering/print_funksjonen/teori.html"><code class="code docutils literal highlight highlight-python"><span class="nb">print</span></code>-funksjonen</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../programmering/for_l%C3%B8kker/teori.html"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../programmering/for_l%C3%B8kker/oppgaver.html">Oppgaver</a></li>
 </ul>
@@ -489,7 +714,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -505,6 +732,26 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Innhold </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-2">Oppgave 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-3">Oppgave 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-4">Oppgave 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-5">Oppgave 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-6">Oppgave 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-7">Oppgave 7</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-8">Oppgave 8</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-9">Oppgave 9</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-10">Oppgave 10</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-11">Oppgave 11</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-12">Oppgave 12</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-13">Oppgave 13</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -516,8 +763,9 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="oppgaver-andregradsulikheter">
 <h1>Oppgaver: Andregradsulikheter<a class="headerlink" href="#oppgaver-andregradsulikheter" title="Link to this heading">#</a></h1>
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 1</p>
+<section class="exercise-section" id="exercise-Oppgave-1">
+<h2>Oppgave 1<a class="headerlink" href="#exercise-Oppgave-1" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-0">
@@ -532,20 +780,22 @@ f(x) \leq 0.
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/a2.svg"><img alt="../../../_images/a2.svg" class="no-click adaptive-figure" src="../../../_images/a2.svg" style="width: 90%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = [-3, 1].
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-37 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Grafen til <span class="math notranslate nohighlight">\(f\)</span> skjærer <span class="math notranslate nohighlight">\(x\)</span>-aksen i <span class="math notranslate nohighlight">\((-3, 0)\)</span> og <span class="math notranslate nohighlight">\((1, 0)\)</span>. Grafen ligger under <span class="math notranslate nohighlight">\(x\)</span>-aksen mellom disse to punktene som betyr at <span class="math notranslate nohighlight">\(f(x) \leq 0\)</span> når</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = [-3, 1].
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-1" name="sd-tab-set-0" type="radio">
@@ -561,20 +811,22 @@ f(x) &lt; 0.
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/b2.svg"><img alt="../../../_images/b2.svg" class="no-click adaptive-figure" src="../../../_images/b2.svg" style="width: 90%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -1 \rangle \cup \langle 3, \to \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-72 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Grafen til <span class="math notranslate nohighlight">\(f\)</span> skjærer <span class="math notranslate nohighlight">\(x\)</span>-aksen i <span class="math notranslate nohighlight">\((-1, 0)\)</span> og <span class="math notranslate nohighlight">\((3, 0)\)</span>. På nedsiden av <span class="math notranslate nohighlight">\((-1, 0)\)</span> og på oversiden av <span class="math notranslate nohighlight">\((3, 0)\)</span> ligger grafen til <span class="math notranslate nohighlight">\(f\)</span> under <span class="math notranslate nohighlight">\(x\)</span>-aksen som betyr at <span class="math notranslate nohighlight">\(f(x) &lt; 0\)</span> når</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -1 \rangle \cup \langle 3, \to \rangle.
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-2" name="sd-tab-set-0" type="radio">
@@ -590,20 +842,22 @@ f(x) &gt; 0.
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/c2.svg"><img alt="../../../_images/c2.svg" class="no-click adaptive-figure" src="../../../_images/c2.svg" style="width: 90%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle -5, 1 \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-106 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Grafen til <span class="math notranslate nohighlight">\(f\)</span> skjærer <span class="math notranslate nohighlight">\(x\)</span>-aksen i <span class="math notranslate nohighlight">\((-5, 0)\)</span> og <span class="math notranslate nohighlight">\((1, 0)\)</span>. Mellom disse to punktene ligger grafen til <span class="math notranslate nohighlight">\(f\)</span> over <span class="math notranslate nohighlight">\(x\)</span>-aksen som betyr at <span class="math notranslate nohighlight">\(f(x) &gt; 0\)</span> når</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle -5, 1 \rangle.
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-3" name="sd-tab-set-0" type="radio">
@@ -619,15 +873,16 @@ f(x) \geq 0.
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/d1.svg"><img alt="../../../_images/d1.svg" class="no-click adaptive-figure" src="../../../_images/d1.svg" style="width: 90%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle\gets, -2] \cup [2, \to \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-139 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Grafen til <span class="math notranslate nohighlight">\(f\)</span> skjærer <span class="math notranslate nohighlight">\(x\)</span>-aksen i <span class="math notranslate nohighlight">\((-2, 0)\)</span> og <span class="math notranslate nohighlight">\((2, 0)\)</span>. På nedsiden av <span class="math notranslate nohighlight">\((-2, 0)\)</span> og på oversiden av <span class="math notranslate nohighlight">\((2, 0)\)</span> ligger grafen til <span class="math notranslate nohighlight">\(f\)</span> over <span class="math notranslate nohighlight">\(x\)</span>-aksen som betyr at <span class="math notranslate nohighlight">\(f(x) \geq 0\)</span> når</p>
 <div class="math notranslate nohighlight">
 \[
@@ -637,13 +892,16 @@ f(x) \geq 0.
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 2</p>
+<section class="exercise-section" id="exercise-Oppgave-2">
+<h2>Oppgave 2<a class="headerlink" href="#exercise-Oppgave-2" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <p>Ta quizen!</p>
 
         <!-- Container for the quiz -->
-        <div id="quiz-container-d61b11db7f5044b38dcd3a187508c0cf" class="quiz-main-container"></div>
+        <div id="quiz-container-3b64a927a12d4b10847acd3a39b3187b" class="quiz-main-container"></div>
         <!-- Include KaTeX for LaTeX rendering -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
         <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -652,16 +910,18 @@ f(x) \geq 0.
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 // Define your questions and answers
-                const questionsData = [{"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img1_figurer_oppgaver_oppgave_2_spm_1_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img2_figurer_oppgaver_oppgave_2_spm_1_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img3_figurer_oppgaver_oppgave_2_spm_1_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img4_figurer_oppgaver_oppgave_2_spm_1_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img5_figurer_oppgaver_oppgave_2_spm_1_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img6_figurer_oppgaver_oppgave_2_spm_2_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img7_figurer_oppgaver_oppgave_2_spm_2_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img8_figurer_oppgaver_oppgave_2_spm_2_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img9_figurer_oppgaver_oppgave_2_spm_2_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img10_figurer_oppgaver_oppgave_2_spm_2_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img11_figurer_oppgaver_oppgave_2_spm_3_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img12_figurer_oppgaver_oppgave_2_spm_3_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img13_figurer_oppgaver_oppgave_2_spm_3_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img14_figurer_oppgaver_oppgave_2_spm_3_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img15_figurer_oppgaver_oppgave_2_spm_3_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img16_figurer_oppgaver_oppgave_2_spm_4_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img17_figurer_oppgaver_oppgave_2_spm_4_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img18_figurer_oppgaver_oppgave_2_spm_4_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img19_figurer_oppgaver_oppgave_2_spm_4_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img20_figurer_oppgaver_oppgave_2_spm_4_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img21_figurer_oppgaver_oppgave_2_spm_5_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img22_figurer_oppgaver_oppgave_2_spm_5_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img23_figurer_oppgaver_oppgave_2_spm_5_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img24_figurer_oppgaver_oppgave_2_spm_5_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/d61b11db7f5044b38dcd3a187508c0cf_img25_figurer_oppgaver_oppgave_2_spm_5_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}];
+                const questionsData = [{"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img1_figurer_oppgaver_oppgave_2_spm_1_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img2_figurer_oppgaver_oppgave_2_spm_1_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img3_figurer_oppgaver_oppgave_2_spm_1_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img4_figurer_oppgaver_oppgave_2_spm_1_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img5_figurer_oppgaver_oppgave_2_spm_1_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img6_figurer_oppgaver_oppgave_2_spm_2_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img7_figurer_oppgaver_oppgave_2_spm_2_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img8_figurer_oppgaver_oppgave_2_spm_2_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img9_figurer_oppgaver_oppgave_2_spm_2_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img10_figurer_oppgaver_oppgave_2_spm_2_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img11_figurer_oppgaver_oppgave_2_spm_3_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img12_figurer_oppgaver_oppgave_2_spm_3_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img13_figurer_oppgaver_oppgave_2_spm_3_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img14_figurer_oppgaver_oppgave_2_spm_3_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img15_figurer_oppgaver_oppgave_2_spm_3_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img16_figurer_oppgaver_oppgave_2_spm_4_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img17_figurer_oppgaver_oppgave_2_spm_4_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img18_figurer_oppgaver_oppgave_2_spm_4_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img19_figurer_oppgaver_oppgave_2_spm_4_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img20_figurer_oppgaver_oppgave_2_spm_4_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img21_figurer_oppgaver_oppgave_2_spm_5_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img22_figurer_oppgaver_oppgave_2_spm_5_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img23_figurer_oppgaver_oppgave_2_spm_5_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img24_figurer_oppgaver_oppgave_2_spm_5_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img25_figurer_oppgaver_oppgave_2_spm_5_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-d61b11db7f5044b38dcd3a187508c0cf', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-3b64a927a12d4b10847acd3a39b3187b', questionsData);
             });
         </script>
         </div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 3</p>
+<section class="exercise-section" id="exercise-Oppgave-3">
+<h2>Oppgave 3<a class="headerlink" href="#exercise-Oppgave-3" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-4" name="sd-tab-set-1" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-4">
@@ -676,9 +936,10 @@ a</label><div class="sd-tab-content docutils">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/merged_figure3.svg"><img alt="../../../_images/merged_figure3.svg" class="no-click adaptive-figure" src="../../../_images/merged_figure3.svg" style="width: 100%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <p>Graf C.</p>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-5" name="sd-tab-set-1" type="radio">
@@ -694,9 +955,10 @@ b</label><div class="sd-tab-content docutils">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/merged_figure4.svg"><img alt="../../../_images/merged_figure4.svg" class="no-click adaptive-figure" src="../../../_images/merged_figure4.svg" style="width: 100%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <p>Graf A.</p>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-6" name="sd-tab-set-1" type="radio">
@@ -712,16 +974,19 @@ c</label><div class="sd-tab-content docutils">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/merged_figure5.svg"><img alt="../../../_images/merged_figure5.svg" class="no-click adaptive-figure" src="../../../_images/merged_figure5.svg" style="width: 100%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <p>Graf D.</p>
 </div>
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 4</p>
+<section class="exercise-section" id="exercise-Oppgave-4">
+<h2>Oppgave 4<a class="headerlink" href="#exercise-Oppgave-4" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-7" name="sd-tab-set-2" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-7">
@@ -736,12 +1001,13 @@ f(x) \geq 0.
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/a3.svg"><img alt="../../../_images/a3.svg" class="no-click adaptive-figure" src="../../../_images/a3.svg" style="width: 90%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -2] \cup [2, \to \rangle
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-8" name="sd-tab-set-2" type="radio">
@@ -757,12 +1023,13 @@ g(x) &gt; 0.
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/b3.svg"><img alt="../../../_images/b3.svg" class="no-click adaptive-figure" src="../../../_images/b3.svg" style="width: 90%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle -1, 2 \rangle
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-9" name="sd-tab-set-2" type="radio">
@@ -778,12 +1045,13 @@ h(x) &lt; 0.
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/c3.svg"><img alt="../../../_images/c3.svg" class="no-click adaptive-figure" src="../../../_images/c3.svg" style="width: 90%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -2 \rangle \cup \langle -2, \to \rangle
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-10" name="sd-tab-set-2" type="radio">
@@ -799,8 +1067,8 @@ p(x) \leq 0.
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/d2.svg"><img alt="../../../_images/d2.svg" class="no-click adaptive-figure" src="../../../_images/d2.svg" style="width: 90%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -1] \cup [0,  \to \rangle
@@ -809,9 +1077,12 @@ p(x) \leq 0.
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 5</p>
+<section class="exercise-section" id="exercise-Oppgave-5">
+<h2>Oppgave 5<a class="headerlink" href="#exercise-Oppgave-5" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-11" name="sd-tab-set-3" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-11">
@@ -821,15 +1092,16 @@ a</label><div class="sd-tab-content docutils">
 \[
 (x + 2)(x - 4) \leq 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = [-2, 4]
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-460 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi tegner fortegnslinja til <span class="math notranslate nohighlight">\(f(x) = (x + 2)(x - 4)\)</span>. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til <span class="math notranslate nohighlight">\(f(x)\)</span>:</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/a4.svg"><img alt="../../../_images/a4.svg" class="no-click adaptive-figure" src="../../../_images/a4.svg" style="width: 100%;" />
@@ -842,6 +1114,7 @@ a</label><div class="sd-tab-content docutils">
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-12" name="sd-tab-set-3" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-12">
 b</label><div class="sd-tab-content docutils">
@@ -850,15 +1123,16 @@ b</label><div class="sd-tab-content docutils">
 \[
 (x - 1)(x + 4) \geq 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -4] \cup [1, \to \rangle
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-498 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi starter med å tegne fortegnslinja til <span class="math notranslate nohighlight">\(f(x) = (x - 1)(x + 4)\)</span>. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til <span class="math notranslate nohighlight">\(f(x)\)</span>:</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/b4.svg"><img alt="../../../_images/b4.svg" class="no-click adaptive-figure" src="../../../_images/b4.svg" style="width: 100%;" />
@@ -871,6 +1145,7 @@ b</label><div class="sd-tab-content docutils">
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-13" name="sd-tab-set-3" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-13">
 c</label><div class="sd-tab-content docutils">
@@ -879,15 +1154,16 @@ c</label><div class="sd-tab-content docutils">
 \[
 -2x(x - 3) &lt; 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, 0 \rangle \cup \langle 3, \to \rangle
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-538 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi starter med å tegne fortegnslinja til <span class="math notranslate nohighlight">\(f(x) = -2x(x - 3)\)</span>. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til <span class="math notranslate nohighlight">\(f(x)\)</span>:</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/c4.svg"><img alt="../../../_images/c4.svg" class="no-click adaptive-figure" src="../../../_images/c4.svg" style="width: 100%;" />
@@ -900,6 +1176,7 @@ c</label><div class="sd-tab-content docutils">
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-14" name="sd-tab-set-3" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-14">
 d</label><div class="sd-tab-content docutils">
@@ -908,15 +1185,16 @@ d</label><div class="sd-tab-content docutils">
 \[
 -3(x + 1)(x - 1) &gt; 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle -1, 1 \rangle
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-575 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi starter med å tegne fortegnslinja til <span class="math notranslate nohighlight">\(f(x) = -3(x + 1)(x - 1)\)</span>. Vi tegner først en fortegnslinje for hver faktor, deretter ganger vi fortegnene sammen for å få fortegnslinja til <span class="math notranslate nohighlight">\(f(x)\)</span>:</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/d3.svg"><img alt="../../../_images/d3.svg" class="no-click adaptive-figure" src="../../../_images/d3.svg" style="width: 100%;" />
@@ -931,9 +1209,12 @@ d</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 6</p>
+<section class="exercise-section" id="exercise-Oppgave-6">
+<h2>Oppgave 6<a class="headerlink" href="#exercise-Oppgave-6" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-15" name="sd-tab-set-4" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-15">
@@ -943,15 +1224,16 @@ a</label><div class="sd-tab-content docutils">
 \[
 -x^2 + 4x - 3 \leq 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, 1] \cup [3, \to \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-627 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi starter med å nullpunktsfaktorisere andregradsuttrykket. Vi finner nullpunktene med <span class="math notranslate nohighlight">\(abc\)</span>-formelen:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -979,6 +1261,7 @@ x = \dfrac{-2}{-2} = 1 \or x = \dfrac{-6}{-2} = 3.
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-16" name="sd-tab-set-4" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-16">
 b</label><div class="sd-tab-content docutils">
@@ -987,15 +1270,16 @@ b</label><div class="sd-tab-content docutils">
 \[
 x^2 + 4x - 5 \geq 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -5] \cup [1, \to \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-683 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi starter med å nullpunktsfaktorisere andregradsuttrykket. Vi finner nullpunktene med <span class="math notranslate nohighlight">\(abc\)</span>-formelen:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1023,6 +1307,7 @@ x = \dfrac{2}{2} = 1 \or x = \dfrac{-10}{2} = -5.
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-17" name="sd-tab-set-4" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-17">
 c</label><div class="sd-tab-content docutils">
@@ -1031,15 +1316,16 @@ c</label><div class="sd-tab-content docutils">
 \[
 x^2 + 6x + 5 &gt; -4
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -3 \rangle \cup \langle -3, \to \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-736 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi starter med å samle alle ledd på én side av ulikheten slik at vi får <span class="math notranslate nohighlight">\(0\)</span> på høyre side:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1067,6 +1353,7 @@ x^2 + 6x + 9 = (x + 3)^2.
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-18" name="sd-tab-set-4" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-18">
 d</label><div class="sd-tab-content docutils">
@@ -1075,15 +1362,16 @@ d</label><div class="sd-tab-content docutils">
 \[
 -x^2 + 3x + 1 &lt; 3x + 2
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \real
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-791 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi starter med å samle alle ledd på én side av ulikheten slik at vi får <span class="math notranslate nohighlight">\(0\)</span> på høyre side:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -1098,16 +1386,20 @@ d</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 7</p>
-<div class="admonition hints dropdown">
-<p class="admonition-title">Hvordan løser jeg andregradsulikheter med CAS?</p>
+<section class="exercise-section" id="exercise-Oppgave-7">
+<h2>Oppgave 7<a class="headerlink" href="#exercise-Oppgave-7" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
+<div class="hint docutils container">
+<button class="hint-toggle" aria-expanded="false" data-label="Hvordan løser jeg andregradsulikheter med CAS?">Hvordan løser jeg andregradsulikheter med CAS?</button><div class="hint-content docutils container">
 <p>I gif-en nedenfor vises et eksempel på hvordan man løser en andregradsulikhet med CAS:</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/cas_ulikheter.gif"><img alt="../../../_images/cas_ulikheter.gif" class="no-click adaptive-figure" src="../../../_images/cas_ulikheter.gif" style="width: 80%;" />
 </a>
 </figure>
+</div>
 </div>
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-19" name="sd-tab-set-5" type="radio">
@@ -1117,9 +1409,9 @@ a</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-cae6ca40" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-cae6ca40" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-cae6ca40" class="ggb-window"></div>
+<button id="button-ggb-cas-5af5f027" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-5af5f027" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-5af5f027" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1170,12 +1462,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-cae6ca40';
+    const storageKey = 'ggb-cas-state-ggb-cas-5af5f027';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-cae6ca40").width(),
-            h = $("#ggb-cas-cae6ca40").height();
+      const w = $("#ggb-cas-5af5f027").width(),
+            h = $("#ggb-cas-5af5f027").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1246,7 +1538,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-cae6ca40").dialog({
+    const $dlg = $("#dialog-ggb-cas-5af5f027").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1256,7 +1548,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-cae6ca40",
+            appName: "classic", id: "ggb-cas-5af5f027",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1268,7 +1560,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-cae6ca40");
+          }, true).inject("ggb-cas-5af5f027");
         } else {
           applySize();
         }
@@ -1289,12 +1581,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-cae6ca40").empty();
+            $("#ggb-cas-5af5f027").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-cae6ca40",
+              appName: "classic", id: "ggb-cas-5af5f027",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1304,7 +1596,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-cae6ca40");
+            }, true).inject("ggb-cas-5af5f027");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1356,7 +1648,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-cae6ca40')) {
+          if (!e.target.closest('#ggb-cas-5af5f027')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1384,7 +1676,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-cae6ca40');
+      const ggbContainer = document.getElementById('ggb-cas-5af5f027');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1430,10 +1722,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-cae6ca40").button()
+    $("#button-ggb-cas-5af5f027").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-cae6ca40").dialog("open");
+        $("#dialog-ggb-cas-5af5f027").dialog("open");
       });
   });
 })();
@@ -1444,15 +1736,16 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 \[
 x^2 - 3x + 2 &lt; 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle 1, 2 \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-859 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/a2.png"><img alt="../../../_images/a2.png" class="no-click adaptive-figure" src="../../../_images/a2.png" style="width: 60%;" />
 </a>
@@ -1464,6 +1757,7 @@ x^2 - 3x + 2 &lt; 0
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-20" name="sd-tab-set-5" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-20">
 b</label><div class="sd-tab-content docutils">
@@ -1471,9 +1765,9 @@ b</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-2272df36" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-2272df36" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-2272df36" class="ggb-window"></div>
+<button id="button-ggb-cas-0a9f81f7" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-0a9f81f7" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-0a9f81f7" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1524,12 +1818,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-2272df36';
+    const storageKey = 'ggb-cas-state-ggb-cas-0a9f81f7';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-2272df36").width(),
-            h = $("#ggb-cas-2272df36").height();
+      const w = $("#ggb-cas-0a9f81f7").width(),
+            h = $("#ggb-cas-0a9f81f7").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1600,7 +1894,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-2272df36").dialog({
+    const $dlg = $("#dialog-ggb-cas-0a9f81f7").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1610,7 +1904,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-2272df36",
+            appName: "classic", id: "ggb-cas-0a9f81f7",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1622,7 +1916,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-2272df36");
+          }, true).inject("ggb-cas-0a9f81f7");
         } else {
           applySize();
         }
@@ -1643,12 +1937,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-2272df36").empty();
+            $("#ggb-cas-0a9f81f7").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-2272df36",
+              appName: "classic", id: "ggb-cas-0a9f81f7",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1658,7 +1952,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-2272df36");
+            }, true).inject("ggb-cas-0a9f81f7");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1710,7 +2004,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-2272df36')) {
+          if (!e.target.closest('#ggb-cas-0a9f81f7')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1738,7 +2032,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-2272df36');
+      const ggbContainer = document.getElementById('ggb-cas-0a9f81f7');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1784,10 +2078,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-2272df36").button()
+    $("#button-ggb-cas-0a9f81f7").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-2272df36").dialog("open");
+        $("#dialog-ggb-cas-0a9f81f7").dialog("open");
       });
   });
 })();
@@ -1798,15 +2092,16 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 \[
 -x^2 + 2x - 1 &lt; 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, 1 \rangle \cup \langle 1, \to \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-901 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/b2.png"><img alt="../../../_images/b2.png" class="no-click adaptive-figure" src="../../../_images/b2.png" style="width: 60%;" />
 </a>
@@ -1818,6 +2113,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-21" name="sd-tab-set-5" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-21">
 c</label><div class="sd-tab-content docutils">
@@ -1825,9 +2121,9 @@ c</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-2ebdb1ef" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-2ebdb1ef" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-2ebdb1ef" class="ggb-window"></div>
+<button id="button-ggb-cas-e0da0da3" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-e0da0da3" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-e0da0da3" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1878,12 +2174,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-2ebdb1ef';
+    const storageKey = 'ggb-cas-state-ggb-cas-e0da0da3';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-2ebdb1ef").width(),
-            h = $("#ggb-cas-2ebdb1ef").height();
+      const w = $("#ggb-cas-e0da0da3").width(),
+            h = $("#ggb-cas-e0da0da3").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1954,7 +2250,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-2ebdb1ef").dialog({
+    const $dlg = $("#dialog-ggb-cas-e0da0da3").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1964,7 +2260,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-2ebdb1ef",
+            appName: "classic", id: "ggb-cas-e0da0da3",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1976,7 +2272,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-2ebdb1ef");
+          }, true).inject("ggb-cas-e0da0da3");
         } else {
           applySize();
         }
@@ -1997,12 +2293,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-2ebdb1ef").empty();
+            $("#ggb-cas-e0da0da3").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-2ebdb1ef",
+              appName: "classic", id: "ggb-cas-e0da0da3",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2012,7 +2308,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-2ebdb1ef");
+            }, true).inject("ggb-cas-e0da0da3");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2064,7 +2360,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-2ebdb1ef')) {
+          if (!e.target.closest('#ggb-cas-e0da0da3')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2092,7 +2388,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-2ebdb1ef');
+      const ggbContainer = document.getElementById('ggb-cas-e0da0da3');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2138,10 +2434,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-2ebdb1ef").button()
+    $("#button-ggb-cas-e0da0da3").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-2ebdb1ef").dialog("open");
+        $("#dialog-ggb-cas-e0da0da3").dialog("open");
       });
   });
 })();
@@ -2152,15 +2448,16 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 \[
 -x^2 + 5x + 6 \geq 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = [-1, 6]
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-943 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/c2.png"><img alt="../../../_images/c2.png" class="no-click adaptive-figure" src="../../../_images/c2.png" style="width: 60%;" />
 </a>
@@ -2172,6 +2469,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-22" name="sd-tab-set-5" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-22">
 d</label><div class="sd-tab-content docutils">
@@ -2179,9 +2477,9 @@ d</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-dfde46fb" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-dfde46fb" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-dfde46fb" class="ggb-window"></div>
+<button id="button-ggb-cas-d345665c" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-d345665c" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-d345665c" class="ggb-window"></div>
 </div>
 
 <style>
@@ -2232,12 +2530,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-dfde46fb';
+    const storageKey = 'ggb-cas-state-ggb-cas-d345665c';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-dfde46fb").width(),
-            h = $("#ggb-cas-dfde46fb").height();
+      const w = $("#ggb-cas-d345665c").width(),
+            h = $("#ggb-cas-d345665c").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -2308,7 +2606,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-dfde46fb").dialog({
+    const $dlg = $("#dialog-ggb-cas-d345665c").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -2318,7 +2616,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-dfde46fb",
+            appName: "classic", id: "ggb-cas-d345665c",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -2330,7 +2628,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-dfde46fb");
+          }, true).inject("ggb-cas-d345665c");
         } else {
           applySize();
         }
@@ -2351,12 +2649,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-dfde46fb").empty();
+            $("#ggb-cas-d345665c").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-dfde46fb",
+              appName: "classic", id: "ggb-cas-d345665c",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2366,7 +2664,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-dfde46fb");
+            }, true).inject("ggb-cas-d345665c");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2418,7 +2716,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-dfde46fb')) {
+          if (!e.target.closest('#ggb-cas-d345665c')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2446,7 +2744,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-dfde46fb');
+      const ggbContainer = document.getElementById('ggb-cas-d345665c');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2492,10 +2790,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-dfde46fb").button()
+    $("#button-ggb-cas-d345665c").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-dfde46fb").dialog("open");
+        $("#dialog-ggb-cas-d345665c").dialog("open");
       });
   });
 })();
@@ -2506,15 +2804,16 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 \[
 x^2 - 2x + 5 \leq -x^2 + 3x + 3
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \left[ \dfrac{1}{2}, 2\right]
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-990 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/d2.png"><img alt="../../../_images/d2.png" class="no-click adaptive-figure" src="../../../_images/d2.png" style="width: 60%;" />
 </a>
@@ -2528,9 +2827,12 @@ x^2 - 2x + 5 \leq -x^2 + 3x + 3
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 8</p>
+<section class="exercise-section" id="exercise-Oppgave-8">
+<h2>Oppgave 8<a class="headerlink" href="#exercise-Oppgave-8" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <p>Nedenfor vises grafen til en andregradsfunksjon <span class="math notranslate nohighlight">\(f\)</span> og en lineær funksjon <span class="math notranslate nohighlight">\(g\)</span>.</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/figur2.svg"><img alt="../../../_images/figur2.svg" class="no-click adaptive-figure" src="../../../_images/figur2.svg" style="width: 80%;" />
@@ -2545,20 +2847,22 @@ a</label><div class="sd-tab-content docutils">
 \[
 f(x) &lt; 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -3\rangle \cup \langle 1, \to \rangle
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1051 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi ser at grafen til <span class="math notranslate nohighlight">\(f\)</span> skjærer <span class="math notranslate nohighlight">\(x\)</span>-aksen i <span class="math notranslate nohighlight">\((-3, 0)\)</span> og <span class="math notranslate nohighlight">\((1, 0)\)</span>. Grafen ligger under <span class="math notranslate nohighlight">\(x\)</span>-aksen på nedsiden av <span class="math notranslate nohighlight">\((-2, 0)\)</span> og på oversiden av <span class="math notranslate nohighlight">\((3, 0)\)</span>. Dermed er løsningen</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -3\rangle \cup \langle 1, \to \rangle
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-24" name="sd-tab-set-6" type="radio">
@@ -2569,20 +2873,22 @@ b</label><div class="sd-tab-content docutils">
 \[
 f(x) &gt; 3
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle -2, 0 \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1077 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Grafen til <span class="math notranslate nohighlight">\(f\)</span> skjærer linja <span class="math notranslate nohighlight">\(y = 3\)</span> i <span class="math notranslate nohighlight">\((-2, 3)\)</span> og <span class="math notranslate nohighlight">\((0, 3)\)</span>. Mellom disse to punktene, så ligger grafen til <span class="math notranslate nohighlight">\(f\)</span> over linja <span class="math notranslate nohighlight">\(y = 3\)</span>. Dermed er løsningen</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle -2, 0 \rangle.
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-25" name="sd-tab-set-6" type="radio">
@@ -2593,15 +2899,16 @@ c</label><div class="sd-tab-content docutils">
 \[
 f(x) \geq g(x)
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = [-4, 0]
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1102 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Grafene til <span class="math notranslate nohighlight">\(f\)</span> og <span class="math notranslate nohighlight">\(g\)</span> skjærer hverandre i punktene <span class="math notranslate nohighlight">\((-4, -5)\)</span> og <span class="math notranslate nohighlight">\((0, 3)\)</span>. Mellom disse to punktene, så ligger grafen til <span class="math notranslate nohighlight">\(f\)</span> på oversiden av grafen til <span class="math notranslate nohighlight">\(g\)</span>. Dermed er løsningen av ulikheten</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2611,9 +2918,12 @@ f(x) \geq g(x)
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 9</p>
+<section class="exercise-section" id="exercise-Oppgave-9">
+<h2>Oppgave 9<a class="headerlink" href="#exercise-Oppgave-9" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <p>Nedenfor vises grafen til en andregradsfunksjon <span class="math notranslate nohighlight">\(f\)</span>.</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/figur3.svg"><img alt="../../../_images/figur3.svg" class="no-click adaptive-figure" src="../../../_images/figur3.svg" style="width: 80%;" />
@@ -2624,12 +2934,13 @@ f(x) \geq g(x)
 <label class="sd-tab-label" for="sd-tab-item-26">
 a</label><div class="sd-tab-content docutils">
 <p>Bestem <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <p>f(x) = -2(x + 3)(x - 4).</p>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1148 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi ser at grafen skjærer <span class="math notranslate nohighlight">\(x\)</span>-aksen i <span class="math notranslate nohighlight">\((-3, 0)\)</span> og <span class="math notranslate nohighlight">\((4, 0)\)</span> som vi kan bruke til å bestemme <span class="math notranslate nohighlight">\(f(x)\)</span> på nullpunktsform:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2647,6 +2958,7 @@ f(x) = -2(x + 3)(x - 4).
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-27" name="sd-tab-set-7" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-27">
 b</label><div class="sd-tab-content docutils">
@@ -2655,20 +2967,22 @@ b</label><div class="sd-tab-content docutils">
 \[
 f(x) \leq 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -3] \cup [4, \to \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1188 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi ser at grafen ligger under <span class="math notranslate nohighlight">\(x\)</span>-aksen på nedsiden av <span class="math notranslate nohighlight">\((-3, 0)\)</span> og på oversiden av <span class="math notranslate nohighlight">\((4, 0)\)</span>. Dermed er løsningen</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -3] \cup [4, \to \rangle.
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-28" name="sd-tab-set-7" type="radio">
@@ -2679,15 +2993,16 @@ c</label><div class="sd-tab-content docutils">
 \[
 f(x) &gt; 12.
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 (x + 2)(x - 3) &lt; 0 \liff \mathcal{L} = \langle -2, 3 \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1214 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Her får vi ikke lest av fra grafen, så vi tyr til algebraisk løsning. Vi skal løse ulikheten</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2737,9 +3052,12 @@ x = \dfrac{6}{2} = 3 \or x = \dfrac{-4}{2} = -2.
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 10</p>
+<section class="exercise-section" id="exercise-Oppgave-10">
+<h2>Oppgave 10<a class="headerlink" href="#exercise-Oppgave-10" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <p>I figuren nedenfor vises grafen til en andregradsfunksjon <span class="math notranslate nohighlight">\(f\)</span>.</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/figur4.svg"><img alt="../../../_images/figur4.svg" class="no-click adaptive-figure" src="../../../_images/figur4.svg" style="width: 80%;" />
@@ -2750,15 +3068,16 @@ x = \dfrac{6}{2} = 3 \or x = \dfrac{-4}{2} = -2.
 <label class="sd-tab-label" for="sd-tab-item-29">
 a</label><div class="sd-tab-content docutils">
 <p>Bestem <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 f(x) = x(x - 4) = x^2 - 4x.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1315 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Grafen til <span class="math notranslate nohighlight">\(f\)</span> har et bunnpunkt i <span class="math notranslate nohighlight">\((2, -4)\)</span> og et nullpunkt <span class="math notranslate nohighlight">\((0, 0)\)</span> Fordi symmetrilinja er i <span class="math notranslate nohighlight">\(x = 2\)</span>, så vil det andre nullpunktet ligge samme avstand fra symmetrilinja langs <span class="math notranslate nohighlight">\(x\)</span>-aksen som betyr at det andre nullpunktet er i <span class="math notranslate nohighlight">\((4, 0)\)</span>. Da kan vi skrive <span class="math notranslate nohighlight">\(f(x)\)</span> på nullpunktsform:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2776,6 +3095,7 @@ f(x) = x(x - 4) = x^2 - 4x.
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-30" name="sd-tab-set-8" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-30">
 b</label><div class="sd-tab-content docutils">
@@ -2784,20 +3104,22 @@ b</label><div class="sd-tab-content docutils">
 \[
 f(x) \leq 0
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = [0, 4].
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1354 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Fra grafen til <span class="math notranslate nohighlight">\(f\)</span> kan vi se at grafen ligger under <span class="math notranslate nohighlight">\(x\)</span>-aksen mellom nullpunktene. Dermed er <span class="math notranslate nohighlight">\(f(x) \leq 0\)</span> når</p>
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = [0, 4].
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-31" name="sd-tab-set-8" type="radio">
@@ -2808,15 +3130,16 @@ c</label><div class="sd-tab-content docutils">
 \[
 f(x) &gt; 5
 \]</div>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle \gets, -1 \rangle \cup \langle 5, \to \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1381 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi skal løse ulikheten</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2851,9 +3174,12 @@ x = \dfrac{10}{2} = 5 \or x = \dfrac{-2}{2} = -1.
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 11</p>
+<section class="exercise-section" id="exercise-Oppgave-11">
+<h2>Oppgave 11<a class="headerlink" href="#exercise-Oppgave-11" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-32" name="sd-tab-set-9" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-32">
@@ -2864,20 +3190,22 @@ a</label><div class="sd-tab-content docutils">
 \mathcal{L} = \langle -2, 1 \rangle.
 \]</div>
 <p>Lag en ulikhet som har denne løsningen.</p>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 (x + 2)(x - 1) &lt; 0
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1454 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi kan velge en andregradsfunksjon <span class="math notranslate nohighlight">\(f\)</span> som har nullpunkter i <span class="math notranslate nohighlight">\(x = -2\)</span> og <span class="math notranslate nohighlight">\(x = 1\)</span>, og som er konveks (slik at den smiler <span class="math notranslate nohighlight">\(\smile\)</span>). Da vet vi at grafen ligger under <span class="math notranslate nohighlight">\(x\)</span>-aksen mellom nullpunktene. Derfor er en mulig ulikhet denne:</p>
 <div class="math notranslate nohighlight">
 \[
 (x + 2)(x - 1) &lt; 0
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-33" name="sd-tab-set-9" type="radio">
@@ -2889,20 +3217,22 @@ b</label><div class="sd-tab-content docutils">
 \mathcal{L} = \langle \gets, -2 \rangle \cup \langle -2, \to \rangle.
 \]</div>
 <p>Lag en ulikhet som har denne løsningen.</p>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 (x + 2)^2 &gt; 0.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1482 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi kan velge en andregradsfunksjon <span class="math notranslate nohighlight">\(f\)</span> som har ett nullpunkt i <span class="math notranslate nohighlight">\(x = -2\)</span>, og som er konveks (slik at den smiler <span class="math notranslate nohighlight">\(\smile\)</span>). Da vet vi at grafen alltid ligger over <span class="math notranslate nohighlight">\(x\)</span>-aksen bortsett fra i <span class="math notranslate nohighlight">\(x = -2\)</span>. Da er en mulig ulikhet denne:</p>
 <div class="math notranslate nohighlight">
 \[
 (x + 2)^2 &gt; 0.
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-34" name="sd-tab-set-9" type="radio">
@@ -2914,20 +3244,22 @@ c</label><div class="sd-tab-content docutils">
 \mathcal{L} = [-4, 4].
 \]</div>
 <p>Lag en ulikhet som har denne løsningen.</p>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 (x + 4)(x - 4) \leq 0.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1510 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi kan velge en andregradsfunksjon <span class="math notranslate nohighlight">\(f\)</span> som har nullpunkter i <span class="math notranslate nohighlight">\(x = -4\)</span> og <span class="math notranslate nohighlight">\(x = 4\)</span>, og som er konveks (slik at den smiler <span class="math notranslate nohighlight">\(\smile\)</span>). Da vet vi at grafen ligger under <span class="math notranslate nohighlight">\(x\)</span>-aksen mellom nullpunktene slik at følgende ulikhet vil ha den oppgitte løsningen:</p>
 <div class="math notranslate nohighlight">
 \[
 (x + 4)(x - 4) \leq 0.
 \]</div>
+</div>
 </div>
 </div>
 <input id="sd-tab-item-35" name="sd-tab-set-9" type="radio">
@@ -2939,15 +3271,16 @@ d</label><div class="sd-tab-content docutils">
 \mathcal{L} = \left\langle \gets, -\dfrac{1}{2} \right \rangle \cup \langle 4, \to \rangle.
 \]</div>
 <p>Lag en ulikhet som har denne løsningen.</p>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 -\left(x + \dfrac{1}{2}\right)(x - 4) &lt; 0.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1539 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi kan velge en andregradsfunksjon <span class="math notranslate nohighlight">\(f\)</span> som har nullpunkter i <span class="math notranslate nohighlight">\(x = -\dfrac{1}{2}\)</span> og <span class="math notranslate nohighlight">\(x = 4\)</span>, og som er konkav (surt fjes <span class="math notranslate nohighlight">\(\frown\)</span>). Da vet vi at grafen til <span class="math notranslate nohighlight">\(f\)</span> ligger under <span class="math notranslate nohighlight">\(x\)</span>-aksen på nedsiden og oversiden av nullpunktene. Dermed vil følgende ulikhet ha den oppgitte løsningen:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2957,9 +3290,12 @@ d</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 12</p>
+<section class="exercise-section" id="exercise-Oppgave-12">
+<h2>Oppgave 12<a class="headerlink" href="#exercise-Oppgave-12" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <p>Anna jobber med funksjonen</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2971,14 +3307,17 @@ f(x) = (x - 2)^2 + 3
 </a>
 </figure>
 <p>Forklar hva utskriften forteller oss om grafen til <span class="math notranslate nohighlight">\(f\)</span>.</p>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1581 dropdown">
-<p class="admonition-title">Løsning</p>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Ulikheten har ingen løsning, som er grunnen til at utskriften gir <span class="math notranslate nohighlight">\(\{\}\)</span>. Siden Anna har prøvd å løse ulikheten <span class="math notranslate nohighlight">\(f(x) &lt; 0\)</span>, forteller det oss at grafen aldri ligger under <span class="math notranslate nohighlight">\(x\)</span>-aksen.</p>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Oppgave 13</p>
+<section class="exercise-section" id="exercise-Oppgave-13">
+<h2>Oppgave 13<a class="headerlink" href="#exercise-Oppgave-13" title="Link to this heading">#</a></h2>
+<div class="exercise-body docutils container">
 <p>En andregradsfunksjon <span class="math notranslate nohighlight">\(f\)</span> er gitt ved</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2989,15 +3328,16 @@ f(x) = rx^2 - 2x + r \qder r \in \real
 <label class="sd-tab-label" for="sd-tab-item-36">
 a</label><div class="sd-tab-content docutils">
 <p>Bestem <span class="math notranslate nohighlight">\(r\)</span> slik at <span class="math notranslate nohighlight">\(f\)</span> bare har ett nullpunkt.</p>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 r = -1 \or r = 1.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1618 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi bruker <span class="math notranslate nohighlight">\(abc\)</span>-formelen for å avgjøre hvilke verdier for <span class="math notranslate nohighlight">\(r\)</span> som gir ett nullpunkts:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -3015,19 +3355,21 @@ r = -1 \or r = 1.
 \]</div>
 </div>
 </div>
+</div>
 <input id="sd-tab-item-37" name="sd-tab-set-10" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-37">
 b</label><div class="sd-tab-content docutils">
 <p>Bestem <span class="math notranslate nohighlight">\(r\)</span> slik at <span class="math notranslate nohighlight">\(f\)</span> ikke har noen nullpunkter.</p>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \langle -1, 1 \rangle.
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-ulikheter-oppgaver-1655 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi vet at <span class="math notranslate nohighlight">\(f\)</span> ikke har noen nullpunkter dersom vi får et negativt tall i kvadratroten, som betyr at <span class="math notranslate nohighlight">\(f\)</span> ikke har noen nullpunkter dersom</p>
 <div class="math notranslate nohighlight">
 \[
@@ -3042,6 +3384,8 @@ b</label><div class="sd-tab-content docutils">
 </div>
 </div>
 </div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -3090,6 +3434,35 @@ b</label><div class="sd-tab-content docutils">
             
             
               
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item"><div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Innhold
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-2">Oppgave 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-3">Oppgave 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-4">Oppgave 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-5">Oppgave 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-6">Oppgave 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-7">Oppgave 7</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-8">Oppgave 8</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-9">Oppgave 9</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-10">Oppgave 10</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-11">Oppgave 11</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-12">Oppgave 12</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-13">Oppgave 13</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
             
           </div>
           <footer class="bd-footer-content">
@@ -3133,8 +3506,8 @@ Av Torstein Flatval, Tiller Videregående Skole
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>

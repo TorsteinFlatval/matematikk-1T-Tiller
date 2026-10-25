@@ -9,9 +9,7 @@ class: tip
 
 ## `for`{l=python}-løkker
 
-:::{margin}
-Senere skal vi lære om en annen type løkke som kalles for en `while`{l=python}-løkke.
-:::
+
 
 En løkke er et verktøy i programmering som lar oss gjenta én eller flere linjer med kode flere ganger – vi kaller dette for en **kodeblokk**. Dette er nyttig når vi ønsker å lage tallfølger. Vi skal her fokusere på en type løkke som kalles `for`{l=python}-løkke. En `for`{l=python}-løkke lar oss gjenta en kodeblokk for hvert element i en liste eller en tallmengde.  
 

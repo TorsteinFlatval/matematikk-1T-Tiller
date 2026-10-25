@@ -57,18 +57,20 @@ class InteractiveCodeSetup {
 `;
 
         const html = `
-            <div>
-                <textarea id="${this.editorId}" name="code-${this.uniqueId}">${this.initialCode}</textarea>
+            <div class="ic-container">
+                <textarea id="${this.editorId}" name="code-${this.uniqueId}"></textarea>
                 
                 <button id="${this.runButtonId}" class="button button-run">Kjør kode ${runIcon}</button>
                 <button id="${this.resetButtonId}" class="button button-reset">Reset kode ${resetIcon}</button>
                 <button id="${this.cancelButtonId}" class="button button-cancel">Avbryt kjøring ${cancelIcon}</button>
             </div>
             <div id="${this.errorBoxId}"></div>
-            <pre id="${this.outputId}" class="pythonoutput"></pre>
+            <pre id="${this.outputId}" class="pythonoutput" data-placeholder="Kjør programmet for å se resultatet"></pre>
         `;
 
         container.innerHTML = html;
+        // Assign as text so HTML entities and closing textarea tags stay literal code.
+        document.getElementById(this.editorId).value = this.initialCode;
     }
 
     setupInteractiveEditor() {
@@ -238,7 +240,7 @@ class PredictionInteractiveCodeSetup extends InteractiveCodeSetup {
 
         // Build the prediction input HTML
         const predictionHtml = `
-            <div id="${this.predictionContainerId}" class="prediction-container">
+            <div id="${this.predictionContainerId}" class="prediction-container ic-container">
             <textarea id="${this.predictionInputId}" rows="3" placeholder="Skriv inn svaret ditt her! \n \nTrykk på Enter (&#9166;) for en ny linje."></textarea>
             <button id="${this.lockPredictionButtonId}" class="button button-run">Sjekk svaret!</button>
             </div>

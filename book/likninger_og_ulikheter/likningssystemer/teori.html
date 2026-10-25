@@ -27,8 +27,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
@@ -36,11 +36,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=9237f12a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/popup.css?v=2d27c3a4" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/escape-room.css?v=bfeb5342" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/interactive_code.css?v=23cd07d5" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/jeopardy.css?v=71d9bb06" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/parsonsPuzzle.css?v=9fbab2c7" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/static_code_blocks.css?v=68f9364b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/clickable_figures/style.css?v=2580ef29" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/style.css?v=b30732ed" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/mathjax/style.css?v=194b018e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/misc_styles/figures.css?v=46e199f0" />
@@ -57,61 +56,106 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=57d653fb" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=ea5285ea" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/flashcards.css?v=816457f1" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=f903e660" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=951b6e4f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=722631f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=575e2325" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/masonry.css?v=db25927a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/notebook.css?v=00170ee0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" />
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/admonitions.css?v=aacd8e29" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/dialogue.css?v=1b585024" />
+    <link onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/admonitions.css?v=a3692687" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/dialogue.css?v=c5b7ed32" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/figures.css?v=acd93126" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup.css?v=26181dfd" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/timedQuiz.css?v=89e27729" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/cas_popup.css?v=bae4ad7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/cas_popup.css?v=bb968b84" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-light.css?v=0cccc4aa" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-dark.css?v=2454bc3f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-dark.css?v=e9bcc25f" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-dark-high-contrast.css?v=4c0c1b0f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/table.css?v=30eed71c" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/pairPuzzle/style.css?v=f77426ac" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=8c5c5c21" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/table.css?v=fd6d533f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/pairPuzzle/style.css?v=0a0f323a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=a1529215" />
+    <link onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/part.css?v=bc286cc2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" />
     <link id="highlight-theme-light" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" />
     <link id="highlight-theme-dark" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/dialogue.css?v=1b585024" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/grid_print.css?v=73205d86" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/admonitions.css?v=f84a357c" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/multipleChoiceQuiz/style.css?v=89e27729" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mathjax/style.css?v=0f1cb662" />
     <link rel="stylesheet" type="text/css" href="../../../_static/parsons_puzzle/parsonsPuzzle.css?v=9fbab2c7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/multipleChoiceQuiz/style.css?v=89e27729" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
     <link rel="stylesheet" type="text/css" href="../../../_static/fonts/opendyslexic/dyslexic.css?v=80f1227b" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../../../_static/documentation_options.js?v=c712eed9"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
@@ -126,15 +170,37 @@
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script src="../../../_static/tabs.js?v=3ee01567"></script>
-    <script src="../../../_static/munchboka/js/solution_timer.js?v=e7176ead"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/solution_timer.js?v=8d1f44f8"></script>
+    <script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=733f5585"></script>
+    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
-    <script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=0d62d95e"></script>
+    <script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=ecc68a76"></script>
     <script src="../../../_static/munchboka/js/jeopardy.js?v=375a3583"></script>
+    <script defer="defer" src="../../../_static/munchboka/js/masonry.js?v=96ec6874"></script>
     <script src="../../../_static/munchboka/js/quiz.js?v=f8bcd7a1"></script>
     <script>let toggleHintShow = 'Klikk for å vise';</script>
     <script>let toggleHintHide = 'Klikk for å skjule';</script>
@@ -154,6 +220,7 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3.2/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/likninger_og_ulikheter/likningssystemer/teori';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <script>mermaid.initialize({"startOnLoad": true})</script>
     <script src="../../../_static/munchboka/js/pairPuzzle/draggableItem.js?v=ce9ef7bd"></script>
     <script src="../../../_static/munchboka/js/pairPuzzle/dropZone.js?v=56907477"></script>
@@ -161,27 +228,132 @@
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=57870877"></script>
     <script src="../../../_static/munchboka/js/print_answer_key.js?v=eebcd271"></script>
-    <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
-    <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/solution2.js?v=a2d1029e"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/part.js?v=ca40db03"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/goals.js?v=a2f2d5f7"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
     <script src="../../../_static/utils.js?v=14803243"></script>
+    <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
+    <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
     <script src="../../../_static/serviceWorker.js?v=19bb19ce"></script>
-    <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
-    <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
-    <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
-    <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
-    <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
-    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
-    <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
-    <script src="../../../_static/pairPuzzle/dropZone.js?v=56907477"></script>
-    <script src="../../../_static/pairPuzzle/game.js?v=cb8b0d45"></script>
-    <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=6e8c8774"></script>
-    <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
-    <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
-    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
     <script src="../../../_static/multipleChoiceQuiz/utils.js?v=2c6f871c"></script>
-    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
+    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
     <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
     <script src="../../../_static/multipleChoiceQuiz/timedMultipleChoiceQuiz.js?v=9accc73d"></script>
+    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
+    <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=6e8c8774"></script>
+    <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
+    <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
+    <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
+    <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
+    <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
+    <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
+    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
+    <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
+    <script src="../../../_static/pairPuzzle/dropZone.js?v=56907477"></script>
+    <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
+    <script src="../../../_static/pairPuzzle/game.js?v=cb8b0d45"></script>
     <script src="../../../_static/fonts/opendyslexic/opendylexic-toggle.js?v=7208047f"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
@@ -191,6 +363,7 @@
     <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+    <script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Oppgaver: Ikke-lineære likningssystemer" href="oppgaver.html" />
@@ -199,6 +372,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="norwegian"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../../_static/searchtools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../searchindex.js"></script>
+  
 <!-- Pyodide -->
 <script src="https://cdn.jsdelivr.net/pyodide/v0.27.0/full/pyodide.js"></script>
 
@@ -236,19 +415,19 @@
 
 
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -274,7 +453,51 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -329,6 +552,8 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programmering</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../programmering/variabler_tall_matematikk/teori.html">Variabler, tall og matematikk i Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../programmering/print_funksjonen/teori.html"><code class="code docutils literal highlight highlight-python"><span class="nb">print</span></code>-funksjonen</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../programmering/for_l%C3%B8kker/teori.html"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../programmering/for_l%C3%B8kker/oppgaver.html">Oppgaver</a></li>
 </ul>
@@ -512,13 +737,27 @@
                 <h2> Innhold </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafisk-losning">Grafisk løsning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algebraisk-losning">Algebraisk løsning</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cas">CAS</a></li>
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafisk-losning">Grafisk løsning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-1">Eksempel 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-1">Underveisoppgave 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-2">Eksempel 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-2">Underveisoppgave 2</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losning-med-programmering">Løsning med programmering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algebraisk-losning">Algebraisk løsning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-3">Eksempel 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cas">CAS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-1">Utforsk 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-2-2">Underveisoppgave 2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losning-med-programmering">Løsning med programmering</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-2">Utforsk 2</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -532,11 +771,12 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="likningssystemer">
 <h1>Likningssystemer<a class="headerlink" href="#likningssystemer" title="Link to this heading">#</a></h1>
-<div class="admonition tip">
-<p class="admonition-title">Læringsmål</p>
+<div class="goals docutils container">
+<button class="goals-toggle" aria-expanded="false" data-label="Læringsmål">Læringsmål</button><div class="goals-content docutils container">
 <ul class="simple">
 <li><p>Kunne løse likningssystemer grafisk, algebraisk og med programmering.</p></li>
 </ul>
+</div>
 </div>
 <p>I dette kapittelet skal vi lær eå løse likningsystemer med digitale verktøy. Vi skal begrense oss til likningssystemer der vi har lineære eller kvadratiske potenser for de ukjente.</p>
 <p>Vi kan køse likningssystemer med tre forskjellige strategier:</p>
@@ -549,16 +789,17 @@
 <span id="id1"></span><h2>Grafisk løsning<a class="headerlink" href="#grafisk-losning" title="Link to this heading">#</a></h2>
 <p>Når vi løser et ikke-lineært likningssystem grafisk, tegner vi grafene som svarer til likningene og finner skjæringspunktene mellom dem. Hvert skjæringspunkt representerer en løsning på likningssystemet.</p>
 <p>La oss se på et eksempel:</p>
-<div class="admonition example">
-<p class="admonition-title">Eksempel 1</p>
+<section class="example-section" id="example-Eksempel-1">
+<h3>Eksempel 1<a class="headerlink" href="#example-Eksempel-1" title="Link to this heading">#</a></h3>
+<div class="example-body docutils container">
 <p>Et likningssystem er gitt ved</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 x^2 + y &amp;= 3 \\
 x - y &amp;= 3
 \end{align*}\]</div>
-<div class="admonition solution">
-<p class="admonition-title">Løsning</p>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Den første likningen representerer en andregradsfunksjon som vi kan se ved å løse likningen for <span class="math notranslate nohighlight">\(y\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -592,9 +833,12 @@ x = 2 \and y = -1 \quad \lor \quad x = -3 \and y = -6
 <p>Vi tolker dette som at enten så er <span class="math notranslate nohighlight">\(x = 2\)</span> og samtidig er <span class="math notranslate nohighlight">\(y = -1\)</span>. Eller så er <span class="math notranslate nohighlight">\(x = -3\)</span> og samtidig er <span class="math notranslate nohighlight">\(y = -6\)</span>.</p>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Underveisoppgave 1</p>
+<section class="exercise-section" id="exercise-Underveisoppgave-1">
+<h3>Underveisoppgave 1<a class="headerlink" href="#exercise-Underveisoppgave-1" title="Link to this heading">#</a></h3>
+<div class="exercise-body docutils container">
 <p>Et likningssystem er gitt ved</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -607,15 +851,16 @@ x + y &amp;= -1
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/figur1.svg"><img alt="../../../_images/figur1.svg" class="no-click adaptive-figure" src="../../../_images/figur1.svg" style="width: 80%;" />
 </a>
 </figure>
-<div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+<div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \{(-1, 0), (-3, 2)\}
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-likningssystemer-teori-110 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Grafene skjærer hverandre i punktene <span class="math notranslate nohighlight">\((-1, 0)\)</span> og <span class="math notranslate nohighlight">\((-3, 2)\)</span>. Løsningen av likningssystemet er derfor</p>
 <div class="math notranslate nohighlight">
 \[
@@ -623,10 +868,13 @@ x + y &amp;= -1
 \]</div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
 <p>I praksis kan vi bruke graftegner til å tegne grafene og finne skjæringspunktene. La oss se på et eksempel.</p>
-<div class="admonition example">
-<p class="admonition-title">Eksempel 2</p>
+<section class="example-section" id="example-Eksempel-2">
+<h3>Eksempel 2<a class="headerlink" href="#example-Eksempel-2" title="Link to this heading">#</a></h3>
+<div class="example-body docutils container">
 <p>Et likningssystem er gitt ved</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -644,9 +892,11 @@ x + y &amp;= -1
 \mathcal{L} = \{(4, 5), (0, -3)\}
 \]</div>
 </div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Underveisoppgave 2</p>
+<section class="exercise-section" id="exercise-Underveisoppgave-2">
+<h3>Underveisoppgave 2<a class="headerlink" href="#exercise-Underveisoppgave-2" title="Link to this heading">#</a></h3>
+<div class="exercise-body docutils container">
 <p>Et likningssystem er gitt ved</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -655,7 +905,7 @@ x + y &amp;= -1
 \end{align*}\]</div>
 <p>Bruk Geogebra-vinduet nedenfor til å løse likningssystemet grafisk.</p>
 
-<div id="ggb-cas-5a7b6011" style="width: 720px; height: 600px;" class="ggb-window"></div>
+<div id="ggb-cas-81517d52" style="width: 720px; height: 600px;" class="ggb-window"></div>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     var options = {
@@ -674,24 +924,25 @@ document.addEventListener("DOMContentLoaded", function() {
         rounding: 2,
         showKeyboardOnFocus: false,
         preventFocus: true,
-        id: 'ggb-cas-5a7b6011',
+        id: 'ggb-cas-81517d52',
         '': '',
         '': '',
     };
 
     var applet = new GGBApplet(options, true);
-    applet.inject('ggb-cas-5a7b6011');
+    applet.inject('ggb-cas-81517d52');
 });
 </script>
-        <div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+        <div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \{(1, 1), (4, 7)\}
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-likningssystemer-teori-182 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi skriver inn likningene i algebrafeltet og trykker først på <img src="../../../_static/munchboka/icons/ggb/mode_point.svg" alt="GeoGebra mode_point icon" class="inline-image" /> for å få opp alternativer og deretter trykker på <img src="../../../_static/munchboka/icons/ggb/mode_intersect.svg" alt="GeoGebra mode_intersect icon" class="inline-image" /> (Skjæring mellom to objekt) etterfulgt av å trykke på hver graf for å finne skjæringspunktene. Se figuren nedenfor.</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/sol.png"><img alt="../../../_images/sol.png" class="no-click adaptive-figure" src="../../../_images/sol.png" style="width: 90%;" />
@@ -704,20 +955,23 @@ document.addEventListener("DOMContentLoaded", function() {
 \]</div>
 </div>
 </div>
+</div>
+</section>
 </section>
 <section id="algebraisk-losning">
 <h2>Algebraisk løsning<a class="headerlink" href="#algebraisk-losning" title="Link to this heading">#</a></h2>
 <p>Når vi løser et ikke-lineært likningssystem algebraisk, bruker vi oftest innsettingsmetoden som leder til en andregradslikning. La oss se på et eksempel:</p>
-<div class="admonition example">
-<p class="admonition-title">Eksempel 3</p>
+<section class="example-section" id="example-Eksempel-3">
+<h3>Eksempel 3<a class="headerlink" href="#example-Eksempel-3" title="Link to this heading">#</a></h3>
+<div class="example-body docutils container">
 <p>Løs likningssystemet</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 x^2 + y &amp;= 3 \\
 x - y &amp;= 3
 \end{align*}\]</div>
-<div class="admonition solution">
-<p class="admonition-title">Løsning</p>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi starter med å løse likning 2 for <span class="math notranslate nohighlight">\(y\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -755,11 +1009,14 @@ y = 2 - 3 = -1
 \]</div>
 </div>
 </div>
+</div>
+</section>
 <section id="cas">
 <h3>CAS<a class="headerlink" href="#cas" title="Link to this heading">#</a></h3>
 <p>Vi kan bruke CAS til å løse ikke-lineære likningssystemer på samme måte som vi gjorde med lineære likningssystemer. Det skal du se nærmere på i Utforsk 1.</p>
-<div class="admonition explore">
-<p class="admonition-title">Utforsk 1</p>
+<section class="explore-section" id="explore-Utforsk-1">
+<h4>Utforsk 1<a class="headerlink" href="#explore-Utforsk-1" title="Link to this heading">#</a></h4>
+<div class="explore-body docutils container">
 <p>I gif-en nedenfor vises det hvordan vi kan bruke CAS til å løse et ikke-lineært likningssystem.</p>
 <figure class="align-default">
 <a class="no-click adaptive-figure reference internal image-reference" href="../../../_images/cas_likningssystemer.gif"><img alt="../../../_images/cas_likningssystemer.gif" class="no-click adaptive-figure" src="../../../_images/cas_likningssystemer.gif" style="width: 80%;" />
@@ -773,9 +1030,9 @@ a</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-dbe92681" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-dbe92681" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-dbe92681" class="ggb-window"></div>
+<button id="button-ggb-cas-0ad9d8e4" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-0ad9d8e4" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-0ad9d8e4" class="ggb-window"></div>
 </div>
 
 <style>
@@ -826,12 +1083,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-dbe92681';
+    const storageKey = 'ggb-cas-state-ggb-cas-0ad9d8e4';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-dbe92681").width(),
-            h = $("#ggb-cas-dbe92681").height();
+      const w = $("#ggb-cas-0ad9d8e4").width(),
+            h = $("#ggb-cas-0ad9d8e4").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -902,7 +1159,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-dbe92681").dialog({
+    const $dlg = $("#dialog-ggb-cas-0ad9d8e4").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -912,7 +1169,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-dbe92681",
+            appName: "classic", id: "ggb-cas-0ad9d8e4",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -924,7 +1181,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-dbe92681");
+          }, true).inject("ggb-cas-0ad9d8e4");
         } else {
           applySize();
         }
@@ -945,12 +1202,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-dbe92681").empty();
+            $("#ggb-cas-0ad9d8e4").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-dbe92681",
+              appName: "classic", id: "ggb-cas-0ad9d8e4",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -960,7 +1217,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-dbe92681");
+            }, true).inject("ggb-cas-0ad9d8e4");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1012,7 +1269,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-dbe92681')) {
+          if (!e.target.closest('#ggb-cas-0ad9d8e4')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1040,7 +1297,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-dbe92681');
+      const ggbContainer = document.getElementById('ggb-cas-0ad9d8e4');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1086,10 +1343,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-dbe92681").button()
+    $("#button-ggb-cas-0ad9d8e4").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-dbe92681").dialog("open");
+        $("#dialog-ggb-cas-0ad9d8e4").dialog("open");
       });
   });
 })();
@@ -1104,9 +1361,9 @@ b</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-9b93ff71" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-9b93ff71" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-9b93ff71" class="ggb-window"></div>
+<button id="button-ggb-cas-cfd74836" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-cfd74836" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-cfd74836" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1157,12 +1414,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-9b93ff71';
+    const storageKey = 'ggb-cas-state-ggb-cas-cfd74836';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-9b93ff71").width(),
-            h = $("#ggb-cas-9b93ff71").height();
+      const w = $("#ggb-cas-cfd74836").width(),
+            h = $("#ggb-cas-cfd74836").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1233,7 +1490,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-9b93ff71").dialog({
+    const $dlg = $("#dialog-ggb-cas-cfd74836").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1243,7 +1500,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-9b93ff71",
+            appName: "classic", id: "ggb-cas-cfd74836",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1255,7 +1512,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-9b93ff71");
+          }, true).inject("ggb-cas-cfd74836");
         } else {
           applySize();
         }
@@ -1276,12 +1533,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-9b93ff71").empty();
+            $("#ggb-cas-cfd74836").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-9b93ff71",
+              appName: "classic", id: "ggb-cas-cfd74836",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1291,7 +1548,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-9b93ff71");
+            }, true).inject("ggb-cas-cfd74836");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1343,7 +1600,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-9b93ff71')) {
+          if (!e.target.closest('#ggb-cas-cfd74836')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1371,7 +1628,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-9b93ff71');
+      const ggbContainer = document.getElementById('ggb-cas-cfd74836');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1417,10 +1674,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-9b93ff71").button()
+    $("#button-ggb-cas-cfd74836").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-9b93ff71").dialog("open");
+        $("#dialog-ggb-cas-cfd74836").dialog("open");
       });
   });
 })();
@@ -1441,9 +1698,9 @@ c</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-346473be" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-346473be" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-346473be" class="ggb-window"></div>
+<button id="button-ggb-cas-a731baeb" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-a731baeb" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-a731baeb" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1494,12 +1751,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-346473be';
+    const storageKey = 'ggb-cas-state-ggb-cas-a731baeb';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-346473be").width(),
-            h = $("#ggb-cas-346473be").height();
+      const w = $("#ggb-cas-a731baeb").width(),
+            h = $("#ggb-cas-a731baeb").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1570,7 +1827,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-346473be").dialog({
+    const $dlg = $("#dialog-ggb-cas-a731baeb").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1580,7 +1837,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-346473be",
+            appName: "classic", id: "ggb-cas-a731baeb",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1592,7 +1849,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-346473be");
+          }, true).inject("ggb-cas-a731baeb");
         } else {
           applySize();
         }
@@ -1613,12 +1870,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-346473be").empty();
+            $("#ggb-cas-a731baeb").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-346473be",
+              appName: "classic", id: "ggb-cas-a731baeb",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1628,7 +1885,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-346473be");
+            }, true).inject("ggb-cas-a731baeb");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1680,7 +1937,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-346473be')) {
+          if (!e.target.closest('#ggb-cas-a731baeb')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1708,7 +1965,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-346473be');
+      const ggbContainer = document.getElementById('ggb-cas-a731baeb');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1754,10 +2011,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-346473be").button()
+    $("#button-ggb-cas-a731baeb").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-346473be").dialog("open");
+        $("#dialog-ggb-cas-a731baeb").dialog("open");
       });
   });
 })();
@@ -1773,9 +2030,11 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 </div>
 </div>
 </div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Underveisoppgave 2</p>
+<section class="exercise-section" id="exercise-Underveisoppgave-2-2">
+<h4>Underveisoppgave 2<a class="headerlink" href="#exercise-Underveisoppgave-2-2" title="Link to this heading">#</a></h4>
+<div class="exercise-body docutils container">
 <p>Løs likningssystemet nedenfor med CAS.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -1786,9 +2045,9 @@ x^2 - 3x - 2y &amp;= -4
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-3513c662" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-3513c662" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-3513c662" class="ggb-window"></div>
+<button id="button-ggb-cas-c287a8ab" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-c287a8ab" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-c287a8ab" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1839,12 +2098,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-3513c662';
+    const storageKey = 'ggb-cas-state-ggb-cas-c287a8ab';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-3513c662").width(),
-            h = $("#ggb-cas-3513c662").height();
+      const w = $("#ggb-cas-c287a8ab").width(),
+            h = $("#ggb-cas-c287a8ab").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1915,7 +2174,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-3513c662").dialog({
+    const $dlg = $("#dialog-ggb-cas-c287a8ab").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1925,7 +2184,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-3513c662",
+            appName: "classic", id: "ggb-cas-c287a8ab",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1937,7 +2196,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-3513c662");
+          }, true).inject("ggb-cas-c287a8ab");
         } else {
           applySize();
         }
@@ -1958,12 +2217,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-3513c662").empty();
+            $("#ggb-cas-c287a8ab").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-3513c662",
+              appName: "classic", id: "ggb-cas-c287a8ab",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1973,7 +2232,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-3513c662");
+            }, true).inject("ggb-cas-c287a8ab");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2025,7 +2284,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-3513c662')) {
+          if (!e.target.closest('#ggb-cas-c287a8ab')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2053,7 +2312,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-3513c662');
+      const ggbContainer = document.getElementById('ggb-cas-c287a8ab');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2099,24 +2358,25 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-3513c662").button()
+    $("#button-ggb-cas-c287a8ab").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-3513c662").dialog("open");
+        $("#dialog-ggb-cas-c287a8ab").dialog("open");
       });
   });
 })();
 </script>
 </div>
-        <div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+        <div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="math notranslate nohighlight">
 \[
 \mathcal{L} = \{(4, 4), (3, 2)\}
 \]</div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-likningssystemer-teori-367 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi løser likning 1 for <span class="math notranslate nohighlight">\(y\)</span>:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -2162,13 +2422,16 @@ y = 2 \cdot 3 - 4 = 6 - 4 = 2
 \]</div>
 </div>
 </div>
+</div>
+</section>
 </section>
 </section>
 <section id="losning-med-programmering">
 <span id="id2"></span><h2>Løsning med programmering<a class="headerlink" href="#losning-med-programmering" title="Link to this heading">#</a></h2>
 <p>Når vi løser en ikke-lineært likningssystem med programmering, kan vi bruke systematisk prøve ut punkter <span class="math notranslate nohighlight">\((x, y)\)</span> og sjekke om de oppfyller likningene i systemet.</p>
-<div class="admonition explore">
-<p class="admonition-title">Utforsk 2</p>
+<section class="explore-section" id="explore-Utforsk-2">
+<h3>Utforsk 2<a class="headerlink" href="#explore-Utforsk-2" title="Link to this heading">#</a></h3>
+<div class="explore-body docutils container">
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio">
 <label class="sd-tab-label" for="sd-tab-item-3">
@@ -2177,9 +2440,9 @@ a</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-56f887ba" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-56f887ba" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-56f887ba" class="ggb-window"></div>
+<button id="button-ggb-cas-9fc8e209" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-9fc8e209" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-9fc8e209" class="ggb-window"></div>
 </div>
 
 <style>
@@ -2230,12 +2493,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-56f887ba';
+    const storageKey = 'ggb-cas-state-ggb-cas-9fc8e209';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-56f887ba").width(),
-            h = $("#ggb-cas-56f887ba").height();
+      const w = $("#ggb-cas-9fc8e209").width(),
+            h = $("#ggb-cas-9fc8e209").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -2306,7 +2569,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-56f887ba").dialog({
+    const $dlg = $("#dialog-ggb-cas-9fc8e209").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -2316,7 +2579,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-56f887ba",
+            appName: "classic", id: "ggb-cas-9fc8e209",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -2328,7 +2591,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-56f887ba");
+          }, true).inject("ggb-cas-9fc8e209");
         } else {
           applySize();
         }
@@ -2349,12 +2612,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-56f887ba").empty();
+            $("#ggb-cas-9fc8e209").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-56f887ba",
+              appName: "classic", id: "ggb-cas-9fc8e209",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2364,7 +2627,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-56f887ba");
+            }, true).inject("ggb-cas-9fc8e209");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2416,7 +2679,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-56f887ba')) {
+          if (!e.target.closest('#ggb-cas-9fc8e209')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2444,7 +2707,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-56f887ba');
+      const ggbContainer = document.getElementById('ggb-cas-9fc8e209');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2490,10 +2753,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-56f887ba").button()
+    $("#button-ggb-cas-9fc8e209").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-56f887ba").dialog("open");
+        $("#dialog-ggb-cas-9fc8e209").dialog("open");
       });
   });
 })();
@@ -2512,8 +2775,8 @@ b</label><div class="sd-tab-content docutils">
 \\
 x^2 - 2x + 3y &amp;= 3
 \end{align*}\]</div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-likninger_og_ulikheter-likningssystemer-teori-463 dropdown">
-<p class="admonition-title">Løsning</p>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span> <span class="mi">11</span><span class="p">):</span>
 <span class="linenos">3</span>        <span class="k">if</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span> <span class="o">==</span> <span class="mi">5</span> <span class="ow">and</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">y</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
@@ -2533,8 +2796,9 @@ x^2 - 2x + 3y &amp;= 3
 </div>
 </div>
 </div>
+</div>
 
-        <div id="container-code-294c686f"></div>
+        <div id="container-code-737ca7dc"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -2546,12 +2810,13 @@ x^2 - 2x + 3y &amp;= 3
  `;
 
                 makePredictionInteractiveCode(
-                    "container-code-294c686f",
+                    "container-code-737ca7dc",
                     code,
                 );
             });
         </script>
         </div>
+</section>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -2622,13 +2887,27 @@ x^2 - 2x + 3y &amp;= 3
     <i class="fa-solid fa-list"></i> Innhold
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafisk-losning">Grafisk løsning</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algebraisk-losning">Algebraisk løsning</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cas">CAS</a></li>
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#grafisk-losning">Grafisk løsning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-1">Eksempel 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-1">Underveisoppgave 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-2">Eksempel 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-2">Underveisoppgave 2</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losning-med-programmering">Løsning med programmering</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algebraisk-losning">Algebraisk løsning</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-3">Eksempel 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cas">CAS</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-1">Utforsk 1</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-2-2">Underveisoppgave 2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#losning-med-programmering">Løsning med programmering</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-2">Utforsk 2</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
@@ -2677,8 +2956,8 @@ Av Torstein Flatval, Tiller Videregående Skole
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>

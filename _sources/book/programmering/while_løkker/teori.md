@@ -37,7 +37,6 @@ I Utforsk 1 vil du se at vi må sette en variabel før `while`{l=python}-løkken
 :::
 
 :::::::::::::::{example} Eksempel 1: En enkel `while`{l=python}-løkke
-La oss se på et lite eksempel:
 
 :::{code-block} python
 ---

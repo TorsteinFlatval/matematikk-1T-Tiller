@@ -27,8 +27,8 @@
   </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
     <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
@@ -36,11 +36,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=9237f12a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/popup.css?v=2d27c3a4" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/escape-room.css?v=bfeb5342" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/interactive_code.css?v=23cd07d5" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/jeopardy.css?v=71d9bb06" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/parsonsPuzzle.css?v=9fbab2c7" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/static_code_blocks.css?v=68f9364b" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/clickable_figures/style.css?v=2580ef29" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/style.css?v=b30732ed" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/mathjax/style.css?v=194b018e" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/misc_styles/figures.css?v=46e199f0" />
@@ -57,61 +56,106 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/proof.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css?v=4c969af8" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=57d653fb" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/general_style.css?v=ea5285ea" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/calculator_popup.css?v=9c5cafe2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/escapeRoom/escape-room.css?v=9eb2d604" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/flashcards.css?v=816457f1" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=f903e660" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=951b6e4f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=722631f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/interactive_code.css?v=44933e1a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/jeopardy.css?v=575e2325" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/masonry.css?v=db25927a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/notebook.css?v=00170ee0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup_code.css?v=b88b7ace" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/quiz.css?v=bc8164d8" />
     <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" />
     <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/admonitions.css?v=aacd8e29" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/dialogue.css?v=1b585024" />
+    <link onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/admonitions.css?v=a3692687" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/dialogue.css?v=c5b7ed32" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/figures.css?v=acd93126" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/popup.css?v=26181dfd" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/timedQuiz.css?v=89e27729" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/cas_popup.css?v=bae4ad7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/cas_popup.css?v=bb968b84" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-light.css?v=0cccc4aa" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-dark.css?v=2454bc3f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-dark.css?v=e9bcc25f" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/github-dark-high-contrast.css?v=4c0c1b0f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/table.css?v=30eed71c" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/pairPuzzle/style.css?v=f77426ac" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=8c5c5c21" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/table.css?v=fd6d533f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/pairPuzzle/style.css?v=0a0f323a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/parsons/parsonsPuzzle.css?v=a1529215" />
+    <link onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/part.css?v=bc286cc2" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/print_pdf.css?v=448841f9" />
     <link id="highlight-theme-light" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" />
     <link id="highlight-theme-dark" rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github-dark.min.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/dialogue.css?v=1b585024" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
     <link rel="stylesheet" type="text/css" href="../../../_static/grid_print.css?v=73205d86" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/general_style.css?v=11bbc4b6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/admonitions.css?v=f84a357c" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/static_code_blocks.css?v=68f9364b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/multipleChoiceQuiz/style.css?v=89e27729" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mathjax/style.css?v=0f1cb662" />
     <link rel="stylesheet" type="text/css" href="../../../_static/parsons_puzzle/parsonsPuzzle.css?v=9fbab2c7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/multipleChoiceQuiz/style.css?v=89e27729" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/interactiveCode/style.css?v=23cd07d5" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/clickable_figures/style.css?v=d35dfce7" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_default_cm.css?v=c880a553" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_light_cm.css?v=facc8b7a" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/one_dark_cm.css?v=3ae52176" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_high_contrast_cm.css?v=4c0c1b0f" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_cm.css?v=d1235728" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/code_mirror_themes/github_dark_default_cm.css?v=3beebd47" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/tabs.css?v=a560da15" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/grids.css?v=7667ba21" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/popup_code.css?v=4b4feebf" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/misc.css?v=55d93a12" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/figures.css?v=5dd46ff0" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/misc_styles/geogebra.css?v=fd180d66" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
     <link rel="stylesheet" type="text/css" href="../../../_static/fonts/opendyslexic/dyslexic.css?v=80f1227b" />
   
   <!-- So that users can add custom icons -->
-  <script src="../../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
 
     <script src="../../../_static/documentation_options.js?v=c712eed9"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
@@ -126,15 +170,37 @@
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
     <script src="../../../_static/tabs.js?v=3ee01567"></script>
-    <script src="../../../_static/munchboka/js/solution_timer.js?v=e7176ead"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/solution_timer.js?v=8d1f44f8"></script>
+    <script src="../../../_static/munchboka/js/calculator_popup.js?v=93ae1e49"></script>
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/flashcards.js?v=293ceac2"></script>
-    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=733f5585"></script>
+    <script src="../../../_static/munchboka/js/interactiveCode/interactiveCodeSetup.js?v=9bcf659f"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/codeEditor.js?v=d7a9df79"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
     <script src="../../../_static/munchboka/js/interactiveCode/workerManager.js?v=024a7849"></script>
-    <script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=0d62d95e"></script>
+    <script src="../../../_static/munchboka/js/interactiveCode/turtleCode.js?v=ecc68a76"></script>
     <script src="../../../_static/munchboka/js/jeopardy.js?v=375a3583"></script>
+    <script defer="defer" src="../../../_static/munchboka/js/masonry.js?v=96ec6874"></script>
     <script src="../../../_static/munchboka/js/quiz.js?v=f8bcd7a1"></script>
     <script>let toggleHintShow = 'Klikk for å vise';</script>
     <script>let toggleHintHide = 'Klikk for å skjule';</script>
@@ -154,6 +220,7 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3.2/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/programmering/funksjoner/teori';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <script>mermaid.initialize({"startOnLoad": true})</script>
     <script src="../../../_static/munchboka/js/pairPuzzle/draggableItem.js?v=ce9ef7bd"></script>
     <script src="../../../_static/munchboka/js/pairPuzzle/dropZone.js?v=56907477"></script>
@@ -161,27 +228,132 @@
     <script src="../../../_static/munchboka/js/escapeRoom/escape-room.js?v=1498b374"></script>
     <script src="../../../_static/munchboka/js/parsons/parsonsPuzzle.js?v=57870877"></script>
     <script src="../../../_static/munchboka/js/print_answer_key.js?v=eebcd271"></script>
-    <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
-    <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/solution2.js?v=a2d1029e"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/part.js?v=ca40db03"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/goals.js?v=a2f2d5f7"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/proof.js?v=2793954e"></script>
+    <script onerror="if (!this.dataset.munchbokaRetryPending) {
+  var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
+  if (attempt &lt;= 2) {
+    var replacement = document.createElement(this.tagName);
+    for (var i = 0; i &lt; this.attributes.length; i++) {
+      replacement.setAttribute(this.attributes[i].name, this.attributes[i].value);
+    }
+    if (this.nonce) replacement.nonce = this.nonce;
+    replacement.dataset.munchbokaRetry = String(attempt);
+    var attribute = this.tagName === &#x27;LINK&#x27; ? &#x27;href&#x27; : &#x27;src&#x27;;
+    var url = new window.URL(this.getAttribute(attribute), document.baseURI);
+    url.searchParams.set(&#x27;munchboka_retry&#x27;, String(attempt));
+    replacement.setAttribute(attribute, url.href);
+    this.dataset.munchbokaRetryPending = &#x27;true&#x27;;
+    var failed = this;
+    window.setTimeout(function () {
+      if (failed.parentNode) failed.parentNode.replaceChild(replacement, failed);
+    }, attempt * 300);
+  }
+}
+" src="../../../_static/munchboka/js/hint.js?v=9d6836a9"></script>
     <script src="../../../_static/utils.js?v=14803243"></script>
+    <script src="../../../_static/geogebra-setup.js?v=c67998b1"></script>
+    <script src="../../../_static/static_code_blocks.js?v=e512471c"></script>
     <script src="../../../_static/serviceWorker.js?v=19bb19ce"></script>
-    <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
-    <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
-    <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
-    <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
-    <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
-    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
-    <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
-    <script src="../../../_static/pairPuzzle/dropZone.js?v=56907477"></script>
-    <script src="../../../_static/pairPuzzle/game.js?v=cb8b0d45"></script>
-    <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=6e8c8774"></script>
-    <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
-    <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
-    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
     <script src="../../../_static/multipleChoiceQuiz/utils.js?v=2c6f871c"></script>
-    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
+    <script src="../../../_static/multipleChoiceQuiz/sequentialMultipleChoiceQuiz.js?v=503540b6"></script>
     <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuestion.js?v=c6ce1ca2"></script>
     <script src="../../../_static/multipleChoiceQuiz/timedMultipleChoiceQuiz.js?v=9accc73d"></script>
+    <script src="../../../_static/multipleChoiceQuiz/multipleChoiceQuiz.js?v=7d161c2c"></script>
+    <script src="../../../_static/parsons_puzzle/parsonsPuzzle.js?v=6e8c8774"></script>
+    <script src="../../../_static/parsons_puzzle/theme-switcher.js?v=c0cdcaac"></script>
+    <script src="../../../_static/interactiveCode/turtleCode.js?v=0d62d95e"></script>
+    <script src="../../../_static/interactiveCode/codeEditor.js?v=30f3f389"></script>
+    <script src="../../../_static/interactiveCode/interactiveCodeSetup.js?v=49566f0b"></script>
+    <script src="../../../_static/interactiveCode/workerManager.js?v=de8adb65"></script>
+    <script src="../../../_static/interactiveCode/pythonRunner.js?v=e9f0c2d2"></script>
+    <script src="../../../_static/clickable_figures/clickable_figure.js?v=dd2467e6"></script>
+    <script src="../../../_static/skulpt/skulpt.js?v=51c28977"></script>
+    <script src="../../../_static/pairPuzzle/dropZone.js?v=56907477"></script>
+    <script src="../../../_static/pairPuzzle/draggableItem.js?v=5767251d"></script>
+    <script src="../../../_static/pairPuzzle/game.js?v=cb8b0d45"></script>
     <script src="../../../_static/fonts/opendyslexic/opendylexic-toggle.js?v=7208047f"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
@@ -191,6 +363,7 @@
     <script src="../../../_static/munchboka/js/geogebra-setup.js?v=8e77fc11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+    <script src="../../../_static/munchboka/js/popup_code.js?v=da823f0c"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
     <link rel="next" title="Oppgaver: Funksjoner i Python" href="oppgaver.html" />
@@ -199,6 +372,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="norwegian"/>
   <meta name="docsearch:version" content="" />
+  
+    
+    <script src="../../../_static/searchtools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../searchindex.js"></script>
+  
 <!-- Pyodide -->
 <script src="https://cdn.jsdelivr.net/pyodide/v0.27.0/full/pyodide.js"></script>
 
@@ -236,19 +415,19 @@
 
 
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
-
+  <body data-default-mode="">
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
-
+  
+  
+  
   
   <dialog id="pst-search-dialog">
     
@@ -274,7 +453,51 @@
 </div>
 
   
-    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
     </header>
   
 
@@ -329,6 +552,8 @@
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programmering</span></p>
 <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../variabler_tall_matematikk/teori.html">Variabler, tall og matematikk i Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../print_funksjonen/teori.html"><code class="code docutils literal highlight highlight-python"><span class="nb">print</span></code>-funksjonen</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../for_l%C3%B8kker/teori.html"><code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../for_l%C3%B8kker/oppgaver.html">Oppgaver</a></li>
 </ul>
@@ -512,10 +737,27 @@
                 <h2> Innhold </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definere-en-funksjon">Definere en funksjon</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funksjoner-med-parametere">Funksjoner med parametere</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#returnere-en-verdi">Returnere en verdi</a></li>
+                <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definere-en-funksjon">Definere en funksjon</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-Definere-en-funksjon">Definere en funksjon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-1">Eksempel 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-1">Utforsk 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funksjoner-med-parametere">Funksjoner med parametere</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-2">Eksempel 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#returnere-en-verdi">Returnere en verdi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-return-l-python"><code class="code docutils literal highlight highlight-python"><span class="k">return</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-2">Utforsk 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-4">Eksempel 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-1">Underveisoppgave 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-2">Underveisoppgave 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-3">Underveisoppgave 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-5">Eksempel 5</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -529,8 +771,8 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="funksjoner-med-programmering">
 <h1>Funksjoner med programmering<a class="headerlink" href="#funksjoner-med-programmering" title="Link to this heading">#</a></h1>
-<div class="admonition tip">
-<p class="admonition-title">Læringsmål</p>
+<div class="goals docutils container">
+<button class="goals-toggle" aria-expanded="false" data-label="Læringsmål">Læringsmål</button><div class="goals-content docutils container">
 <ul class="simple">
 <li><p>Forstå hva en funksjon er og hvorfor vi bruker funksjoner</p></li>
 <li><p>Kunne definere egne funksjoner med <code class="code docutils literal highlight highlight-python"><span class="k">def</span></code></p></li>
@@ -538,12 +780,14 @@
 <li><p>Forstå forskjellen på <code class="code docutils literal highlight highlight-python"><span class="nb">print</span></code> og <code class="code docutils literal highlight highlight-python"><span class="k">return</span></code></p></li>
 </ul>
 </div>
+</div>
 <p>I dette kapittelet skal vi lære å samle kode i funksjoner. En funksjon er en navngitt kodeblokk som utfører en bestemt oppgave. Dette er veldig nyttig når vi skal gjøre samme operasjon flere ganger.</p>
 <section id="definere-en-funksjon">
 <h2>Definere en funksjon<a class="headerlink" href="#definere-en-funksjon" title="Link to this heading">#</a></h2>
 <p>Vi bruker nøkkelordet <code class="code docutils literal highlight highlight-python"><span class="k">def</span></code> for å lage (definere) en funksjon i Python.</p>
-<div class="admonition summary">
-<p class="admonition-title">Definere en funksjon</p>
+<section class="summary-section" id="summary-Definere-en-funksjon">
+<h3>Definere en funksjon<a class="headerlink" href="#summary-Definere-en-funksjon" title="Link to this heading">#</a></h3>
+<div class="summary-body docutils container">
 <p>Vi definerer en funksjon slik:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">funksjonsnavn</span><span class="p">():</span>
 <span class="linenos">2</span>    <span class="c1"># Kode som skal utføres</span>
@@ -551,11 +795,13 @@
 </div>
 <p>For å bruke (kalle) funksjonen senere i programmet, skriver vi navnet etterfulgt av parenteser: <code class="code docutils literal highlight highlight-python"><span class="n">funksjonsnavn</span><span class="p">()</span></code>.</p>
 </div>
-<div class="admonition example">
-<p class="admonition-title">Eksempel 1</p>
+</section>
+<section class="example-section" id="example-Eksempel-1">
+<h3>Eksempel 1<a class="headerlink" href="#example-Eksempel-1" title="Link to this heading">#</a></h3>
+<div class="example-body docutils container">
 <p>Programmet nedenfor viser en enkel funksjon som skriver ut en hilsen.</p>
 
-        <div id="container-code-963da714"></div>
+        <div id="container-code-fdec78dc"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -566,13 +812,13 @@ hils()
 hils()`;
 
                 makeInteractiveCode(
-                    "container-code-963da714",
+                    "container-code-fdec78dc",
                     code,
                 );
             });
         </script>
-        <div class="admonition solution">
-<p class="admonition-title">Løsning</p>
+        <div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Programmet definerer først funksjonen <code class="code docutils literal highlight highlight-python"><span class="n">hils</span><span class="p">()</span></code>. Deretter kaller vi funksjonen to ganger.</p>
 <p>Utskriften blir:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Hei på deg!</span>
@@ -581,9 +827,12 @@ hils()`;
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition explore">
-<p class="admonition-title">Utforsk 1</p>
+<section class="explore-section" id="explore-Utforsk-1">
+<h3>Utforsk 1<a class="headerlink" href="#explore-Utforsk-1" title="Link to this heading">#</a></h3>
+<div class="explore-body docutils container">
 <p>Nedenfor vises et program som definerer og bruker en funksjon i en løkke.</p>
 <div class="sd-tab-set tabs-parts docutils">
 <input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio">
@@ -592,7 +841,7 @@ a</label><div class="sd-tab-content docutils">
 <p>Les programmet nedenfor og prøv å forutsi hva programmet skriver ut.</p>
 <p>Skriv inn gjetningen din nedenfor og sjekk svaret ditt!</p>
 
-        <div id="container-code-956a4ff5"></div>
+        <div id="container-code-957af29a"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -603,7 +852,7 @@ for i in range(3):
     si_hurra()`;
 
                 makePredictionInteractiveCode(
-                    "container-code-956a4ff5",
+                    "container-code-957af29a",
                     code,
                 );
             });
@@ -612,15 +861,17 @@ for i in range(3):
 </div>
 </div>
 </section>
+</section>
 <hr class="docutils" />
 <section id="funksjoner-med-parametere">
 <h2>Funksjoner med parametere<a class="headerlink" href="#funksjoner-med-parametere" title="Link to this heading">#</a></h2>
 <p>Ofte vil vi at funksjonen skal bruke noen verdier vi sender til den. Vi kaller disse verdiene for <strong>parametere</strong> eller <strong>argumenter</strong>. En parameter er variabelen du oppretter når du definerer en funksjon, mens et argument er den faktiske verdien du sender inn når du kaller funksjonen.</p>
-<div class="admonition example">
-<p class="admonition-title">Eksempel 2</p>
+<section class="example-section" id="example-Eksempel-2">
+<h3>Eksempel 2<a class="headerlink" href="#example-Eksempel-2" title="Link to this heading">#</a></h3>
+<div class="example-body docutils container">
 <p>La oss definere to funksjoner og bruke en <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkke til å finne når de gir samme verdi.</p>
 
-        <div id="container-code-aba93c31"></div>
+        <div id="container-code-261d7687"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -636,13 +887,13 @@ for x in range(10):
         print(f"f({x}) = g({x}) = {f(x)}")`;
 
                 makeInteractiveCode(
-                    "container-code-aba93c31",
+                    "container-code-261d7687",
                     code,
                 );
             });
         </script>
-        <div class="admonition solution">
-<p class="admonition-title">Løsning</p>
+        <div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi definerer to funksjoner:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">f(x)</span> <span class="pre">=</span> <span class="pre">2x</span> <span class="pre">+</span> <span class="pre">1</span></code></p></li>
@@ -656,13 +907,16 @@ for x in range(10):
 </div>
 </div>
 </div>
+</div>
+</section>
 </section>
 <hr class="docutils" />
 <section id="returnere-en-verdi">
 <h2>Returnere en verdi<a class="headerlink" href="#returnere-en-verdi" title="Link to this heading">#</a></h2>
 <p>Hittil har funksjonene våre bare brukt <code class="code docutils literal highlight highlight-python"><span class="nb">print</span></code> for å skrive ut tekst på skjermen. Ofte vil vi heller at funksjonen skal regne ut et svar og <strong>sende svaret tilbake</strong> til oss slik at vi kan bruke det videre i programmet. Da bruker vi nøkkelordet <code class="code docutils literal highlight highlight-python"><span class="k">return</span></code>.</p>
-<div class="admonition summary">
-<p class="admonition-title"><code class="code docutils literal highlight highlight-python"><span class="k">return</span></code></p>
+<section class="summary-section" id="summary-return-l-python">
+<h3><code class="code docutils literal highlight highlight-python"><span class="k">return</span></code><a class="headerlink" href="#summary-return-l-python" title="Link to this heading">#</a></h3>
+<div class="summary-body docutils container">
 <p>En funksjon avsluttes når den kommer til en <code class="code docutils literal highlight highlight-python"><span class="k">return</span></code>-setning. Verdien bak <code class="code docutils literal highlight highlight-python"><span class="k">return</span></code> sendes tilbake til der funksjonen ble kalt.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">kvadrat</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
@@ -671,13 +925,15 @@ for x in range(10):
 </pre></div>
 </div>
 </div>
-<div class="admonition explore">
-<p class="admonition-title">Utforsk 2</p>
+</section>
+<section class="explore-section" id="explore-Utforsk-2">
+<h3>Utforsk 2<a class="headerlink" href="#explore-Utforsk-2" title="Link to this heading">#</a></h3>
+<div class="explore-body docutils container">
 <p>Prøv koden nedenfor!
 Hva skjer hvis du bytter ut <code class="docutils literal notranslate"><span class="pre">return</span> <span class="pre">areal</span></code> med <code class="docutils literal notranslate"><span class="pre">print(areal)</span></code> inne i funksjonen?
 Når vi vil bruke svaret fra en funksjon videre (som å legge det sammen med noe annet), holder det ikke at funksjonen bare <em>printer</em> svaret. Funksjonen må <strong>returnere</strong> verdien til oss.</p>
 
-        <div id="container-code-c4543bff"></div>
+        <div id="container-code-38aeff5d"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -693,13 +949,13 @@ totalt_areal = areal1 + areal2
 print("Det totale arealet er", totalt_areal)`;
 
                 makeInteractiveCode(
-                    "container-code-c4543bff",
+                    "container-code-38aeff5d",
                     code,
                 );
             });
         </script>
-        <div class="admonition solution">
-<p class="admonition-title">Løsning</p>
+        <div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>I stedet for <code class="code docutils literal highlight highlight-python"><span class="nb">print</span></code> bruker funksjonen <code class="code docutils literal highlight highlight-python"><span class="k">return</span></code>. Det gjør at vi kan lagre resultatet som kommer fra funksjonen, for eksempel i variablene <code class="code docutils literal highlight highlight-python"><span class="n">areal1</span></code> og <code class="code docutils literal highlight highlight-python"><span class="n">areal2</span></code>. Etterpå kan vi regne videre med dem!</p>
 <p>Utskriften blir:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Det totale arealet er 25</span>
@@ -707,16 +963,19 @@ print("Det totale arealet er", totalt_areal)`;
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
 <aside class="margin sidebar">
 <p class="sidebar-title"><code class="code docutils literal highlight highlight-python"><span class="nb">print</span></code> med f-strenger</p>
 <p>I koden bruker vi <code class="code docutils literal highlight highlight-python"><span class="sa">f</span><span class="s2">&quot;f(</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s2">) = </span><span class="si">{</span><span class="n">f_verdi</span><span class="si">}</span><span class="s2">&quot;</span></code>. Dette kalles en <strong>f-streng</strong>. F-strengen lar oss sette verdier inn i teksten ved å bruke <code class="code docutils literal highlight highlight-python"><span class="p">{}</span></code> for å erstate variabelverdier.</p>
 </aside>
-<div class="admonition example">
-<p class="admonition-title">Eksempel 4</p>
+<section class="example-section" id="example-Eksempel-4">
+<h3>Eksempel 4<a class="headerlink" href="#example-Eksempel-4" title="Link to this heading">#</a></h3>
+<div class="example-body docutils container">
 <p>La oss lage en lineær funksjon <span class="math notranslate nohighlight">\(f(x) = 2x + 1\)</span> og en kvadratisk funksjon <span class="math notranslate nohighlight">\(g(x) = x^2 - 3\)</span>. Så finner vi noen funksjonsværdier.</p>
 
-        <div id="container-code-4cb36f2d"></div>
+        <div id="container-code-a61859b7"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -735,13 +994,13 @@ print(f"f({x}) = {f_verdi}")
 print(f"g({x}) = {g_verdi}")`;
 
                 makeInteractiveCode(
-                    "container-code-4cb36f2d",
+                    "container-code-a61859b7",
                     code,
                 );
             });
         </script>
-        <div class="admonition solution">
-<p class="admonition-title">Løsning</p>
+        <div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Vi definerer to funksjoner: <code class="code docutils literal highlight highlight-python"><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> som representerer den lineære funksjonen <span class="math notranslate nohighlight">\(f(x) = 2x + 1\)</span>, og <code class="code docutils literal highlight highlight-python"><span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> som representerer den andregradsfunksjonen <span class="math notranslate nohighlight">\(g(x) = x^2 - 3\)</span>.</p>
 <p>Deretter finner vi funksjonsverdiene for <span class="math notranslate nohighlight">\(x = 4\)</span>.</p>
 <p>Utskriften blir:</p>
@@ -751,12 +1010,15 @@ print(f"g({x}) = {g_verdi}")`;
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Underveisoppgave 1</p>
+<section class="exercise-section" id="exercise-Underveisoppgave-1">
+<h3>Underveisoppgave 1<a class="headerlink" href="#exercise-Underveisoppgave-1" title="Link to this heading">#</a></h3>
+<div class="exercise-body docutils container">
 <p>Hva skriver programmet ut?</p>
 
-        <div id="container-code-6604ef53"></div>
+        <div id="container-code-453815eb"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -766,19 +1028,20 @@ print(f"g({x}) = {g_verdi}")`;
 print(f(5))`;
 
                 makeInteractiveCode(
-                    "container-code-6604ef53",
+                    "container-code-453815eb",
                     code,
                 );
             });
         </script>
-        <div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+        <div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">11</span>
 </pre></div>
 </div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-programmering-funksjoner-teori-253 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Funksjonen <code class="code docutils literal highlight highlight-python"><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> tar inn verdien <code class="docutils literal notranslate"><span class="pre">5</span></code> som <code class="docutils literal notranslate"><span class="pre">x</span></code> og regner ut <code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">*</span> <span class="pre">5</span> <span class="pre">+</span> <span class="pre">1</span></code>, som er 11. Dette returneres og blir deretter skrevet ut av <code class="code docutils literal highlight highlight-python"><span class="nb">print</span></code>.</p>
 <p>Utskriften blir:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">11</span>
@@ -786,33 +1049,37 @@ print(f(5))`;
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Underveisoppgave 2</p>
+<section class="exercise-section" id="exercise-Underveisoppgave-2">
+<h3>Underveisoppgave 2<a class="headerlink" href="#exercise-Underveisoppgave-2" title="Link to this heading">#</a></h3>
+<div class="exercise-body docutils container">
 <p>Lag en funksjon <code class="code docutils literal highlight highlight-python"><span class="n">g</span><span class="p">(</span><span class="n">x</span><span class="p">)</span></code> som tilsvarer det matematiske uttrykket <span class="math notranslate nohighlight">\(g(x) = x^2 - 3\)</span>.
 Bruk funksjonen til å regne ut og skrive ut oppgitt svar for <span class="math notranslate nohighlight">\(g(4)\)</span>.</p>
 
-        <div id="container-code-32530147"></div>
+        <div id="container-code-11c7ad12"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
 `# Skriv koden din her`;
 
                 makeInteractiveCode(
-                    "container-code-32530147",
+                    "container-code-11c7ad12",
                     code,
                 );
             });
         </script>
-        <div class="admonition answer dropdown">
-<p class="admonition-title">Fasit</p>
+        <div class="answer-2 docutils container">
+<button class="answer-2-toggle" aria-expanded="false" data-label="Vis fasit">Vis fasit</button><div class="answer-2-content docutils container">
 <p>Utskriften blir:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">13</span>
 </pre></div>
 </div>
 </div>
-<div class="admonition solution solution-timed solution-delay-300 solution-ref-book-programmering-funksjoner-teori-283 dropdown">
-<p class="admonition-title">Løsning</p>
+</div>
+<div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">g</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
 <span class="linenos">2</span>    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="mi">3</span>
 <span class="linenos">3</span>
@@ -821,13 +1088,16 @@ Bruk funksjonen til å regne ut og skrive ut oppgitt svar for <span class="math 
 </div>
 </div>
 </div>
+</div>
+</section>
 <hr class="docutils" />
-<div class="admonition exercise">
-<p class="admonition-title">Underveisoppgave 3</p>
+<section class="exercise-section" id="exercise-Underveisoppgave-3">
+<h3>Underveisoppgave 3<a class="headerlink" href="#exercise-Underveisoppgave-3" title="Link to this heading">#</a></h3>
+<div class="exercise-body docutils container">
 <p>Ta quizen!</p>
 
         <!-- Container for the quiz -->
-        <div id="quiz-container-7cea332c4ec4476b902879d19687dd3c" class="quiz-main-container"></div>
+        <div id="quiz-container-9657112feb0d4608ade9397c6e168c50" class="quiz-main-container"></div>
         <!-- Include KaTeX for LaTeX rendering -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
         <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -839,16 +1109,18 @@ Bruk funksjonen til å regne ut og skrive ut oppgitt svar for <span class="math 
                 const questionsData = [{"content": "Løs oppgaven ved å velge det riktige alternativet: Hvilken kodelinje kaller funksjonen riktig? <pre><code class=\"python\">def min_funksjon(tall):\n    return tall * 2</code></pre>", "answers": [{"content": "`svar = min_funksjon(4)`", "isCorrect": true}, {"content": "`svar = min_funksjon[4]`", "isCorrect": false}, {"content": "`min_funksjon = 4`", "isCorrect": false}, {"content": "`def min_funksjon(4)`", "isCorrect": false}]}, {"content": "Hva er den viktigste forskjellen på `print` og `return`?", "answers": [{"content": "`return` sender et resultat tilbake til programmet slik at det kan lagres, mens `print` bare viser teksten på skjermen.", "isCorrect": true}, {"content": "De betyr akkurat det samme i Python.", "isCorrect": false}, {"content": "`return` kan bare brukes for tall, mens `print` bare er for tekstbeter.", "isCorrect": false}, {"content": "`print` avslutter funksjonen slik at den stopper.", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-7cea332c4ec4476b902879d19687dd3c', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-9657112feb0d4608ade9397c6e168c50', questionsData);
             });
         </script>
         </div>
+</section>
 <hr class="docutils" />
-<div class="admonition example">
-<p class="admonition-title">Eksempel 5</p>
+<section class="example-section" id="example-Eksempel-5">
+<h3>Eksempel 5<a class="headerlink" href="#example-Eksempel-5" title="Link to this heading">#</a></h3>
+<div class="example-body docutils container">
 <p>La oss kombinere funksjoner, <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkker og <code class="code docutils literal highlight highlight-python"><span class="k">if</span></code>-<code class="code docutils literal highlight highlight-python"><span class="k">else</span></code>-setninger. Vi skal definere en funksjon som sjekker om et tall er partall eller oddetall, og deretter bruke en <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkke til å sjekke alle tall fra 1 til 10.</p>
 
-        <div id="container-code-81584855"></div>
+        <div id="container-code-61705a06"></div>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 const code = 
@@ -864,13 +1136,13 @@ for tall in range(1, 11):
     print(tall, "er" ,resultat)`;
 
                 makeInteractiveCode(
-                    "container-code-81584855",
+                    "container-code-61705a06",
                     code,
                 );
             });
         </script>
-        <div class="admonition solution">
-<p class="admonition-title">Løsning</p>
+        <div class="solution-2 docutils container">
+<button class="solution-2-toggle" aria-expanded="false" data-label="Vis løsningsforslag">Vis løsningsforslag</button><div class="solution-2-content docutils container">
 <p>Funksjonen <code class="code docutils literal highlight highlight-python"><span class="n">par_eller_oddetall</span><span class="p">(</span><span class="n">n</span><span class="p">)</span></code> bruker en <code class="code docutils literal highlight highlight-python"><span class="k">if</span></code>-<code class="code docutils literal highlight highlight-python"><span class="k">else</span></code>-setning til å sjekke om <code class="docutils literal notranslate"><span class="pre">n</span></code> er delelig på 2. Hvis <code class="code docutils literal highlight highlight-python"><span class="n">n</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span></code> (resten er 0), returnerer funksjonen “partall”, ellers returnerer den “oddetall”.</p>
 <p>Deretter bruker vi en <code class="code docutils literal highlight highlight-python"><span class="k">for</span></code>-løkke til å kalle funksjonen for alle tall fra 1 til 10. Vi lagrer resultatet og skriver det ut med f-strengen.</p>
 <p>Utskriften blir:</p>
@@ -889,6 +1161,8 @@ for tall in range(1, 11):
 </div>
 </div>
 </div>
+</div>
+</section>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -959,10 +1233,27 @@ for tall in range(1, 11):
     <i class="fa-solid fa-list"></i> Innhold
   </div>
   <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definere-en-funksjon">Definere en funksjon</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funksjoner-med-parametere">Funksjoner med parametere</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#returnere-en-verdi">Returnere en verdi</a></li>
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definere-en-funksjon">Definere en funksjon</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-Definere-en-funksjon">Definere en funksjon</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-1">Eksempel 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-1">Utforsk 1</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funksjoner-med-parametere">Funksjoner med parametere</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-2">Eksempel 2</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#returnere-en-verdi">Returnere en verdi</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-return-l-python"><code class="code docutils literal highlight highlight-python"><span class="k">return</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explore-Utforsk-2">Utforsk 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-4">Eksempel 4</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-1">Underveisoppgave 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-2">Underveisoppgave 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Underveisoppgave-3">Underveisoppgave 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-Eksempel-5">Eksempel 5</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
@@ -1011,8 +1302,8 @@ Av Torstein Flatval, Tiller Videregående Skole
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
 
   <footer class="bd-footer">
   </footer>

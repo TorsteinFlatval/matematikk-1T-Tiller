@@ -49,7 +49,7 @@ Q: Hvilke tall skrives ut av programmet nedenfor? <pre><code class="python">for 
 - $0, 101, 10$
 - $0, 10, 100$
 :::
-::::::::::::::
+:::::::::::::::
 
 
 :::::::::::::::{exercise} Oppgave 2
