@@ -51,13 +51,13 @@ jobs:
         run: |
           python -c "import importlib.metadata as m; print('munchboka-edutools', m.version('munchboka-edutools'))"
 
-      # Build the book
+      # Build using the same command as the working local build
       - name: Build the book
         run: |
           export PYTHONPATH=$PYTHONPATH:$(pwd)
-          jupyter-book clean . --all
           rm -rf _build .jupyter_cache
-          jupyter-book build . --all
+          muncho build . --profile web
+          test -f _build/html/index.html
 
 
       # Deploy to GitHub Pages
