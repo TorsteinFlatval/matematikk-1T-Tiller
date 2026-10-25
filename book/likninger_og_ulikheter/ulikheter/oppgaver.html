@@ -16,22 +16,20 @@
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
-  <!--
-    this give us a css class that will be invisible only if js is disabled
-  -->
-  <noscript>
-    <style>
-      .pst-js-only { display: none !important; }
-
-    </style>
-  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../../_static/styles/theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
-<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=55c26ed414f5f8a31ebb" rel="stylesheet" />
+  <link href="../../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=fa44fd50" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=3c74b3bc" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/general_style.css?v=11bbc4b6" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/admonitions.css?v=9237f12a" />
     <link rel="stylesheet" type="text/css" href="../../../_static/munchboka/css/legacy_1t/popup.css?v=2d27c3a4" />
@@ -151,11 +149,10 @@
     <link rel="stylesheet" type="text/css" href="../../../_static/pairPuzzle/style.css?v=f77426ac" />
     <link rel="stylesheet" type="text/css" href="../../../_static/fonts/opendyslexic/dyslexic.css?v=80f1227b" />
   
-  <!-- So that users can add custom icons -->
-  <script defer src="../../../_static/scripts/fontawesome.js?digest=55c26ed414f5f8a31ebb"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb" />
-<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb" />
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
 
     <script src="../../../_static/documentation_options.js?v=c712eed9"></script>
     <script src="../../../_static/doctools.js?v=9a2dae69"></script>
@@ -168,7 +165,7 @@
     <script src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
     <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../../_static/copybutton.js?v=f281be69"></script>
-    <script src="../../../_static/scripts/sphinx-book-theme.js?v=fab101a9"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <script src="../../../_static/tabs.js?v=3ee01567"></script>
     <script onerror="if (!this.dataset.munchbokaRetryPending) {
   var attempt = Number(this.dataset.munchbokaRetry || 0) + 1;
@@ -220,7 +217,6 @@
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3.2/es5/tex-mml-chtml.js"></script>
     <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/likninger_og_ulikheter/ulikheter/oppgaver';</script>
-    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
     <script>mermaid.initialize({"startOnLoad": true})</script>
     <script src="../../../_static/munchboka/js/pairPuzzle/draggableItem.js?v=ce9ef7bd"></script>
     <script src="../../../_static/munchboka/js/pairPuzzle/dropZone.js?v=56907477"></script>
@@ -370,13 +366,6 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="norwegian"/>
-  <meta name="docsearch:version" content="" />
-  
-    
-    <script src="../../../_static/searchtools.js"></script>
-    <script src="../../../_static/language_data.js"></script>
-    <script src="../../../searchindex.js"></script>
-  
 <!-- Pyodide -->
 <script src="https://cdn.jsdelivr.net/pyodide/v0.27.0/full/pyodide.js"></script>
 
@@ -414,22 +403,33 @@
 
 
   </head>
-  <body data-default-mode="">
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
   
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
-
   
   <div id="pst-scroll-pixel-helper"></div>
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
     <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
   
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
   
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
   
-  
-  <dialog id="pst-search-dialog">
-    
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
       action="../../../search.html"
       method="get">
@@ -437,6 +437,7 @@
   <input type="search"
          class="form-control"
          name="q"
+         id="search-input"
          placeholder="Search..."
          aria-label="Search..."
          autocomplete="off"
@@ -444,59 +445,15 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form>
-  </dialog>
+</form></div>
+  </div>
 
   <div class="pst-async-banner-revealer d-none">
   <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
 </div>
 
   
-    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
-<div class="bd-header__inner bd-page-width">
-  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
-    <span class="fa-solid fa-bars"></span>
-  </button>
-  
-  
-  <div class="col-lg-9 navbar-header-items">
-    
-    
-    <div class="navbar-header-items__end">
-      
-        <div class="navbar-item navbar-persistent--container">
-          
-
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button>
-        </div>
-      
-      
-    </div>
-    
-  </div>
-  
-  
-    <div class="navbar-persistent--mobile">
-
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button>
-    </div>
-  
-
-  
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
-</div>
-
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
     </header>
   
 
@@ -505,8 +462,7 @@
       
       
       
-      <dialog id="pst-primary-sidebar-modal"></dialog>
-      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -536,17 +492,21 @@
     
     
     <img src="../../../_static/Tiller 1T logo.png" class="logo__image only-light" alt="Matematikk 1T - Home"/>
-    <img src="../../../_static/Tiller 1T logo.png" class="logo__image only-dark pst-js-only" alt="Matematikk 1T - Home"/>
+    <script>document.write(`<img src="../../../_static/Tiller 1T logo.png" class="logo__image only-dark" alt="Matematikk 1T - Home"/>`);</script>
   
   
 </a></div>
         <div class="sidebar-primary-item">
 
-<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
- <i class="fa-solid fa-magnifying-glass"></i>
- <span class="search-button__default-text">Search</span>
- <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-</button></div>
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Programmering</span></p>
@@ -600,14 +560,9 @@
   
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
-      <div class="sidebar-primary-item">
-<div id="ethical-ad-placement"
-      class="flat"
-      data-ea-publisher="readthedocs"
-      data-ea-type="readthedocs-sidebar"
-      data-ea-manual="true">
-</div></div>
   </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
       </div>
@@ -690,7 +645,7 @@
 
 
 <button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button pst-navbar-icon"
+  class="btn btn-sm btn-fullscreen-button"
   title="Fullskjerm-modus"
   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
@@ -704,17 +659,25 @@
 
 
 
-<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
-  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
-  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
-</button>
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
 
 
-<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-</button>
-<button class="sidebar-toggle secondary-toggle btn btn-sm pst-navbar-icon" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <span class="fa-solid fa-list"></span>
 </button>
 </div></div>
@@ -736,7 +699,7 @@
                 <h2> Innhold </h2>
             </div>
             <nav aria-label="Page">
-                <ul class="pst-show_toc_level nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-2">Oppgave 2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-3">Oppgave 3</a></li>
@@ -901,7 +864,7 @@ f(x) \geq 0.
 <p>Ta quizen!</p>
 
         <!-- Container for the quiz -->
-        <div id="quiz-container-3b64a927a12d4b10847acd3a39b3187b" class="quiz-main-container"></div>
+        <div id="quiz-container-0e9fb1df72fa4054874f227e38fbe4e9" class="quiz-main-container"></div>
         <!-- Include KaTeX for LaTeX rendering -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
         <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
@@ -910,10 +873,10 @@ f(x) \geq 0.
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", () => {
                 // Define your questions and answers
-                const questionsData = [{"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img1_figurer_oppgaver_oppgave_2_spm_1_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img2_figurer_oppgaver_oppgave_2_spm_1_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img3_figurer_oppgaver_oppgave_2_spm_1_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img4_figurer_oppgaver_oppgave_2_spm_1_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img5_figurer_oppgaver_oppgave_2_spm_1_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img6_figurer_oppgaver_oppgave_2_spm_2_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img7_figurer_oppgaver_oppgave_2_spm_2_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img8_figurer_oppgaver_oppgave_2_spm_2_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img9_figurer_oppgaver_oppgave_2_spm_2_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img10_figurer_oppgaver_oppgave_2_spm_2_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img11_figurer_oppgaver_oppgave_2_spm_3_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img12_figurer_oppgaver_oppgave_2_spm_3_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img13_figurer_oppgaver_oppgave_2_spm_3_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img14_figurer_oppgaver_oppgave_2_spm_3_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img15_figurer_oppgaver_oppgave_2_spm_3_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img16_figurer_oppgaver_oppgave_2_spm_4_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img17_figurer_oppgaver_oppgave_2_spm_4_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img18_figurer_oppgaver_oppgave_2_spm_4_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img19_figurer_oppgaver_oppgave_2_spm_4_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img20_figurer_oppgaver_oppgave_2_spm_4_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img21_figurer_oppgaver_oppgave_2_spm_5_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img22_figurer_oppgaver_oppgave_2_spm_5_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img23_figurer_oppgaver_oppgave_2_spm_5_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img24_figurer_oppgaver_oppgave_2_spm_5_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/3b64a927a12d4b10847acd3a39b3187b_img25_figurer_oppgaver_oppgave_2_spm_5_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}];
+                const questionsData = [{"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img1_figurer_oppgaver_oppgave_2_spm_1_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img2_figurer_oppgaver_oppgave_2_spm_1_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img3_figurer_oppgaver_oppgave_2_spm_1_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img4_figurer_oppgaver_oppgave_2_spm_1_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img5_figurer_oppgaver_oppgave_2_spm_1_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img6_figurer_oppgaver_oppgave_2_spm_2_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img7_figurer_oppgaver_oppgave_2_spm_2_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img8_figurer_oppgaver_oppgave_2_spm_2_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img9_figurer_oppgaver_oppgave_2_spm_2_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img10_figurer_oppgaver_oppgave_2_spm_2_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img11_figurer_oppgaver_oppgave_2_spm_3_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img12_figurer_oppgaver_oppgave_2_spm_3_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img13_figurer_oppgaver_oppgave_2_spm_3_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img14_figurer_oppgaver_oppgave_2_spm_3_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img15_figurer_oppgaver_oppgave_2_spm_3_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img16_figurer_oppgaver_oppgave_2_spm_4_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img17_figurer_oppgaver_oppgave_2_spm_4_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img18_figurer_oppgaver_oppgave_2_spm_4_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img19_figurer_oppgaver_oppgave_2_spm_4_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img20_figurer_oppgaver_oppgave_2_spm_4_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}, {"content": "Hvilken av fortegnslinjene hører til grafen? <div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img21_figurer_oppgaver_oppgave_2_spm_5_graf.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 70%;\">\n        </div>", "answers": [{"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img22_figurer_oppgaver_oppgave_2_spm_5_A.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": true}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img23_figurer_oppgaver_oppgave_2_spm_5_B.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img24_figurer_oppgaver_oppgave_2_spm_5_C.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}, {"content": "<div class=\"quiz-image-container\">\n            <img src=\"../../../_static/figurer/book/likninger_og_ulikheter/ulikheter/0e9fb1df72fa4054874f227e38fbe4e9_img25_figurer_oppgaver_oppgave_2_spm_5_D.svg\" class=\"quiz-image adaptive-figure\" alt=\"Quiz figure\" style=\"width: 100%;\">\n        </div>", "isCorrect": false}]}];
 
                 // Initialize the multiple-choice quiz
-                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-3b64a927a12d4b10847acd3a39b3187b', questionsData);
+                const quiz = new SequentialMultipleChoiceQuiz('quiz-container-0e9fb1df72fa4054874f227e38fbe4e9', questionsData);
             });
         </script>
         </div>
@@ -1409,9 +1372,9 @@ a</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-5af5f027" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-5af5f027" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-5af5f027" class="ggb-window"></div>
+<button id="button-ggb-cas-144edc89" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-144edc89" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-144edc89" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1462,12 +1425,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-5af5f027';
+    const storageKey = 'ggb-cas-state-ggb-cas-144edc89';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-5af5f027").width(),
-            h = $("#ggb-cas-5af5f027").height();
+      const w = $("#ggb-cas-144edc89").width(),
+            h = $("#ggb-cas-144edc89").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1538,7 +1501,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-5af5f027").dialog({
+    const $dlg = $("#dialog-ggb-cas-144edc89").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1548,7 +1511,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-5af5f027",
+            appName: "classic", id: "ggb-cas-144edc89",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1560,7 +1523,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-5af5f027");
+          }, true).inject("ggb-cas-144edc89");
         } else {
           applySize();
         }
@@ -1581,12 +1544,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-5af5f027").empty();
+            $("#ggb-cas-144edc89").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-5af5f027",
+              appName: "classic", id: "ggb-cas-144edc89",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1596,7 +1559,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-5af5f027");
+            }, true).inject("ggb-cas-144edc89");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -1648,7 +1611,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-5af5f027')) {
+          if (!e.target.closest('#ggb-cas-144edc89')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -1676,7 +1639,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-5af5f027');
+      const ggbContainer = document.getElementById('ggb-cas-144edc89');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -1722,10 +1685,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-5af5f027").button()
+    $("#button-ggb-cas-144edc89").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-5af5f027").dialog("open");
+        $("#dialog-ggb-cas-144edc89").dialog("open");
       });
   });
 })();
@@ -1765,9 +1728,9 @@ b</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-0a9f81f7" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-0a9f81f7" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-0a9f81f7" class="ggb-window"></div>
+<button id="button-ggb-cas-c61644ab" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-c61644ab" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-c61644ab" class="ggb-window"></div>
 </div>
 
 <style>
@@ -1818,12 +1781,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-0a9f81f7';
+    const storageKey = 'ggb-cas-state-ggb-cas-c61644ab';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-0a9f81f7").width(),
-            h = $("#ggb-cas-0a9f81f7").height();
+      const w = $("#ggb-cas-c61644ab").width(),
+            h = $("#ggb-cas-c61644ab").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -1894,7 +1857,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-0a9f81f7").dialog({
+    const $dlg = $("#dialog-ggb-cas-c61644ab").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -1904,7 +1867,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-0a9f81f7",
+            appName: "classic", id: "ggb-cas-c61644ab",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -1916,7 +1879,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-0a9f81f7");
+          }, true).inject("ggb-cas-c61644ab");
         } else {
           applySize();
         }
@@ -1937,12 +1900,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-0a9f81f7").empty();
+            $("#ggb-cas-c61644ab").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-0a9f81f7",
+              appName: "classic", id: "ggb-cas-c61644ab",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -1952,7 +1915,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-0a9f81f7");
+            }, true).inject("ggb-cas-c61644ab");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2004,7 +1967,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-0a9f81f7')) {
+          if (!e.target.closest('#ggb-cas-c61644ab')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2032,7 +1995,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-0a9f81f7');
+      const ggbContainer = document.getElementById('ggb-cas-c61644ab');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2078,10 +2041,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-0a9f81f7").button()
+    $("#button-ggb-cas-c61644ab").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-0a9f81f7").dialog("open");
+        $("#dialog-ggb-cas-c61644ab").dialog("open");
       });
   });
 })();
@@ -2121,9 +2084,9 @@ c</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-e0da0da3" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-e0da0da3" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-e0da0da3" class="ggb-window"></div>
+<button id="button-ggb-cas-cd13dccc" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-cd13dccc" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-cd13dccc" class="ggb-window"></div>
 </div>
 
 <style>
@@ -2174,12 +2137,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-e0da0da3';
+    const storageKey = 'ggb-cas-state-ggb-cas-cd13dccc';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-e0da0da3").width(),
-            h = $("#ggb-cas-e0da0da3").height();
+      const w = $("#ggb-cas-cd13dccc").width(),
+            h = $("#ggb-cas-cd13dccc").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -2250,7 +2213,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-e0da0da3").dialog({
+    const $dlg = $("#dialog-ggb-cas-cd13dccc").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -2260,7 +2223,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-e0da0da3",
+            appName: "classic", id: "ggb-cas-cd13dccc",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -2272,7 +2235,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-e0da0da3");
+          }, true).inject("ggb-cas-cd13dccc");
         } else {
           applySize();
         }
@@ -2293,12 +2256,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-e0da0da3").empty();
+            $("#ggb-cas-cd13dccc").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-e0da0da3",
+              appName: "classic", id: "ggb-cas-cd13dccc",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2308,7 +2271,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-e0da0da3");
+            }, true).inject("ggb-cas-cd13dccc");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2360,7 +2323,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-e0da0da3')) {
+          if (!e.target.closest('#ggb-cas-cd13dccc')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2388,7 +2351,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-e0da0da3');
+      const ggbContainer = document.getElementById('ggb-cas-cd13dccc');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2434,10 +2397,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-e0da0da3").button()
+    $("#button-ggb-cas-cd13dccc").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-e0da0da3").dialog("open");
+        $("#dialog-ggb-cas-cd13dccc").dialog("open");
       });
   });
 })();
@@ -2477,9 +2440,9 @@ d</label><div class="sd-tab-content docutils">
 <div class="sidebar-cas">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<button id="button-ggb-cas-d345665c" class="ggb-cas-button">Åpne CAS‑vindu</button>
-<div id="dialog-ggb-cas-d345665c" title="CAS‑vindu" style="display:none;">
-    <div id="ggb-cas-d345665c" class="ggb-window"></div>
+<button id="button-ggb-cas-39fc6516" class="ggb-cas-button">Åpne CAS‑vindu</button>
+<div id="dialog-ggb-cas-39fc6516" title="CAS‑vindu" style="display:none;">
+    <div id="ggb-cas-39fc6516" class="ggb-window"></div>
 </div>
 
 <style>
@@ -2530,12 +2493,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
 (function() {
   $(function() {
     let ggbReady = false;
-    const storageKey = 'ggb-cas-state-ggb-cas-d345665c';
+    const storageKey = 'ggb-cas-state-ggb-cas-39fc6516';
 
     function applySize() {
       if (!ggbReady) return;
-      const w = $("#ggb-cas-d345665c").width(),
-            h = $("#ggb-cas-d345665c").height();
+      const w = $("#ggb-cas-39fc6516").width(),
+            h = $("#ggb-cas-39fc6516").height();
       window.ggbApplet.setSize(Math.round(w), Math.round(h));
     }
 
@@ -2606,7 +2569,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       }
     }
 
-    const $dlg = $("#dialog-ggb-cas-d345665c").dialog({
+    const $dlg = $("#dialog-ggb-cas-39fc6516").dialog({
       autoOpen: false,
       width: 390, height: 580,
       resizable: true, draggable: true,
@@ -2616,7 +2579,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
       open: function() {
         if (!ggbReady) {
           new GGBApplet({
-            appName: "classic", id: "ggb-cas-d345665c",
+            appName: "classic", id: "ggb-cas-39fc6516",
             width: 350, height: 500,
             perspective: "C", language: "nb",
             showToolBar: true, showAlgebraInput: false,
@@ -2628,7 +2591,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
               // Restore state after a short delay to ensure GeoGebra is fully initialized
               setTimeout(restoreState, 100);
             }
-          }, true).inject("ggb-cas-d345665c");
+          }, true).inject("ggb-cas-39fc6516");
         } else {
           applySize();
         }
@@ -2649,12 +2612,12 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
           localStorage.removeItem(storageKey + '-timestamp');
           if (ggbReady && window.ggbApplet) {
             // Clear the container
-            $("#ggb-cas-d345665c").empty();
+            $("#ggb-cas-39fc6516").empty();
             // Reset the flag
             ggbReady = false;
             // Recreate the applet from scratch
             new GGBApplet({
-              appName: "classic", id: "ggb-cas-d345665c",
+              appName: "classic", id: "ggb-cas-39fc6516",
               width: 350, height: 500,
               perspective: "C", language: "nb",
               showToolBar: true, showAlgebraInput: false,
@@ -2664,7 +2627,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
                 ggbReady = true; 
                 applySize();
               }
-            }, true).inject("ggb-cas-d345665c");
+            }, true).inject("ggb-cas-39fc6516");
           }
         } catch (e) {
           console.error('Failed to reset:', e);
@@ -2716,7 +2679,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
             target = target.parentElement;
           }
           // Prevent page scroll but don't stop the event from reaching GeoGebra
-          if (!e.target.closest('#ggb-cas-d345665c')) {
+          if (!e.target.closest('#ggb-cas-39fc6516')) {
             e.preventDefault();
             e.stopPropagation();
           }
@@ -2744,7 +2707,7 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     
     // Monitor GeoGebra applet focus/interaction to control scroll lock
     function bindScrollLock() {
-      const ggbContainer = document.getElementById('ggb-cas-d345665c');
+      const ggbContainer = document.getElementById('ggb-cas-39fc6516');
       if (!ggbContainer) {
         setTimeout(bindScrollLock, 300);
         return;
@@ -2790,10 +2753,10 @@ html[data-theme="dark"] .ggb-reset-btn:hover {
     // Cleanup on dialog close
     $dlg.on('dialogclose', unlockScroll);
 
-    $("#button-ggb-cas-d345665c").button()
+    $("#button-ggb-cas-39fc6516").button()
       .on("click touchend pointerup", e => {
         e.preventDefault();
-        $("#dialog-ggb-cas-d345665c").dialog("open");
+        $("#dialog-ggb-cas-39fc6516").dialog("open");
       });
   });
 })();
@@ -3434,17 +3397,15 @@ b</label><div class="sd-tab-content docutils">
             
             
               
-                <dialog id="pst-secondary-sidebar-modal"></dialog>
-                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
 
-  <div class="sidebar-secondary-item"><div
-    id="pst-page-navigation-heading-2"
-    class="page-toc tocsection onthispage">
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> Innhold
   </div>
-  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
-    <ul class="pst-show_toc_level nav section-nav flex-column">
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-1">Oppgave 1</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-2">Oppgave 2</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exercise-Oppgave-3">Oppgave 3</a></li>
@@ -3506,8 +3467,8 @@ Av Torstein Flatval, Tiller Videregående Skole
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script defer src="../../../_static/scripts/bootstrap.js?digest=55c26ed414f5f8a31ebb"></script>
-<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=55c26ed414f5f8a31ebb"></script>
+  <script src="../../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
 
   <footer class="bd-footer">
   </footer>
