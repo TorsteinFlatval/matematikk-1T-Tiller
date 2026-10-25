@@ -315,7 +315,9 @@ else:
 :::::::::::::
 
 :::::::::::::{tab-item} b
-Skriv et program som sjekker om lengden av strengen `tekst` er større enn 5 tegn. Hvis den er lengre, skal det skrive ut "Teksten er lang", ellers "Teksten er kort".
+Skriv et program som sjekker om lengden av strengen `tekst` er større enn 5 tegn. Hvis den er lengre, skal det skrive ut "Teksten er lang", ellers "Teksten er kort". 
+
+> tips: funkjsonen `len("tekst")`{l=python} returnerer `4`{l=python}, altså hvor lang teksten er.
 
 :::{interactive-code}
 tekst = "Hello"

@@ -7,6 +7,8 @@ options:
 parts:
   - caption: Programmering
     chapters:
+    - file: book/programmering/variabler_tall_matematikk/teori.md
+    - file: book/programmering/print_funksjonen/teori.md
     - file: book/programmering/for_løkker/teori.md
       sections:
       - file: book/programmering/for_løkker/oppgaver.md
@@ -35,6 +37,8 @@ parts:
       sections:
       - file: book/programmering/tallfølger_og_figurtall/oppgaver.md
         title: Oppgaver
+      - file: book/programmering/tallfølger_og_figurtall/gjett_koden.md
+        title: Gjett hva koden gjør
   - caption: Likninger og ulikheter
     chapters:
     - file: book/likninger_og_ulikheter/likningssystemer/teori.md
@@ -45,7 +49,7 @@ parts:
       sections:
       - file: book/likninger_og_ulikheter/ulikheter/oppgaver.md
         title: Oppgaver
-    
+
 
 
 

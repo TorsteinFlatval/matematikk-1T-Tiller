@@ -5,22 +5,15 @@
 ---
 level: 2
 ---
-> I denne oppgaven skal du lære hvordan man summerer tall med et program.
 
 
 ::::::::::::::{tab-set}
 ---
 class: tabs-parts
 ---
+
+
 :::::::::::::{tab-item} a
-I programmet nedenfor summeres noen tall med en variabel `s`{l=python} i en løkke. Linja `s = s + n`{l=python} legger til verdien av `n`{l=python} til summen `s`{l=python}.
-
-Les programmet og forutsi hvilken verdi som skrives ut av programmet.
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
 Endre på programmet slik at det regner ut summen
 
 $$
@@ -45,7 +38,7 @@ print(s)
 :::::::::::::
 
 
-:::::::::::::{tab-item} c
+:::::::::::::{tab-item} b
 Endre på programmet slik at det regner ut summen
 
 $$
@@ -69,7 +62,7 @@ print(s)
 :::::::::::::
 
 
-:::::::::::::{tab-item} d
+:::::::::::::{tab-item} c
 Endre på programmet slik at det regner ut summen
 
 $$

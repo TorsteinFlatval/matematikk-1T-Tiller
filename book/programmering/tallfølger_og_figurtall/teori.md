@@ -15,56 +15,82 @@ Tallfølger er nært knyttet til de naturlige tallene og egenskaper ved tall. Du
 Når vi skriver et program, så ønsker vi ofte å regne med formler. 
 
 
-:::::::::::::::{explore} Utforsk 3 
+:::::::::::::::{example} Eksempel 1
+
+:::{figure} ./figurer/eksempler/eksempel_2.svg
+---
+width: 70%
+class: no-click, adaptive-figure
+---
+:::
+
+Over ser vi figurtallene til de tre første i formelen $F_n = 3\cdot n + 1$.
+Vi skriver ut de fire første figurtrallene:
+
+
+:::{code-block} python
+---
+linenos:
+---
+for n in range(1,5):
+    print(3 * n + 1)
+:::
+
+Dette programmet skriver ut:
+```text
+4
+7
+11
+14
+```
+::::
+
+Vi kan også skrive ut tekst for hvert figurtall:
+:::{code-block} python
+---
+linenos:
+---
+for n in range(1,5):
+    print("Figur nummer", n , ":", 3 * n + 1)
+:::
+
+Dette programmet skriver ut:
+```text
+Figur nummer 1 : 4
+Figur nummer 2 : 7
+Figur nummer 3 : 10
+Figur nummer 4 : 13
+```
+
+::::
+
+:::::::::::::::
+
+
+:::::::::::::::{explore} Utforsk 1
 Nedenfor vises et program som bruker en formel for å regne ut og skrive ut noen tall i en tallfølge.
 
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
 Les programmet og forutsi hvilke tall programmet skriver ut.
 
-Skriv inn svaret ditt nedenfor sjekk. 
-
-
 :::::::::::::
 
-
-:::::::::::::{tab-item} b
-Endre på programmet slik at det skriver ut verdiene til tallfølgen 
-
-$$
-a_n = n^2 \qfor n \in \set{1, 2, \ldots, 10}
-$$
-
-> For å opphøye et tall i Python, bruker vi `**`{l=python}. For eksempel er $2^3$ skrevet som `2 ** 3`{l=python} i Python.
-
-
-:::::::::::::
 ::::::::::::::
-
 
 :::{interactive-code}
 ---
 predict:
 ---
 for n in range(1, 5):
-    a = 3 * n + 1
+    a = 2 * n**2 + 3
     
     print(a)
 :::
-
-
-
-
 :::::::::::::::
 
 
 ---
 
-:::::::::::::::{exercise} Underveisoppgave 4
+:::::::::::::::{exercise} Underveisoppgave 1
 
 ::::::::::::::{tab-set}
 ---
@@ -92,7 +118,7 @@ for n in range(????): # FYLL INN
 linenos:
 ---
 for n in range(1, 6):
-    a = 2 * n + 3
+    a = 2 * n**2 + 1
     
     print(a)
 :::
@@ -175,34 +201,17 @@ I mange tilfeller er vi interessert i å summere tallene i en tallfølge.
 Når vi skriver `s = s + n`{l=python}, så betyr det at vi legger til verdien til `n`{l=python} til verdien til `s`{l=python} og lagrer resultatet i `s`{l=python}. 
 :::
 
-:::::::::::::::{explore} Utforsk 4
+:::::::::::::::{explore} Utforsk 2
 Nedenfor vises et program som summerer noen tall. 
 
 
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
+
 Les programmet nedenfor og forutsi hva som skrives ut. 
 
 Skriv inn svaret ditt nedenfor og sjekk.
 :::::::::::::
 
 
-:::::::::::::{tab-item} b
-Endre på programmet slik at det summerer alle naturlig tall fra $1$ til og med $100$. 
-
-Hva blir summen? 
-:::::::::::::
-
-
-:::::::::::::{tab-item} 
-Endre på programmet slik at det finner summen av de $10$ første kvadrattallene
-
-$$
-S = 1^2 + 2^2 + 3^2 + \ldots + 10^2
-$$
 :::::::::::::
 
 ::::::::::::::
@@ -220,4 +229,254 @@ print(s)
 
 :::::::::::::::
 
+
+:::::::::::::::{example} Eksempel 2
+
+:::{figure} ./figurer/eksempler/n*n.svg
+---
+width: 70%
+class: no-click, adaptive-figure
+---
+:::
+
+Over ser vi figurtallene til de tre første kvadrattallene $k_n = n^2$.
+Vi ønsker å summere de tre første kvadrattallene. Vi lager derfor en variabel `sum = 0`{l=python} og adderer figurtallet for hvert steg i `for`{l=python}-løkken.
+
+
+:::{code-block} python
+---
+linenos:
+---
+sum = 0
+for n in range(1,4):
+    sum = sum + n**2
+    print(sum)
+:::
+
+Dette programmet skriver ut:
+```text
+1
+5
+14
+```
+::::
+
+Det programmet skriver ut er:<br>
+$k_1 = 1$<br>
+$k_1 + k2 = 5$ <br>
+$k_1 + k_2 + k_3 = 14$
+
+
+:::::::::::::::
+
+:::::::::::::::{example} Eksempel 3
+
+:::{figure} ./figurer/eksempler/n*n.svg
+---
+width: 70%
+class: no-click, adaptive-figure
+---
+:::
+
+Vi ser igjen på kvadrattallene med formelen $k_n = n^2$.
+Hvis vi har 100 ruter tlgjengelig til å tegne kvadrattall, hvor mange kvadrattall kan vi tegne?
+
+Vi ønsker dermed å stoppe løkken som summerer figurtallene når summen er større enn 100.
+Dette kan vi gjøre med en `while`{l=python}-løkke som kjører `while sum < 100`{l=python}. Vi lager variabelen `n`{l=python} for å holde styr på hvor mange figurtall vi har summert. <br>
+
+I tillegg bruker vi en `if`{l=python}-setning etter `while`{l=python}-løkken siden vi hvis vi må summere fordi 100 for at `while`{l=python}-løkken skal stoppe. Vi må derfor trekke fra forrige `sum`{l=python} og forrige `n`{l=python}: <br> `sum = sum - n**2`{l=python} <br> `n = n - 1`{l=python}.
+:::{code-block} python
+---
+linenos:
+---
+sum = 0
+n = 0  # Antall figurer vi har laget
+
+while sum < 100:
+    n = n + 1
+    sum = sum + n**2
+
+if sum > 100:
+    sum = sum - n**2
+    n = n - 1
+
+print("Man kan lage", n, "kvadrattall med 100 ruter, og da har man brukt", sum, "ruter.")
+:::
+
+Dette programmet skriver ut:
+```text
+Man kan lage 6 kvadrattall med 100 ruter, og da har man brukt 91 ruter.
+
+```
+::::
+
+
+
+
+:::::::::::::::
+
+:::::::::::::::{exercise} Underveisoppgave 2
+
+:::{figure} ./figurer/eksempler/n*(n+1).svg
+---
+width: 70%
+class: no-click, adaptive-figure
+---
+:::
+
+Over ser vi figurtallene til de tre første Rektangeltallene $R_n = n\cdot(n+1)$.
+
+::::::::::::::{tab-set}
+---
+class: tabs-parts
+---
+:::::::::::::{tab-item} a
+
+Endre programmet nedenfor slik at det skriver hvor mange ruter det er i de fem første rektangeltallene.
+
+
+:::{interactive-code}
+for n in range(????): # FYLL INN
+    R = # FYLL INN
+    print(# FYLL INN)
+
+:::
+
+
+::::{answer}
+:::{code-block} python
+---
+linenos:
+---
+for n in range(1,6):
+    R = n*(n+1)
+    print(R)
+:::
+::::
+
+:::::::::::::
+
+
+:::::::::::::{tab-item} b
+Endre på programmet slik at det skriver ut summen av det første, det andre og opp til det femte rektangeltallet:
+```text
+2
+8
+20
+40
+70
+```
+
+
+
+:::{interactive-code}
+sum = # FYLL INN
+for n in range(????): # FYLL INN
+    R = # FYLL INN
+    sum = # FYLL INN
+    print (sum)
+
+:::
+
+::::{answer}
+:::{code-block} python
+---
+linenos:
+---
+sum = 0
+for n in range(1,6):
+    R = n*(n+1)
+    sum = sum + R
+    print (sum)
+:::
+::::
+
+:::::::::::::
+
+
+:::::::::::::{tab-item} c
+Endre på programmet slik at det bare skriver ut summen av de fem første rektangeltallene.
+```text
+70
+```
+
+:::{interactive-code}
+sum = # FYLL INN
+for n in range(????): # FYLL INN
+    R = # FYLL INN
+    sum = # FYLL INN
+    print (sum)
+
+:::
+
+
+::::{answer}
+:::{code-block} python
+---
+linenos:
+---
+sum = 0
+for n in range(1,6):
+    R = n*(n+1)
+    sum = sum + R
+print (sum)
+:::
+::::
+:::::::::::::
+
+:::::::::::::{tab-item} d
+Endre på programmet slik at det skriver ut
+```text
+Man kan lage 6 rektageltall med 100 ruter, og da har man brukt 91 ruter.
+```
+
+:::{interactive-code}
+sum = # FYLL INN
+n = # FYLL INN  # Antall figurer vi har laget
+
+while sum < # FYLL INN:
+    n = # FYLL INN
+    sum = # FYLL INN
+
+if sum > # FYLL INN:
+    sum = # FYLL INN
+    n = # FYLL INN
+
+print("Man kan lage", n, "rektangeltall med 100 ruter, og da har man brukt", sum, "ruter.")
+
+:::
+
+
+::::{answer}
+:::{code-block} python
+---
+linenos:
+---
+sum = 0
+n = 0  # Antall figurer vi har laget
+
+while sum < 100:
+    n = n + 1
+    sum = sum + n*(n+1)
+
+if sum > 100:
+    sum = sum - n*(n+1)
+    n = n - 1
+
+print("Man kan lage", n, "rektangeltall med 100 ruter, og da har man brukt", sum, "ruter.")
+:::
+::::
+:::::::::::::
+::::::::::::::
+
+
+
+:::::::::::::::
+
+
+
+
+
+
+:::::::::::::::
 
