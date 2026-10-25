@@ -15,3 +15,6 @@ plotmath==0.3.13
 signchart==0.2.2
 svgutils==0.3.4
 munchboka-edutools>=0.3.12
+sphinx==7.4.7
+sphinx-book-theme==1.1.4
+pydata-sphinx-theme==0.15.4
