@@ -8,12 +8,9 @@ class: tip
 * Kunne lage programmer som finner summen av tall i en tallfølge.
 :::::
 
-Tallfølger er nært knyttet til de naturlige tallene og egenskaper ved tall. Du har kanskje møtt på figurtall før som trekanttall eller kvadrattall. Dette er eksempler på tallfølger som er representert med figurer. Her skal vi se på hvordan vi kan bruke programmering til å svare på spørsmål knyttet til tallfølger og figurtall. 
+Tallfølger er nært knyttet til de naturlige tallene og egenskaper ved tall. Vi har tidligere sett på figurtall  som trekanttall eller kvadrattall. Dette er eksempler på tallfølger som er representert med figurer. Her skal vi se på hvordan vi kan bruke programmering til å svare på spørsmål knyttet til tallfølger og figurtall. 
 
-## Formler
-
-Når vi skriver et program, så ønsker vi ofte å regne med formler. 
-
+## Figurtall
 
 :::::::::::::::{example} Eksempel 1
 
@@ -268,6 +265,8 @@ $k_1 + k_2 + k_3 = 14$
 
 
 :::::::::::::::
+
+
 
 :::::::::::::::{example} Eksempel 3
 

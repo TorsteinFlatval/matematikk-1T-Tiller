@@ -7,18 +7,22 @@ level: 2
 ---
 
 
+
 ::::::::::::::{tab-set}
 ---
 class: tabs-parts
 ---
 
 
+
 :::::::::::::{tab-item} a
 Endre på programmet slik at det regner ut summen
+
 
 $$
 S = 1 + 2 + 3 + \ldots + 99 + 100
 $$
+
 
 
 ::::{answer}
@@ -31,19 +35,24 @@ s = 0   # variabel som skal lagre summen
 for n in range(1, 101):
     s = s + n
 
+
 print(s)
 :::
 ::::
 
+
 :::::::::::::
+
 
 
 :::::::::::::{tab-item} b
 Endre på programmet slik at det regner ut summen
 
+
 $$
 S = 1 + 3 + 5 + \ldots + 97 + 99
 $$
+
 
 ::::{answer}
 :::{code-block} python
@@ -55,19 +64,24 @@ s = 0   # variabel som skal lagre summen
 for n in range(1, 101, 2):
     s = s + n
 
+
 print(s)
 :::
 ::::
 
+
 :::::::::::::
+
 
 
 :::::::::::::{tab-item} c
 Endre på programmet slik at det regner ut summen
 
+
 $$
 S = 2 + 4 + 6 + \ldots + 98 + 100
 $$
+
 
 
 ::::{answer}
@@ -80,28 +94,33 @@ s = 0   # variabel som skal lagre summen
 for n in range(2, 101, 2):
     s = s + n
 
+
 print(s)
 :::
 ::::
 
+
 :::::::::::::
+
 
 ::::::::::::::
 
+
 :::{interactive-code}
----
-predict:
----
 s = 0   # variabel som skal lagre summen
 for n in range(1, 6):
     s = s + n
 
+
 print(s)
+
 
 
 :::
 
+
 :::::::::::::::
+
 
 
 ---
@@ -109,14 +128,23 @@ print(s)
 
 :::::::::::::::{exercise} Oppgave 2
 ---
-level: 2
+level: 3
 ---
 
-En sum er gitt ved 
 
-$$
-S = 1 + \dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8} + \dfrac{1}{16} + \ldots
-$$
+Nedenfor ser du tre figurer. Figurene er satt sammen av små kvadrater.
+
+
+Tenk deg at du skal fortsette å lage figurer etter samme mønster. Vi lar $K_n$ være antall små kvadrater i figur $n$.
+
+
+:::{figure} ./figurer/oppgaver/oppgave_11/figur.svg
+---
+width: 100%
+class: no-click, adaptive-figure
+---
+:::
+
 
 
 ::::::::::::::{tab-set}
@@ -124,29 +152,23 @@ $$
 class: tabs-parts
 ---
 :::::::::::::{tab-item} a
-Lag et program som skriver ut de første 5 leddene i summen.
-
+Bestem en formel for $K_n$.
 
 
 
 ::::{answer}
-:::{code-block} python
----
-linenos:
----
-for i in range(1, 6, 1):
-    a = 1 / 2**(n + 1)
-    print(a)
-
-:::
+$$
+K_n = 9 + 8(n - 1) = 8n + 1 \qder n \in \mathbb{N}
+$$
 ::::
 
 
 :::::::::::::
+
 
 
 :::::::::::::{tab-item} b
-Lag et program som regner ut summen av de 5 første leddene i summen
+Lag et program som regner ut og skriver ut hvor mange små kvadrater det er i hver av de $10$ første figurene.
 
 
 
@@ -155,13 +177,8 @@ Lag et program som regner ut summen av de 5 første leddene i summen
 ---
 linenos:
 ---
-s = 0
-for i in range(1, 6, 1):
-    a = 1 / 2**(n + 1)
-    s = s + a
-
-print(s)
-    
+for n in range(1, 11):
+    print(8 * n + 1)
 :::
 ::::
 
@@ -169,8 +186,12 @@ print(s)
 :::::::::::::
 
 
+
 :::::::::::::{tab-item} c
-Bruk programmet ditt til å bestemme hvilken verdi summen nærmer seg når vi bruker veldig mange ledd.
+Du starter med å lage figur $1$, så figur $2$, deretter figur $3$, og så videre.
+
+
+Lag et program som finner ut hvor mange kvadrater du må bruke for å lage de 10 000 første figurene.
 
 
 
@@ -180,12 +201,10 @@ Bruk programmet ditt til å bestemme hvilken verdi summen nærmer seg når vi br
 linenos:
 ---
 s = 0
-for i in range(1, 10001, 1):
-    a = 1 / 2**(n + 1)
-    s = s + a
+for n in range(1, 10001):
+    s = s + 8 * n + 1
 
 print(s)
-    
 :::
 ::::
 
@@ -197,12 +216,15 @@ print(s)
 
 
 :::{interactive-code}
-# Din kode her
+# Din kode her 
+
 
 
 
 
 :::
+
+
 
 
 :::::::::::::::
@@ -218,24 +240,21 @@ print(s)
 level: 3
 ---
 
-Alma og Synne jobber med summen 
 
-$$
-S = 1 - \dfrac{1}{2} + \dfrac{1}{4} - \dfrac{1}{8} + \dfrac{1}{16} - \ldots
-$$
+Nedenfor ser du tre figurer. Figurene er satt sammen av små kvadrater.
 
-:::{dialogue}
+
+Tenk deg at du skal fortsette å lage figurer etter samme mønster. Vi lar $K_n$ være antall små kvadrater i figur $n$. 
+
+
+
+:::{figure} ./figurer/oppgaver/oppgave_12/figur.svg
 ---
-name1: Alma
-name2: Synne
-speaker1: left
-speaker2: right
+width: 100%
+class: no-click, adaptive-figure
 ---
-Alma: Jeg vet hvordan vi kan regne ut summen når alle leddene er positive, men nå er jo leddene positive og negative annen hver gang.
-Synne: Kan vi ikke bare bruke en `if`{l=python}-`else`{l=python}-setning sånn at programmet bytter på fortegnet annen hver gang da?
-Alma: Jo! Er ikke det litt som å bare sjekke om et tall er delelig med $2$ da?
-Synne: Det tror jeg vil funke!
 :::
+
 
 
 ::::::::::::::{tab-set}
@@ -243,22 +262,67 @@ Synne: Det tror jeg vil funke!
 class: tabs-parts
 ---
 :::::::::::::{tab-item} a
-Ta utgangspunkt i ideen til Alma og Synne, og lag et program som skriver ut de 5 første leddene i summen.
+Bestem en formel for $K_n$. 
 
+
+
+::::{answer}
+$$
+K(n) = (n + 1)^2 = n^2 + 2n + 1
+$$
+::::
 
 
 :::::::::::::
+
 
 
 :::::::::::::{tab-item} b
-Lag et program som regner ut summen av de 5 første leddene.
+Lag et program som beregner og skriver ut hvor mange små kvadrater det er i hver av de $20$ første figurene.
+
+
+
+::::{answer}
+:::{code-block} python
+---
+linenos:
+---
+for n in range(1, 21):
+    print((n + 1)**2)
+:::
+::::
 
 
 :::::::::::::
 
 
+
+
 :::::::::::::{tab-item} c
-Bruk programmet ditt til å bestemme hvilken verdi programmet nærmer seg når vi bruker veldig mange ledd. 
+Tenk deg at du har 1 000 000 små kvadrater. Du starter med å lage figur $1$, så figur $2$, deretter figur $3$, og så videre. 
+
+
+Lag et program som finner ut
+1. Hvor mange figurer du kan lage
+2. Hvor mange små kvadrater du har igjen
+
+
+
+::::{answer}
+:::{code-block} python
+---
+linenos:
+---
+rest = 1_000_000
+n = 1
+while rest >= (n + 1)**2:
+    rest = rest - (n + 1)**2
+    n = n + 1
+
+print("Antall figurer:", n - 1)
+print("Kvadrater igjen:", rest)
+:::
+::::
 
 
 :::::::::::::
@@ -267,8 +331,10 @@ Bruk programmet ditt til å bestemme hvilken verdi programmet nærmer seg når v
 ::::::::::::::
 
 
+
 :::{interactive-code}
 # Din kode her
+
 
 
 
@@ -287,19 +353,17 @@ Bruk programmet ditt til å bestemme hvilken verdi programmet nærmer seg når v
 
 :::::::::::::::{exercise} Oppgave 4
 ---
-level: 3
+level: 2
 ---
 
-Nedenfor ser du tre figurer. Figurene er satt sammen av små kvadrater.
 
-Tenk deg at du skal fortsette å lage figurer etter samme mønster. Vi lar $K_n$ være antall små kvadrater i figur $n$.
+En sum er gitt ved 
 
-:::{figure} ./figurer/oppgaver/oppgave_11/figur.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
-:::
+
+$$
+S = 1 + \dfrac{1}{2} + \dfrac{1}{4} + \dfrac{1}{8} + \dfrac{1}{16} + \ldots
+$$
+
 
 
 ::::::::::::::{tab-set}
@@ -307,101 +371,89 @@ class: no-click, adaptive-figure
 class: tabs-parts
 ---
 :::::::::::::{tab-item} a
-Bestem en formel for $K_n$.
-
-
-::::{answer}
-$$
-K_n = 9 + 8(n - 1) = 8n + 1 \qder n \in \mathbb{N}
-$$
-::::
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} b
-Lag et program som regner ut og skriver ut hvor mange små kvadrater det er i hver av de $10$ første figurene.
-
-:::::::::::::
-
-
-:::::::::::::{tab-item} c
-Du starter med å lage figur $1$, så figur $2$, deretter figur $3$, og så videre.
-
-Lag et program som finner ut hvor mange kvadrater du må bruke for å lage de 10 000 første figurene.
-
-:::::::::::::
-
-::::::::::::::
-
-:::{interactive-code}
-# Din kode her 
+Lag et program som skriver ut de første 5 leddene i summen.
 
 
 
-
-:::
-
-
-
-:::::::::::::::
-
-
----
-
-
-:::::::::::::::{exercise} Oppgave 5
----
-level: 3
----
-
-Nedenfor ser du tre figurer. Figurene er satt sammen av små kvadrater.
-
-Tenk deg at du skal fortsette å lage figurer etter samme mønster. Vi lar $K_n$ være antall små kvadrater i figur $n$. 
-
-
-:::{figure} ./figurer/oppgaver/oppgave_12/figur.svg
----
-width: 100%
-class: no-click, adaptive-figure
----
-:::
-
-
-::::::::::::::{tab-set}
----
-class: tabs-parts
----
-:::::::::::::{tab-item} a
-Bestem en formel for $K_n$. 
 
 
 ::::{answer}
-$$
-K(n) = (n + 1)^2 = n^2 + 2n + 1
-$$
+:::{code-block} python
+---
+linenos:
+---
+for i in range(5):
+    a = 1 / 2**i
+    print(a)
+
+
+:::
 ::::
+
+
 
 :::::::::::::
 
 
+
 :::::::::::::{tab-item} b
-Lag et program som beregner og skriver ut hvor mange små kvadrater det er i hver av de $20$ første figurene.
+Lag et program som regner ut summen av de 5 første leddene i summen
+
+
+
+
+::::{answer}
+:::{code-block} python
+---
+linenos:
+---
+s = 0
+for i in range(5):
+    a = 1 / 2**i
+    s = s + a
+
+
+print(s)
+    
+:::
+::::
+
+
 
 :::::::::::::
 
 
 
 :::::::::::::{tab-item} c
-Tenk deg at du har 1 000 000 små kvadrater. Du starter med å lage figur $1$, så figur $2$, deretter figur $3$, og så videre. 
+Bruk programmet ditt til å bestemme hvilken verdi summen nærmer seg når vi bruker veldig mange ledd.
 
-Lag et program som finner ut
-1. Hvor mange figurer du kan lage
-2. Hvor mange små kvadrater du har igjen
+
+
+
+::::{answer}
+:::{code-block} python
+---
+linenos:
+---
+s = 0
+for i in range(50):
+    a = 1 / 2**i
+    s = s + a
+
+
+print(s)
+    
+:::
+::::
+
+
 
 :::::::::::::
 
+
+
 ::::::::::::::
+
 
 
 :::{interactive-code}
@@ -410,15 +462,166 @@ Lag et program som finner ut
 
 
 
+
 :::
+
 
 
 :::::::::::::::
 
 
+
+
 ---
 
 
+
+:::{margin} Hvis vi vil finne ut om et tall er delelig på et annet kan vi bruke `%`{l=python}-operatoren.
+`5%2`{l=python} returnerer resten når vi deler $5/2=1$. Dette kan vi bruke til å sjekke om et et er partall eller oddetall.
+:::
+:::::::::::::::{exercise} Oppgave 5
+---
+level: 3
+---
+
+
+Alma og Synne jobber med summen 
+
+
+$$
+S = 1 - \dfrac{1}{2} + \dfrac{1}{4} - \dfrac{1}{8} + \dfrac{1}{16} - \ldots
+$$
+
+
+:::{dialogue}
+---
+name1: Alma
+name2: Synne
+speaker1: left
+speaker2: right
+---
+Alma: Jeg vet hvordan vi kan regne ut summen når alle leddene er positive, men nå er jo leddene positive og negative annen hver gang.
+Synne: Kan vi ikke bare bruke en `if`{l=python}-`else`{l=python}-setning sånn at programmet bytter på fortegnet annen hver gang da?
+Alma: Jo! Er ikke det litt som å bare sjekke om et tall er delelig med $2$ da?
+Synne: Det tror jeg vil funke!
+:::
+
+
+
+::::::::::::::{tab-set}
+---
+class: tabs-parts
+---
+:::::::::::::{tab-item} a
+Ta utgangspunkt i ideen til Alma og Synne, og lag et program som skriver ut de 5 første leddene i summen.
+
+
+
+
+::::{answer}
+:::{code-block} python
+---
+linenos:
+---
+for i in range(5):
+    if i % 2 == 0:
+        a = 1 / 2**i
+    else:
+        a = -1 / 2**i
+    print(a)
+
+
+:::
+::::
+
+
+
+:::::::::::::
+
+
+
+:::::::::::::{tab-item} b
+Lag et program som regner ut summen av de 5 første leddene.
+
+
+
+::::{answer}
+:::{code-block} python
+---
+linenos:
+---
+s = 0
+for i in range(5):
+    if i % 2 == 0:
+        a = 1 / 2**i
+    else:
+        a = -1 / 2**i
+    s = s + a
+
+
+print(s)
+
+:::
+::::
+
+
+
+:::::::::::::
+
+
+
+:::::::::::::{tab-item} c
+Bruk programmet ditt til å bestemme hvilken verdi programmet nærmer seg når vi bruker veldig mange ledd. 
+
+
+
+::::{answer}
+:::{code-block} python
+---
+linenos:
+---
+s = 0
+for i in range(50):
+    if i % 2 == 0:
+        a = 1 / 2**i
+    else:
+        a = -1 / 2**i
+    s = s + a
+
+
+print(s)
+
+:::
+::::
+
+
+
+:::::::::::::
+
+
+
+::::::::::::::
+
+
+
+:::{interactive-code}
+# Din kode her
+
+
+
+
+
+:::
+
+
+
+
+:::::::::::::::
+
+
+
+
+---
 
 
 :::::::::::::::{exercise} Oppgave 6
