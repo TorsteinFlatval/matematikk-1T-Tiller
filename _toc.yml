@@ -2,7 +2,7 @@ format: jb-book
 
 root: index.md
 options:
-  numbered: false
+  numbered: true
 
 parts:
   - caption: Programmering

@@ -79,7 +79,7 @@ level: 2
 class: tabs-parts
 ---
 :::::::::::::{tab-item} a
-Definer en funksjon `f(x)` som beregner $f(x) = x^2 + 2$. Bruk deretter en `for`{l=python}-løkke til å beregne og printe funksjonsværdien for hver $x$-verdi fra $-10$ til og med $10$.
+Definer en funksjon `f(x)` som beregner $f(x) = x^2 + 2$. Bruk deretter en `for`{l=python}-løkke til å beregne og skrive ut funksjonsværdien for hver $x$-verdi fra $-10$ til og med $10$.
 
 :::{interactive-code}
 # Skriv koden din her
