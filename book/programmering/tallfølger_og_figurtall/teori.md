@@ -426,7 +426,7 @@ print (sum)
 :::::::::::::{tab-item} d
 Endre på programmet slik at det skriver ut
 ```text
-Man kan lage 6 rektageltall med 100 ruter, og da har man brukt 91 ruter.
+Man kan lage 5 rektageltall med 100 ruter, og da har man brukt 70 ruter.
 ```
 
 :::{interactive-code}
